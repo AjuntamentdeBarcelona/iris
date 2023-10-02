@@ -1,0 +1,5 @@
+service_name = 'PDF'
+tag_1 = 'Plantilla'
+tag_xml_1 = 'IRIS_Incidencias'
+tag_xml_2 = 'IRIS_Documento'
+default_template_description = 'IRIS2_patro_carta_BSM_area'

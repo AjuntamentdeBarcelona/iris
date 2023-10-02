@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-30 16:48+0200\n"
+"PO-Revision-Date: 2020-04-30 17:36-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: models.py:25
+msgid "Internal conversation"
+msgstr "Conversació Interna"
+
+#: models.py:26
+msgid "External conversation"
+msgstr "Conversació Externa"
+
+#: models.py:27
+msgid "Applicant conversation"
+msgstr "Conversació amb Sol·licitant"
+
+#: models.py:32
+msgid "Conversation Type"
+msgstr "Tipus de conversa"
+
+#: models.py:33
+msgid "Creation Group"
+msgstr "Grup creador"
+
+#: models.py:35
+msgid "RecordCard"
+msgstr "Fitxa"
+
+#: models.py:36
+msgid "Is opened"
+msgstr "Està oberta"
+
+#: models.py:36
+msgid "Conversation is opened"
+msgstr "La conversa està oberta"
+
+#: models.py:37
+msgid "Require answer"
+msgstr "Requereix resposta"
+
+#: models.py:38
+msgid "Indicates if an answer is expected"
+msgstr "Indica si s'espera una resposta"
+
+#: models.py:40
+msgid "Groups involved"
+msgstr "Grups involucrats"
+
+#: models.py:41
+msgid "Groups involved on conversation, if it's Internal Type"
+msgstr "Grups involucrats a la conversa, si és de tipus intern"
+
+#: models.py:42
+msgid "External email"
+msgstr "Email extern"
+
+#: models.py:43
+msgid "External email involved on conversation, if it's External Type"
+msgstr "Email extern involucrat a la conversa, si és de tipus extern"
+
+#: models.py:94 models.py:105 models.py:114
+msgid "Conversation"
+msgstr "Conversa"
+
+#: models.py:95 models.py:106 models.py:115
+msgid "Group"
+msgstr "Grup"
+
+#: models.py:96
+msgid "Enabled"
+msgstr "Actiu"
+
+#: models.py:104
+msgid "Creation date"
+msgstr "Data de creació"
+
+#: models.py:117
+msgid "State of the RecordCard on the creation of the message"
+msgstr "Estat de la fitxa a la creació del missatge"
+
+#: models.py:118
+msgid "Text Message"
+msgstr "Missatge de text"
+
+#: models.py:121
+msgid "Message hash"
+msgstr "Hash del missatge"
+
+#: models.py:123
+msgid "Messages is answered"
+msgstr "El misssatge està respost"
+
+#: serializers.py:56 serializers.py:185
+msgid "The selected RecordCard does not exist"
+msgstr "La fitxa seleccionada no existeix"
+
+#: serializers.py:80
+#| msgid ""
+#| "Only the RecordCard Responsible profile can open new conversations"
+msgid ""
+"Only the RecordCard Responsible profile or a group with admin permissions "
+"can open new conversations"
+msgstr ""
+"Només el perfil responsable de la fitxa o un grup amb permisos "
+"d'administració pot obrir noves converses"
+
+#: serializers.py:94
+msgid "If conversation type is INTERNAL, the groups involved must be set"
+msgstr ""
+"Si el tipus de la conversa es INTERNAL, els grupos involucrats s'han de "
+"setejar"
+
+#: serializers.py:99
+msgid ""
+"The group that create the conversation can not be included in involved "
+"groups"
+msgstr ""
+"El grup que crea la conversa no pot estar inclòs als grups involucrats"
+
+#: serializers.py:104
+msgid "If conversation type is EXTERNAL, the external email must be set"
+msgstr ""
+"Si el tipus de la convers és extern, el email extern de contacte és requerit"
+
+#: serializers.py:110
+msgid ""
+"Conversation type can not be Applicant because applicant email is unknown"
+msgstr ""
+"La conversa no pot ser de tipus sol·licitant perquè es desconeix el email "
+"del sol·licitant de la fitxa"
+
+#: serializers.py:167
+msgid "The selected group does not exist"
+msgstr "El grup seleccionat no existeix"
+
+#: serializers.py:172
+msgid "The selected conversation does not exist or it's closed"
+msgstr "La conversa seleccionada no existeix o està tancada"
+
+#: serializers.py:176
+msgid "The selected record_state does not exist"
+msgstr "El tipus de fitxa seleccionat no existeix"
+
+#: serializers.py:180
+msgid "The selected record file does not exist"
+msgstr "El fitxer seleccionat no existeix"
+
+#: serializers.py:218
+msgid "The conversation is closed and messages can not be added"
+msgstr "La conversa està tancada i no es poden afegir missatges"
+
+#: serializers.py:242
+msgid "The group can not add messages to this {} because it's not involved"
+msgstr "El grup no pot afegir missatges a la {} perquè no està involucrat"
+
+#: serializers.py:267
+msgid "The attach of files is deactivated"
+msgstr "La pujada de fitxa està desactivada"
+
+#: serializers.py:272
+msgid "Files can only be added in conversations with external people"
+msgstr "Només es poden adjuntar fitxers a converses amb gent externa"
+
+#: serializers.py:276
+msgid "There are repeated record files to add to the email"
+msgstr "Hi ha fitxers repetits entre els adjunts a l'email"
+
+#: serializers.py:279
+msgid "The record files selected must be one of record card files"
+msgstr "Els fitxers seleccionats han de ser fitxers de la fitxa"
+
+#: views.py:112
+msgid "User's group is not involved in conversation"
+msgstr "El grup de l'usuari no està involucrat a la conversa"
+
+#: views.py:193
+msgid "Action can not be done with a closed or cancelled record"
+msgstr ""
+"L'acció no es pot dur a terme perquè la fitxa està tancada o anul·lada"
+
+#: views.py:213
+msgid "No RecordCard matches the given query."
+msgstr "Cap fitxa coincideix amb la consulta donada."
+
+#~ msgid "No Message matches the given query."
+#~ msgstr "Cap missatge coincideix amb la consulta donada."
+
+#~ msgid "The messages was previously answered"
+#~ msgstr "El misssatge ja va ser respost"
+
+#~ msgid "IRIS operator"
+#~ msgstr "L'operador d'IRIS"
+
+#~ msgid "from group"
+#~ msgstr "del grup"
+
+#~ msgid "has sent you the following message"
+#~ msgstr "vos ha enviat el següent missatge"
+
+#~ msgid "You can answer the message"
+#~ msgstr "Podeu respondre al missatge"
+
+#~ msgid "here"
+#~ msgstr "aquí"
+
+#~ msgid "IRIS Message"
+#~ msgstr "Missatge d'IRIS"
+
+#~ msgid "No Conversation matches the given query."
+#~ msgstr "Cap conversa coincideix amb la consulta donada."

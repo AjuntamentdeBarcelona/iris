@@ -1,0 +1,6 @@
+sqlite3
+gcc
+krb5-config
+krb5-user
+libpam-krb5
+libkrb5-dev

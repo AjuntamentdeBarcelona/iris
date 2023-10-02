@@ -1,0 +1,6 @@
+{% extends 'profiles/base.html' %}{% load i18n %}
+
+{% block content %}
+<p>{% trans "The record with code" %} <a href="{{front_url}}{{record_normalized_id}}/" target="_blank">{{record_normalized_id}}</a> {% trans "has been assigned to the group "%} {{group.description}}.</p>
+{% include 'profiles/emails/record_list.html' with records=records %}
+{% endblock %}

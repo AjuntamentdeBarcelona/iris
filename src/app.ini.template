@@ -1,0 +1,89 @@
+[Paths]
+APP_ROOT                  = /user/path/iris2-backend/src
+STATIC_ROOT               = /tmp/iris2-backend-static
+MEDIA_URL                 =
+
+[Logs]
+SENTRY_ENABLED            = False
+SENTRY_DSN                =
+LOG_LEVEL                 = DEBUG
+DJANGO_LOG_LEVEL          = INFO
+; EXTRA_LOGGING           = boto3:INFO,botocore:INFO
+; LOG_FILE                = /user/path/iris2.log
+
+; [Database]
+USE_DB_PASSWORD_FILE      = False
+; DATABASE_USER           =
+; DATABASE_HOST           =
+; DATABASE_ENGINE         = django.contrib.gis.db.backends.postgis
+; DATABASE_NAME           = iris2-communtiydb
+; DATABASE_PORT           =
+; DATABASE_PASSWORD       = 1234
+; DATABASE_CONN_MAX_AGE   = 30
+; USE_DB_PASSWORD_FILE    = False
+; DB_PASSWORD_FILE        = /etc/iris/postgresql-secret/psql-dbpass
+
+; TEST_DATABASE_USER      = iris
+; TEST_DATABASE_ENGINE    = django.contrib.gis.db.backends.postgis
+; TEST_DATABASE_HOST      = localhost
+; TEST_DATABASE_NAME      = iris2_test_db
+; TEST_DATABASE_PORT      = 5432
+; TEST_DATABASE_PASSWORD  = 1234
+
+[Base]
+APP_SLUG                  = iris2-community
+
+[Security]
+SECRET_KEY                = change_me
+ALLOWED_HOSTS             = *
+
+[Debug]
+DEBUG                     = True
+TEMPLATE_DEBUG            = True
+ENABLE_DEBUG_TOOLBAR      = True
+
+[Compress]
+COMPRESS_ENABLED          = True
+COMPRESS_OFFLINE          = False
+COMPRESS_LESSC_PATH       = ../node_modules/.bin/lessc
+COMPRESS_BABEL_PATH       = ../node_modules/.bin/babel
+COMPRESS_SASS_PATH        = ../node_modules/.bin/node-sass
+COMPRESS_ROLLUP_PATH      = ../node_modules/.bin/rollup
+; For local docker development
+; COMPRESS_LESSC_PATH       = /node/node_modules/.bin/lessc
+; COMPRESS_BABEL_PATH       = /node/node_modules/.bin/babel
+; COMPRESS_SASS_PATH        = /node/node_modules/.bin/node-sass
+; COMPRESS_ROLLUP_PATH      = /node/node_modules/.bin/rollup
+
+[WhiteNoise]
+ENABLE_WHITENOISE = False
+
+[Cache]
+CACHE_TYPE                = dummy
+; CACHE_TYPE              = redis
+; REDIS_HOST              = localhost
+; CACHE_REDIS_DB          = 0
+; REDIS_PORT              = 6379
+; CACHE_MAX_ENTRIES       = 10000
+; CACHE_TIMEOUT           = 3600
+; CACHE_PREFIX            = iris2-community
+
+[Storage]
+;MINIO_HOST = localhost
+;MINIO_PORT = 9000
+;MINIO_SECRET_FILE = true
+;MINIO_SECURE = true
+;MINIO_BUCKET = iris2-community
+;MINIO_STORAGE_AUTO_CREATE_MEDIA_BUCKET = true
+;MINIO_ACCESS_KEY_FILE = /etc/iris/minio-secret/accesskey
+;MINIO_ACCESS_KEY = change_me
+;MINIO_SECRET_KEY_FILE = /etc/iris/minio-secret/secretkey
+;MINIO_SECRET_KEY = change_me
+
+
+[Integrations]
+URL_PA_ITA = http://iris-int.icp.ajuntament.bcn/services/iris/itaca/api/protocols
+CITY_OS_ENABLED = False
+
+[Auth]
+AUTH_MODE = oauth

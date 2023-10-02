@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-15 20:04+0200\n"
+"PO-Revision-Date: 2020-03-16 17:40-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: filters.py:9 filters.py:24
+msgid "Done at gte"
+msgstr "Data execució major que"
+
+#: filters.py:10 filters.py:25
+msgid "Done at lte"
+msgstr "Data execució menor que"
+
+#: filters.py:26
+msgid "Data start year"
+msgstr ""
+
+#: filters.py:27
+msgid "Data start month"
+msgstr ""
+
+#: filters.py:28
+msgid "Validated"
+msgstr "Validat"
+
+#: filters.py:29
+msgid "Year/month of trimester"
+msgstr ""
+
+#: models.py:35
+msgid "Record File"
+msgstr "Fitxer"
+
+#: models.py:40
+msgid "Oldest date limit"
+msgstr ""
+
+#: models.py:41
+msgid "Newest date limit"
+msgstr ""
+
+#: models.py:42
+msgid "Trimestre"
+msgstr ""
+
+#: models.py:43
+msgid "Year"
+msgstr ""
+
+#: serializers.py:30
+msgid "Email send"
+msgstr "Enviament de correu"
+
+#: serializers.py:31
+msgid "Calculate average close days for theme"
+msgstr "Calcul mitja de dies tancament per temàtica"
+
+#: serializers.py:32
+msgid "Calculate last month indicators"
+msgstr "Calcul indicadors del mes"
+
+#: serializers.py:34
+msgid "Generate BI report"
+msgstr "BI"
+
+#: serializers.py:35
+msgid "Generate Open Data report"
+msgstr "OpenData"
+
+#: serializers.py:36
+msgid "Generate BiMap report"
+msgstr "BiMap"
+
+#: serializers.py:37
+msgid "Generate BI report file"
+msgstr "Generar fitxer informe BI"
+
+#: serializers.py:39
+msgid "Generate MIB report file"
+msgstr "Generar fitxer informe MIB"
+
+#: serializers.py:40
+msgid "Send next to expire group notification"
+msgstr "Notificacions fitxes a punt d'expirar de grup"
+
+#: serializers.py:41
+msgid "Send pending validate group notification"
+msgstr "Notificacions fitxes pendents de validar de grup"
+
+#: serializers.py:42
+msgid "Send pending communications group notification"
+msgstr "Notificacions de comunicacions pendents de grup"
+
+#: serializers.py:43
+msgid "Check element detail record movement after deletion"
+msgstr "Comprovació d'eliminació de detalls"
+
+#: serializers.py:44
+msgid "Check group record movement after deletion"
+msgstr "Comprovació d'eliminació de grup"
+
+#: serializers.py:45
+msgid "Remove auxiliary file uploads"
+msgstr "Eliminació de fitxers auxiliars"
+
+#: serializers.py:46
+msgid "Set messages as expired"
+msgstr "Marcar missatges com expirats"
+
+#: serializers.py:75
+msgid "Month/s {} of year"
+msgstr "Mes/os: {} de l'any"
+
+#: serializers.py:76
+msgid "Every month of year"
+msgstr "Cada mes de l'any"
+
+#: serializers.py:77
+msgid "Day/s: {} of month"
+msgstr "Dies: {} del mes"
+
+#: serializers.py:78
+msgid "Every day of month"
+msgstr "Cada dia del mes"
+
+#: serializers.py:79
+msgid "Every hour"
+msgstr "Cada hora"
+
+#: serializers.py:80
+msgid "hour: {}"
+msgstr "hora: {}"
+
+#: serializers.py:81
+msgid "minute: {}"
+msgstr "minut: {}"
+
+#: serializers.py:82
+msgid "Every minute"
+msgstr "Cada minut"
+
+#: services/pdf/hooks.py:44
+msgctxt "Stair abbreviation"
+msgid "Esc. {}"
+msgstr ""
+
+#: services/mail/hooks.py:82
+msgid "Record has been marked for not sending answer."
+msgstr "Fitxa marca per no enviar resposta"

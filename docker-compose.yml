@@ -1,0 +1,111 @@
+version: "2"
+
+services:
+
+  devel:
+    build:
+      context: .
+    volumes:
+      - ./src/:/app
+    depends_on:
+      - minio
+      - redis
+      - postgis
+    command: run-devel
+    ports:
+      - "8000:8000"
+      - "5678:5678"
+    environment:
+      ENABLE_BASIC_AUTH: "False"
+      CACHE_TYPE: "redis"
+      DEBUG: "True"
+      COMPRESS_OFFLINE: "False"
+    env_file: env-devel
+
+  redis:
+    image: redis:4.0-alpine
+    ports:
+      - "6379:6379"
+
+  minio:
+    image: quay.io/minio/minio
+    volumes:
+      - ./storage/minio:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    env_file: env-devel
+    command: server data --console-address ":9001"
+
+
+  uwsgi:
+    image: iris_iris2-community_uwsgi:build
+    build: .
+    env_file: env-devel
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      ENABLE_BASIC_AUTH: "True"
+
+  nginx:
+    image: iris_iris2-community_nginx:build
+    build:
+      context: docker/nginx/
+    ports:
+      - "8000:8000"
+    depends_on:
+      - uwsgi
+    links:
+      - uwsgi
+    environment:
+      UWSGI_ADDR: "uwsgi:8080"
+
+  postgres:
+    image: postgres:10.1-alpine
+    env_file: env-devel
+    ports:
+      - "5434:5432"
+    volumes:
+      - ../postgres-data:/var/lib/postgresql/data
+      - ../postgres:/postgres
+      - ./initial_data.sql:/docker-entrypoint-initdb.d/initial_data.sql
+
+
+  postgis:
+    image: postgis/postgis:10-3.1-alpine
+    env_file: env-devel
+    ports:
+      - "5435:5432"
+    volumes:
+      - ../postgis-data:/var/lib/postgresql/data
+      - ../postgis:/postgres
+      - ./initial_data.sql:/docker-entrypoint-initdb.d/initial_data.sql
+
+
+  celery:
+    build:
+      context: .
+    volumes:
+      - ./src/:/app
+    depends_on:
+      - redis
+    command: run-celery
+    environment:
+      CELERY_BROKER_URL: "redis://172.17.0.1:6379/1"
+    env_file: env-devel
+
+
+  celery-beat:
+    build:
+      context: .
+    volumes:
+      - ./src/:/app
+    depends_on:
+      - redis
+    command: run-beat
+    environment:
+      CELERY_BROKER_URL: "redis://172.17.0.1:6379/1"
+    env_file: env-devel

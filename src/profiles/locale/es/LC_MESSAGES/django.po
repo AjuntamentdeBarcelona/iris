@@ -1,0 +1,344 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-27 17:49+0200\n"
+"PO-Revision-Date: 2020-03-16 16:32-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: group_delete.py:83
+msgid "The previous responsible group of the RecordCard was deleted"
+msgstr "El grupo responsable de la ficha anterior fue borrado"
+
+#: models.py:79 models.py:294 models.py:336 models.py:353 models.py:384
+#: models.py:412 models.py:432
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: models.py:104
+msgid "Group Plate"
+msgstr "Matrícula Grupo"
+
+#: models.py:107
+msgid "Description"
+msgstr "Descripción"
+
+#: models.py:108
+msgid "Profile Hierarchical"
+msgstr "Perfil jerárquico"
+
+#: models.py:109
+msgid "Profile ctrl user id"
+msgstr "Perfil control user id"
+
+#: models.py:110
+msgid "Dist sect id"
+msgstr "Dist sect id"
+
+#: models.py:111
+msgid "Service line"
+msgstr "Linia de servicio"
+
+#: models.py:112
+msgid "Sector"
+msgstr "Sector"
+
+#: models.py:113
+msgid "No Reasigned"
+msgstr "No Reasignada"
+
+#: models.py:114
+msgid "Email"
+msgstr "Email"
+
+#: models.py:115
+msgid "Signature"
+msgstr "Firma"
+
+#: models.py:116
+msgid "Icon"
+msgstr "Icono"
+
+#: models.py:118
+msgid "Letter template id"
+msgstr "ID del template de carta"
+
+#: models.py:119
+msgid "Last pending delivery"
+msgstr "Última entrega pendiente"
+
+#: models.py:120
+msgid "Citizen ND"
+msgstr "Ciudadano ND"
+
+#: models.py:121
+msgid "Certificate"
+msgstr "Certificado"
+
+#: models.py:122
+msgid "Super Sector"
+msgstr "Super Sector"
+
+#: models.py:123
+msgid "Number of levels above for seeing the tree"
+msgstr "Número de niveles superiores para ver el árbol"
+
+#: models.py:124
+msgid "Validate Thematic Tree"
+msgstr "Validar árbol temática"
+
+#: models.py:125
+msgid "Is AnonymousGroup"
+msgstr "Es Grupo Anónimo"
+
+#: models.py:126
+msgid "Is Ambit"
+msgstr "Es ámbito"
+
+#: models.py:128
+msgid "Notifications emails list"
+msgstr "Emails de notificación"
+
+#: models.py:130
+msgid "List of emails (separated by commas) to send notifications"
+msgstr ""
+"Listado de mails (separado por comas) a los que enviar las notificaciones"
+
+#: models.py:131
+msgid "Records Next to expire"
+msgstr "Fichas cercanas a expirar"
+
+#: models.py:132
+msgid "Send notifications for records next to expire"
+msgstr "Enviar notificaciones para las fichas cercanas a expirar"
+
+#: models.py:134
+msgid "Records Next to expire frequency (days)"
+msgstr "Frecuencia de notificación de las fichas cercanas a expirar"
+
+#: models.py:135
+msgid "Records next to expire last notify date"
+msgstr "Última fecha de notificación de las fichas cercanas a expirar"
+
+#: models.py:137
+msgid "Last day records next to expire has been notified"
+msgstr ""
+"Último dia donde se envió la notificación de las fechas cercanas a expirar"
+
+#: models.py:138
+msgid "Records Allocation"
+msgstr "Fichas recibiadas"
+
+#: models.py:139
+msgid "Send notifications for records allocation"
+msgstr "Enviar notificaciones de fichas asignadas al grupo"
+
+#: models.py:140
+msgid "Pending records"
+msgstr "Fichas pendientes"
+
+#: models.py:141
+msgid "Send notifications for pending records"
+msgstr "Enviar notificación de fichas pendientes"
+
+#: models.py:142
+msgid "Pending records frequency (days)"
+msgstr "Frecuencia de la notificación de las fichas pendientes"
+
+#: models.py:144
+msgid "Pending records last notify date"
+msgstr "Fecha de notificación de las fichas pendientes"
+
+#: models.py:145
+msgid "Last day pending records  has been notified"
+msgstr "Última fecha de notificación de las fichas pendientes"
+
+#: models.py:146
+msgid "Records with pending communications"
+msgstr "Fichas con comunicaciones pendientes"
+
+#: models.py:147
+msgid "Send notifications for records with pending communications"
+msgstr "Enviar notificaciones de fichas con comunicaciones pendientes"
+
+#: models.py:149
+msgid "Pending communications records frequency (days)"
+msgstr ""
+"Frecuencia de la notificación de las fichas con comunicaciones pendientes"
+
+#: models.py:151
+msgid "Records with pending communications last notify date"
+msgstr "Fecha de notificación de las fichas con comunicaciones pendientes"
+
+#: models.py:152
+msgid "Last day records with pending communications has been notified"
+msgstr ""
+"Última fecha de notificación de las fichas con comunicaciones pendientes"
+
+#: models.py:307
+msgid "User"
+msgstr "Usuario"
+
+#: models.py:308 models.py:335 models.py:366 models.py:409
+msgid "Group"
+msgstr "Grupo"
+
+#: models.py:334 models.py:351 models.py:367
+msgid "User Group"
+msgstr "Grupo usuario"
+
+#: models.py:352
+msgid "Profile"
+msgstr "Perfil"
+
+#: models.py:381
+msgid "Origin Group"
+msgstr "Grupo origen"
+
+#: models.py:382
+msgid "Reasign Group"
+msgstr "Grupo reasignado"
+
+#: models.py:392
+msgid "Origin Group and Reasignation Group can not be the same"
+msgstr ""
+"El grupo de origen y el grupo al que se reasigna la ficha no puede ser el "
+"mismo"
+
+#: models.py:410
+msgid "Input Channel"
+msgstr "Canal de Entrada"
+
+#: models.py:414
+msgid "Update User ID"
+msgstr "Id del usuario de actualización"
+
+#: models.py:442
+msgid "Only Open RecordCards"
+msgstr "Solo fichas abiertas"
+
+#: models.py:443
+msgid "Process finished"
+msgstr "Proceso finalizado"
+
+#: models.py:444
+msgid ""
+"Shows if recordCard reassignations and derivations reassignations has "
+"finished correctly"
+msgstr ""
+"Muestra si las reasignaciones de la ficha y las derivaciones han acabado "
+"correctamente"
+
+#: serializers.py:50
+msgid ""
+"The description must be unique and there is another Profile with the same."
+msgstr "La descripción debe ser única y hay otro perfil con la misma."
+
+#: serializers.py:148 serializers.py:402
+msgid "The selected group does not exist or it was delete"
+msgstr "El grupo seleccionado no existe o ha sido borrado"
+
+#: serializers.py:153
+msgid "The selected letter template does not exist or is not enabled"
+msgstr "La plantilla seleccionada no existe o ha sido deshabilitada"
+
+#: serializers.py:180
+msgid "Group can not be assigned as its own parent"
+msgstr "Un grupo no puede ser asignado como su propio padre"
+
+#: serializers.py:183
+msgid "Group can not has a parent"
+msgstr "El grupo no puede tener un padre"
+
+#: serializers.py:196
+msgid "File size must be lower than 1MB"
+msgstr "El fichero debe pesar menos de 1MB"
+
+#: serializers.py:337 views.py:149
+msgid "User has no available groups"
+msgstr "El usuario no tiene grupos disponibles"
+
+#: serializers.py:340
+msgid "Ctrl user id is not selectable for this user"
+msgstr "El id del CtrlUser no se puede selecionar para este usuario"
+
+#: serializers.py:442
+msgid "This user exists and cannot be recreated."
+msgstr "Ya existe un usuario con este nombre."
+
+#: serializers.py:454
+msgid "The current group has to be included in the groups list"
+msgstr "El grupo actual se tiene que incluir en la lista de grupos"
+
+#: serializers.py:548 serializers.py:551
+msgid "The selected Group does not exist or it's deleted"
+msgstr "El grupo seleccionado no existe o ha sido borrado"
+
+#: serializers.py:562
+msgid "Deleted group and Reasignation group can not be the same"
+msgstr "El grupo eliminado y el grupo al que se reasigna no puede ser el mismo"
+
+#: serializers.py:566
+msgid "Group can not be deleted because it has descendants"
+msgstr "El grupo no se puede eliminar porque tiene grupos que dependen de el"
+
+#: views.py:211
+msgid "Group is not one of the user options"
+msgstr "El grupo no es una de las opciones del usuario"
+
+#~ msgid "Pending shipping days"
+#~ msgstr "Días de envio pendientes"
+
+#~ msgid "User does not exist"
+#~ msgstr "El usuario no existe"
+
+#~ msgid "DAIR Group"
+#~ msgstr "Grupo Dair"
+
+#~ msgid "Can Reasign to Group"
+#~ msgstr "Puede reasignar al grupo"
+
+#~ msgid "Group and Can Reasign Group can not be the same"
+#~ msgstr ""
+#~ "El grupo y el grupo que le puede reasignar fichas no puede ser el mismo"
+
+#~ msgid "RecordCard"
+#~ msgstr "La ficha"
+
+#~ msgid "has been assigned to the group "
+#~ msgstr "ha sido asignada al grupo"
+
+#~ msgid "List of records next to expire for group"
+#~ msgstr "Listado de fichas cercanas a expirar"
+
+#~ msgid "Expire date for"
+#~ msgstr "Fecha de expiración de"
+
+#~ msgid "Records next to expire"
+#~ msgstr "Fichas cercanas a expirar"
+
+#~ msgid "List of pending records to validate for group"
+#~ msgstr "Listado de fichas pendientes de validar por el grupo"
+
+#~ msgid "Pending Records to Validate"
+#~ msgstr "Fichas pendientes de validar"
+
+#~ msgid ""
+#~ "RecordCard can not be canceled because of duplicity due to duplicated "
+#~ "record card has been canceled previously"
+#~ msgstr ""
+#~ "La ficha no se puede cancelar por la duplicidad dado que la ficha "
+#~ "duplicada ha sido cancelada previamente"

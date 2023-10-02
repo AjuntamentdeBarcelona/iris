@@ -1,0 +1,7 @@
+{% load i18n %}
+
+{% trans "List of records next to expire for group" %} {{group.description}}
+
+{% for record in record_cards %}
+    {% trans "Expire date for" %} {{record.normalized_record_id}}: {{record.ans_limit_date|date:"d-m-Y"}}
+{% endfor %}

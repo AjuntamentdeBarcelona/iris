@@ -1,0 +1,148 @@
+image: change_me
+
+# CI definition
+before_script:
+  - export VERSION=${CI_PIPELINE_ID}-${CI_BUILD_REF:0:8}
+
+  - export IMAGE_BASE=eu.gcr.io/${GCE_PROJECT}/iris_iris2-community
+  - export UWSGI_IMAGE=${IMAGE_BASE}_uwsgi:${VERSION}
+  - export NGINX_IMAGE=${IMAGE_BASE}_nginx:${VERSION}
+
+  - export UWSGI_IMAGE_LATEST=${IMAGE_BASE}_uwsgi:latest
+  - export NGINX_IMAGE_LATEST=${IMAGE_BASE}_nginx:latest
+
+  - export UWSGI_IMAGE_BUILD=iris_iris2-community_uwsgi:build
+  - export NGINX_IMAGE_BUILD=iris_iris2-community_nginx:build
+
+  - AUTH_KEY_FILE=/key.json
+
+stages:
+  - build
+  - test
+  - migrations
+  - deploy
+
+# Vars definition
+.vars_pre_template: &vars_pre
+  only:
+    - pre
+  variables:
+    GCE_PROJECT: "change_me"
+    GCE_CLUSTER: "change_me"
+    GIT_DEPTH: "1"
+    GCE_CREDENTIALS: ${GCE_CREDENTIALS_PRE}
+    GCLOUD_ACCOUNT: ${GCLOUD_ACCOUNT_PRE}
+
+.vars_prod_template: &vars_prod
+  only:
+    - master
+  variables:
+    GCE_PROJECT: "change_me"
+    GCE_CLUSTER: "change_me"
+    GIT_DEPTH: "1"
+    GCE_CREDENTIALS: ${GCE_CREDENTIALS_PROD}
+    GCLOUD_ACCOUNT: ${GCLOUD_ACCOUNT_PROD}
+
+# Build stage
+.uwsgi_template: &uwsgi
+  stage: build
+  script:
+    - docker-compose build uwsgi
+    - docker tag ${UWSGI_IMAGE_BUILD} ${UWSGI_IMAGE}
+    - '[ ${CI_COMMIT_REF_NAME} = "master" ] && docker tag ${UWSGI_IMAGE_BUILD} ${UWSGI_IMAGE_LATEST}'
+    - gcloud docker --authorize-only
+    - docker push ${UWSGI_IMAGE}
+    - '[ ${CI_COMMIT_REF_NAME} = "master" ] && docker push ${UWSGI_IMAGE_LATEST}'
+    - echo ${UWSGI_IMAGE}
+
+.nginx_template: &nginx
+  stage: build
+  script:
+    - docker-compose build nginx
+    - docker tag ${NGINX_IMAGE_BUILD} ${NGINX_IMAGE}
+    - '[ ${CI_COMMIT_REF_NAME} = "master" ] && docker tag ${NGINX_IMAGE_BUILD} ${NGINX_IMAGE_LATEST}'
+    - gcloud docker --authorize-only
+    - docker push ${NGINX_IMAGE}
+    - '[ ${CI_COMMIT_REF_NAME} = "master" ] && docker push ${NGINX_IMAGE_LATEST}'
+    - echo ${NGINX_IMAGE}
+
+uwsgi_others:
+  <<: *uwsgi
+  except:
+    - master
+    - pre
+
+nginx_others:
+  <<: *nginx
+  except:
+    - master
+    - pre
+
+uwsgi_pre:
+  <<: *uwsgi
+  <<: *vars_pre
+
+nginx_pre:
+  <<: *nginx
+  <<: *vars_pre
+
+uwsgi_prod:
+  <<: *uwsgi
+  <<: *vars_prod
+
+nginx_prod:
+  <<: *nginx
+  <<: *vars_prod
+
+# Test stage
+test_pytest:
+  stage: test
+  allow_failure: true
+  <<: *vars_pre
+  script:
+    - docker-compose up -d postgres
+    - docker-compose build uwsgi
+    - docker-compose run --rm uwsgi run-tests
+    - docker-compose stop postgres
+    - docker-compose down
+
+# Migrations stage
+.execute_migrations_template: &execute_migrations
+  stage: migrations
+  script:
+    - echo "Deploying migrations enviroment"
+    - echo "uwsgi ${UWSGI_IMAGE}"
+    - deploy.py deploy iris iris2-community-migrations iris2-community-migrations=${UWSGI_IMAGE} --workload cronjob --timeout 720
+
+migrations_pre:
+  <<: *execute_migrations
+  <<: *vars_pre
+  environment:
+    name: pre
+
+migrations_prod:
+  <<: *execute_migrations
+  <<: *vars_prod
+  environment:
+    name: prod
+
+# Deploy stage
+.deploy_app_template: &deploy_app
+  stage: deploy
+  script:
+    - echo "Deploying app"
+    - echo "nginx ${NGINX_IMAGE}"
+    - echo "uwsgi ${UWSGI_IMAGE}"
+    - deploy.py deploy iris iris2-community-app iris2-community-uwsgi=${UWSGI_IMAGE} iris2-community-nginx=${NGINX_IMAGE}
+
+deploy_app_pre:
+  <<: *deploy_app
+  <<: *vars_pre
+  environment:
+    name: pre
+
+deploy_app_prod:
+  <<: *deploy_app
+  <<: *vars_prod
+  environment:
+    name: prod

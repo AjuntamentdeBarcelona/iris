@@ -1,0 +1,6 @@
+{% extends 'profiles/base.html' %}{% load i18n %}
+
+{% block content %}
+<h3> {% trans "List of records next to expire for group" %} {{group.description}}</h3>
+{% include 'profiles/emails/record_list.html' with records=record_cards %}
+{% endblock %}

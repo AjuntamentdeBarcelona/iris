@@ -1,0 +1,32 @@
+{% load i18n %}<table width="100%" border="0" cellspacing="0" cellpadding="10" class="100p bordered" aria-describedby="records_list">
+  <thead>
+  <tr bgcolor="#2a8e9d" style="color: white">
+    <th id="code">{% trans "Code" %}</th>
+    <th id="theme">{% trans "Theme" %}</th>
+    <th id="group">{% trans "Group" %}</th>
+    <th id="creation_date">{% trans "Creation date" %}</th>
+    <th id="blank"></th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for record in records %}
+  <tr>
+    <td style="font-size:16px; font-weight: bolder;border-bottom: 1px solid #2a8e9d;">
+      <a href="{{front_url}}{{record.normalized_record_id}}/" target="_blank">{{record.normalized_record_id}}</a>
+    </td>
+    <td style="border-bottom: 1px solid #2a8e9d;" align="center">
+      {{record.element_detail.description}}
+    </td>
+    <td style="border-bottom: 1px solid #2a8e9d;" align="center">
+      {{record.responsible_profile.description}}
+    </td>
+    <td style="border-bottom: 1px solid #2a8e9d;" align="center">
+      {{record.created_at|date:"d/m/Y h:i"}}
+    </td>
+    <td style="border-bottom: 1px solid #2a8e9d;">
+      <a href="{{front_url}}{{record.normalized_record_id}}/" target="_blank">{% trans "Work this record on iris" %}</a>
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:25+0100\n"
+"PO-Revision-Date: 2020-03-16 16:32-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: models.py:21
+msgid "Write Medium (CA)"
+msgstr "Medio escrito (CA)"
+
+#: models.py:22
+msgid "Template for write mediums in catalan"
+msgstr "Plantilla para medios escritos en catalán"
+
+#: models.py:23
+msgid "Write Medium (ES)"
+msgstr "Medio escrito (ES)"
+
+#: models.py:24 models.py:26
+msgid "Template for write mediums in spanish"
+msgstr "Plantilla para medios escritos en castellano"
+
+#: models.py:25
+#| msgid "Write Medium (ES)"
+msgid "Write Medium (EN)"
+msgstr "Medio escrito (EN)"
+
+#: models.py:27
+msgid "SMS Medium (CA)"
+msgstr "Medio SMS (CA)"
+
+#: models.py:28
+msgid "Template for SMS mediums in catalan"
+msgstr "Plantilla para medios SMS en catalán"
+
+#: models.py:29
+msgid "SMS Medium (ES)"
+msgstr "Medio SMS (ES)"
+
+#: models.py:30 models.py:32
+msgid "Template for SMS mediums in spanish"
+msgstr "Plantilla para medios SMS en castellano"
+
+#: models.py:31
+#| msgid "SMS Medium (ES)"
+msgid "SMS Medium (EN)"
+msgstr "Medio SMS (EN)"
+
+#: models.py:69
+msgid "If {} is filled, {} must be filled to"
+msgstr "Si {} esta rellanado, {} debe estar rellenado también"
+
+#: models.py:90
+msgid "Enabled"
+msgstr "Activo"
+
+#: models.py:123
+msgid ""
+"There are another template with the same ResponseType for this RecordType"
+msgstr ""
+"Existe otra plantilla con el mismo tipo de respuesta para este tipo de ficha"
+
+#: serializers.py:30
+msgid "The selected ResponseType does not exists"
+msgstr "El tipo de respuesta no existe"
+
+#: views.py:300
+msgid "You have exceeded the number of templates for this group."
+msgstr "Se ha excedido el número de plantillas para este grupo."

@@ -1,0 +1,7 @@
+{% load i18n %}
+
+{% trans "List of records with pending communications for group" %} {{group.description}}
+
+{% for record in record_cards %}
+    {{record.normalized_record_id}}
+{% endfor %}

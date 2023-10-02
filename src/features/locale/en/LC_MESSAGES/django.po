@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:15 models.py:38 models.py:94 models.py:107
+msgid "Description"
+msgstr "Description"
+
+#: models.py:71
+msgid "Any Character"
+msgstr "Any Character"
+
+#: models.py:72
+msgid "Only Letters"
+msgstr "Only Letters"
+
+#: models.py:73
+msgid "Any Number"
+msgstr "Any Number"
+
+#: models.py:74
+msgid "Integer"
+msgstr "Integer"
+
+#: models.py:75
+msgid "Phone Number (9 digits)"
+msgstr "Phone Number (9 digits)"
+
+#: models.py:76
+msgid "Postal Code (5 digits)"
+msgstr "Postal Code (5 digits)"
+
+#: models.py:77
+msgid "Date Format DD/MM/YYYY"
+msgstr "Date Format DD/MM/YYYY"
+
+#: models.py:78
+msgid "Hour Format HH:MM"
+msgstr "Hour Format HH:MM"
+
+#: models.py:93
+msgid "ID"
+msgstr "ID"
+
+#: models.py:95
+msgid "Type"
+msgstr "Type"
+
+#: models.py:109
+msgid "Special"
+msgstr "Special"
+
+#: models.py:111
+msgid "Explanatory Text"
+msgstr "Explanatory Text"
+
+#: models.py:112
+msgid "GET parameter for integrations"
+msgstr ""
+
+#: models.py:115
+msgid "This feature won't be show to citizens, only in backoffice."
+msgstr ""
+
+#: models.py:118
+msgid "This feature will be filled with automatic values."
+msgstr ""
+
+#: serializers.py:33
+msgid ""
+"The description must be unique and there is another ValuesType with the same."
+msgstr ""
+"The description must be unique and there is another ValuesType with the same."
+
+#: serializers.py:91
+#, fuzzy
+#| msgid ""
+#| "The description must be unique and there is another ValuesType with the "
+#| "same."
+msgid ""
+"The description must be unique and there is another Value with the same."
+msgstr ""
+"The description must be unique and there is another ValuesType with the same."
+
+#: serializers.py:186
+msgid "The selected Mask does not exist"
+msgstr ""
+
+#: serializers.py:190
+msgid "The selected values_type does not exist"
+msgstr ""
+
+#: serializers.py:202
+msgid ""
+"The description must be unique and there is another Feature with the same."
+msgstr ""
+"The description must be unique and there is another Feature with the same."
+
+#: serializers.py:215
+msgid "Mask and ValuesType can not be assigned at the same time"
+msgstr ""
+
+#: serializers.py:219
+msgid "Mask or ValuesType must be assigned"
+msgstr ""
+
+#~ msgid "Enabled"
+#~ msgstr "Enabled"

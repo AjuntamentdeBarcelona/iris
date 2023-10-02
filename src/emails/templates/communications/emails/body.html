@@ -1,0 +1,27 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if show_header %}
+        {% if require_answer %}
+        <p> {% trans "We sent you a communication because we need additional information for solving your request with locator"%} {{ record_card.normalized_record_id }}:</p>
+        {% else %}
+        <p> {% trans "We sent you a communication in relation to a request with locator"%} {{ record_card.normalized_record_id }}:</p>
+        {% endif %}
+    {% endif %}
+
+    <p>
+        {{text|safe}}
+    </p>
+    {% if show_link and require_answer %}
+        <p> {% trans "You can answer the message" %} <a href="{{ answer_url }}" target="_blank">{% trans "here" %}.</a></p>
+    {% endif %}
+    <p>{{ signature|safe|linebreaks }}</p>
+</body>
+
+</html>

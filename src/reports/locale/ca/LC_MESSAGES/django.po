@@ -1,0 +1,341 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-27 09:37+0200\n"
+"PO-Revision-Date: 2019-11-29 11:29-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: serializers.py:19
+msgid "Created at from"
+msgstr "Data entrada des de"
+
+#: serializers.py:20
+msgid "Created at to"
+msgstr "Data entrada fins"
+
+#: serializers.py:21
+msgid "Closed at from"
+msgstr ""
+
+#: serializers.py:22
+msgid "Closed at to"
+msgstr ""
+
+#: serializers.py:26 serializers.py:31
+msgid "The selected record_type does not exist"
+msgstr "El tipus de fitxa seleccionat no existeix"
+
+#: serializers.py:34
+msgid "The selected input_channel does not exist or is not enabled"
+msgstr "El canal d'entrada seleccionat no existeix o no està habilitat"
+
+#: serializers.py:37
+msgid "The selected applicant type does not exist or is not enabled"
+msgstr "El tipus de sol·licitant seleccionat no existeix o no està habilitat"
+
+#: serializers.py:40
+msgid "The selected support does not exist or is not enabled"
+msgstr "El support seleccionat no existeix o no està habilitat"
+
+#: serializers.py:43
+msgid "The selected district does not exist or is not enabled"
+msgstr "El districte seleccionat no existeix o no està habilitat"
+
+#: serializers.py:52
+msgid "A pair of dates is needed to filter records"
+msgstr "Es requereix un parell de dates per filtrar les fitxes"
+
+#: serializers.py:91
+msgid "If {} is set, {} must be set too"
+msgstr "Si {} s'ha emplenat, {} s'ha d'emplenar també"
+
+#: serializers.py:109
+msgid ""
+"The difference between {} and {} can not be separated for more than {} days"
+msgstr "La diferència entre {} i {} no pot ser més gran de {} dies"
+
+#: serializers.py:155
+msgid "The selected theme group does not exists"
+msgstr "El grup temàtic seleccionat no existeix"
+
+#: serializers.py:167 serializers.py:426
+msgid "Record"
+msgstr "Fitxa"
+
+#: serializers.py:168
+msgid "State"
+msgstr "Estat"
+
+#: serializers.py:169 serializers.py:429
+msgid "Creation date"
+msgstr "Data creación"
+
+#: serializers.py:170
+msgid "Creation hour"
+msgstr "Hora creació"
+
+#: serializers.py:171 serializers.py:466
+msgid "Closing date"
+msgstr "Data tancament"
+
+#: serializers.py:172
+msgid "Entry hour"
+msgstr "Hora tancament"
+
+#: serializers.py:173 serializers.py:428
+msgid "Record type"
+msgstr "Tipus"
+
+#: serializers.py:174
+msgid "Area"
+msgstr "Area"
+
+#: serializers.py:175 serializers.py:430 serializers.py:486
+msgid "Element"
+msgstr "Element"
+
+#: serializers.py:176 serializers.py:431
+msgid "Elemet Detail"
+msgstr "Detall"
+
+#: serializers.py:177
+msgid "Special"
+msgstr "Especial"
+
+#: serializers.py:178
+msgid "Input channel"
+msgstr "Canal"
+
+#: serializers.py:179
+msgid "Applicant type"
+msgstr "Tipus sol·licitant"
+
+#: serializers.py:180
+msgid "Support"
+msgstr "Suport"
+
+#: serializers.py:181
+msgid "Answer type"
+msgstr "Tipus resposta"
+
+#: serializers.py:182
+msgid "Workflow type"
+msgstr "Procés"
+
+#: serializers.py:183
+msgid "Validated by"
+msgstr "Usuari validació"
+
+#: serializers.py:184
+msgid "Planned by"
+msgstr "Usuari planificació"
+
+#: serializers.py:185
+msgid "Solved by"
+msgstr "Usuari resolució"
+
+#: serializers.py:186
+msgid "Closed by"
+msgstr "Tancada per"
+
+#: serializers.py:187
+msgid "Responsible profile"
+msgstr "Perfil responsable"
+
+#: serializers.py:188
+msgid "Street type"
+msgstr "Tipus via"
+
+#: serializers.py:189
+msgid "Street"
+msgstr "Carrer"
+
+#: serializers.py:190
+msgid "Number"
+msgstr "Numero"
+
+#: serializers.py:191
+msgid "Block/Apartment"
+msgstr "Lletra"
+
+#: serializers.py:192
+msgid "Neighborhood"
+msgstr "Barri"
+
+#: serializers.py:193 serializers.py:436
+msgid "District"
+msgstr "Districte"
+
+#: serializers.py:194
+msgid "Position X"
+msgstr "Posició X"
+
+#: serializers.py:195
+msgid "Position Y"
+msgstr "Posició Y"
+
+#: serializers.py:196 serializers.py:432
+msgid "Stats sector"
+msgstr "Sector"
+
+#: serializers.py:197
+msgid "Research Zone"
+msgstr "Zona recerca"
+
+#: serializers.py:198
+msgid "Observations"
+msgstr "Observació"
+
+#: serializers.py:199
+msgid "Answer worked?"
+msgstr "Resposta trabllada"
+
+#: serializers.py:200
+msgid "Resolution Comment"
+msgstr "Coment. Resol."
+
+#: serializers.py:201
+msgid "Parent record"
+msgstr "Fitxa pare"
+
+#: serializers.py:202
+msgid "Answer"
+msgstr "Resposta"
+
+#: serializers.py:203
+msgid "Days opened"
+msgstr "Dies oberta"
+
+#: serializers.py:204
+msgid "Days from creation"
+msgstr "Antiguitat"
+
+#: serializers.py:205
+msgid "Applicant ID"
+msgstr "Solicitant id"
+
+#: serializers.py:427
+msgid "Workflow ID"
+msgstr "ID Procés"
+
+#: serializers.py:433
+msgid "Sevice line"
+msgstr "Linia servei"
+
+#: serializers.py:434 serializers.py:550
+msgid "Operator"
+msgstr "Operador"
+
+#: serializers.py:435
+msgid "Record State"
+msgstr "Estat"
+
+#: serializers.py:437
+msgid "Stret"
+msgstr "Carrer"
+
+#: serializers.py:467
+msgid "Resolution time"
+msgstr "Data resol*lució"
+
+#: serializers.py:487
+msgid "Element Detail"
+msgstr "Detall"
+
+#: serializers.py:509
+msgid "Name"
+msgstr "Nom"
+
+#: serializers.py:510
+msgid "ID Card"
+msgstr "Document"
+
+#: serializers.py:511
+msgid "Records"
+msgstr "Fitxes"
+
+#: serializers.py:524
+msgid "Operator profile"
+msgstr "Perfil operador"
+
+#: serializers.py:525
+msgid "Pending to validate"
+msgstr "Pendent validar"
+
+#: serializers.py:526
+msgid "In progress"
+msgstr "En procés"
+
+#: serializers.py:527 serializers.py:560
+msgid "Closed"
+msgstr "Tancada"
+
+#: serializers.py:528 serializers.py:561
+msgid "Cancelled"
+msgstr "Anul·lada"
+
+#: serializers.py:529 serializers.py:563
+msgid "External"
+msgstr "Tramitació externa"
+
+#: serializers.py:530
+msgid "Total"
+msgstr "Total"
+
+#: serializers.py:531
+msgid "Percentage"
+msgstr "Percentatge"
+
+#: serializers.py:539
+msgid "From date"
+msgstr "Desde"
+
+#: serializers.py:540
+msgid "To date"
+msgstr "Fins"
+
+#: serializers.py:547
+msgid "Username"
+msgstr "Username"
+
+#: serializers.py:548
+msgid "Stat sector"
+msgstr "Sector"
+
+#: serializers.py:549
+msgid "Service line"
+msgstr "Linia servei"
+
+#: serializers.py:551
+msgid "Count"
+msgstr "Total"
+
+#: serializers.py:558
+msgid "User id"
+msgstr "Usuari id"
+
+#: serializers.py:559
+msgid "Validated"
+msgstr "Validades"
+
+#: serializers.py:562
+msgid "Reassigned"
+msgstr "Reasignades"
+
+#: serializers.py:564
+msgid "AVG Answer time"
+msgstr "Temps mig resposta"

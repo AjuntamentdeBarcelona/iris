@@ -1,0 +1,295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-18 10:48+0100\n"
+"PO-Revision-Date: 2020-03-02 11:49-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: filters.py:37
+msgid "Start date init"
+msgstr "Fecha inicio inicial"
+
+#: filters.py:38
+msgid "Start date end"
+msgstr "Fecha inicio final"
+
+#: filters.py:43
+msgid "Records with no ubication"
+msgstr "Fichas sin ubicación"
+
+#: filters.py:44
+msgid "Via Type"
+msgstr "Tipo de via"
+
+#: filters.py:45 filters.py:46
+msgid "Neighborhood"
+msgstr "Barrio"
+
+#: filters.py:47
+msgid "District"
+msgstr "Distrito"
+
+#: filters.py:48
+msgid "Street"
+msgstr "Calle"
+
+#: filters.py:49
+msgid "Number"
+msgstr "Número"
+
+#: record_card_texts.py:27
+msgid ""
+"The requested petition {} is closed and has a claim. The status of the "
+"petition corresponding to this claim is displayed."
+msgstr ""
+"La petición buscada {}  está cerrada y tiene una reclamación. Se muestra el "
+"estado de la petición correspondiente a esta reclamación."
+
+#: record_card_texts.py:31
+msgid "The record that you were looking for is closed."
+msgstr "La petición que busca está cerrada."
+
+#: record_card_texts.py:35
+msgid ""
+"If you have not received any answer, you do not agree with its resolution or "
+"you want to provide new information or documentation you can fill in your "
+"request again by doing a Claim."
+msgstr ""
+"Si no ha recibido la respuesta solicitada, no está de acuerdo con su "
+"resolución, o quiere aportar nueva información o documentación puede volver "
+"a darla de alta haciendo una reclamación."
+
+#: record_card_texts.py:43
+msgid "The record that you were looking for is not being processed."
+msgstr "La petición que estaba buscando no se está tramitando."
+
+#: record_card_texts.py:67 record_card_texts.py:76
+msgid ""
+"This request is still within the expected time of resolution {} day/s, and "
+"for this reason we cannot accept its claim. It will be solved shortly."
+msgstr ""
+"Su petición está todavía dentro del proceso de resolución que es de {} día/"
+"s, y por este motivo no podemos aceptar su reclamación. En breve será "
+"resuelta."
+
+#: record_card_texts.py:86
+msgid ""
+"The petition has been canceled due to duplication or reiteration. The "
+"petition processed is {}. If desired, you can claim the processed petition."
+msgstr ""
+"Su ficha ha sido anulada por duplicidad o reiteración. La ficha tramitada es "
+"la {}. Si quiere puede reclamar la ficha tramitada."
+
+#: record_card_texts.py:98
+msgid ""
+"This request has been closed for more than {} days. To contact again with us "
+"you are required to go back to the main menu and open a new request."
+msgstr ""
+"Esta petición se ha cerrado hace más de {} días. Para contactar de nuevo con "
+"nosotros es necesario volver al menú principal y crear una nueva petición."
+
+#: serializers.py:683
+msgid "The selected feature does not exist or is not enabled"
+msgstr "La característica seleccionada no existe o no está habilitada"
+
+#: serializers.py:716
+msgid "Value is not one of the feature options"
+msgstr "El valor no es una de las opciones de la característica"
+
+#: serializers.py:732 serializers.py:1031 serializers.py:1046
+#: serializers.py:1057
+msgid "The selected district does not exist"
+msgstr "El distrito seleccionado no existe"
+
+#: serializers.py:744
+msgid "Address is required with this Element Detail"
+msgstr "La direción es obligatoria con esta temática"
+
+#: serializers.py:746
+msgid "Number is required with this Element Detail"
+msgstr "El número es obligatorio con esta temática"
+
+#: serializers.py:768
+msgid "Mandatory characteristics missing"
+msgstr "Faltan características obligatorias"
+
+#: serializers.py:775 serializers.py:777
+msgid "Characteristics not related to the detail"
+msgstr "Características no relacionadas con la temática"
+
+#: serializers.py:793
+msgid "The number of attachments is greater than the number allowed"
+msgstr "El número de adjuntos es major que el número permitido"
+
+#: serializers.py:806
+msgid "Data is not a base64 valid string"
+msgstr "El string enviado no es un base64 a válido"
+
+#: serializers.py:824 serializers.py:830 serializers.py:1104
+msgid "The selected element detail does not exist or is not enabled"
+msgstr "La temática seleccionada no existe o no está habilitada"
+
+#: serializers.py:833
+msgid "The selected applicant does not exist or is not enabled"
+msgstr "El solicitante seleccionado no existe o no está habilitado"
+
+#: serializers.py:873
+msgid "Transaction value is not valid"
+msgstr "El valor de transación no es válido"
+
+#: serializers.py:909
+msgid "An applicant must be set"
+msgstr "Se ha de introducir un solicitante"
+
+#: serializers.py:919
+msgid "Only one applicant can be set"
+msgstr "Solo se puede introducir un solicitante"
+
+#: serializers.py:932
+msgid "If {} is set, {} must be set too"
+msgstr "Si {} esta introducido, {} se ha de introducir también"
+
+#: serializers.py:1075
+msgid "Street is required with this Element Detail"
+msgstr "La direción es obligatoria con esta temática"
+
+#: serializers.py:1077
+msgid "Street2 is required with this Element Detail"
+msgstr "La direción es obligatoria con esta temática"
+
+#: serializers.py:1083
+msgid "The selected RecordCard does not exist or is not enabled"
+msgstr "La ficha seleccionada no existe o no está habilitada"
+
+#: serializers.py:1087
+msgid "The selected response channel does not exist"
+msgstr "El canal de respuesta seleccionado no existe"
+
+#: serializers.py:1096
+msgid "This field is mandatory for giving an answer by Letter."
+msgstr "Este campo es obligatorio para una respuesta por carta"
+
+#: serializers.py:1107 serializers.py:1110
+msgid "The selected input channel does not exist or is not enabled"
+msgstr "El canal de entrada seleccionado no existe o no está habilitado"
+
+#: serializers.py:1150 serializers.py:1151
+msgid "Citizen and social entity can not be filled at the same time"
+msgstr "El ciudadano y la entidad social no se pueden rellenar al mismo tiempo"
+
+#: serializers.py:1154 serializers.py:1155
+msgid "Citizen or social entity must be filled to create the RecordCard"
+msgstr ""
+"El ciudadano o la entidad social se deben rellenar para poder crear una ficha"
+
+#: serializers.py:1183
+msgid ""
+"Please note that the incidence will be transferred to the responsible "
+"department.The deadline to resolve is {} hours. With this information we "
+"respond to your request"
+msgstr ""
+"Le informamos que la incidencia se traspasará al departamento\n"
+"responsable. El plazo previsto para resolverla es de {} horas. Con esta "
+"información\n"
+"damos por contestada su petición"
+
+#: views.py:259 views.py:271
+msgid "Files can not be greather than {} KB"
+msgstr "Los ficheros no pueden ser mayores de {} KB"
+
+#: views.py:282
+msgid "Applicant can not be used to create a record because it's blocked"
+msgstr ""
+"El solicitante no se puede utilizar para crear una ficha porque esta "
+"bloqueado"
+
+#: views.py:310
+msgid "The introduced location is wrong"
+msgstr "La localización introducida es incorrecta"
+
+#: views.py:544
+msgid "The claim has been created sucesfully!"
+msgstr "La reclamación se ha creado correctamente!"
+
+#: views.py:806
+msgid ""
+"En aquest adreça la recollida es fa a través de contenidors. Consulteu la "
+"ubicació al telèfon del civisme 900 226 226 (trucada gratuita)"
+msgstr ""
+"En esta dirección la recogida se hace a través de contenedores. Consulte la "
+"ubicación con el teléfono de civismo 900 226 226 (llamada gratuita)"
+
+#: views.py:813
+msgid "Podeu deixar els mobles vells davant de la porteria el {} de {}"
+msgstr "Puede dejar los muebles viejos delante de la portería el {} de {}"
+
+#: views.py:816
+msgid ""
+"Cal trucar al telèfon gratuït del Civisme 900 226 226 per sol·licitar la "
+"recollida dels mobles i baixar-los els {}, a partir de les {} hores. La "
+"recollida es fará a l'endemà però nomès retiraran els mobles i trastos que "
+"s'hagin demanat a través d'aquest servei"
+msgstr ""
+"Se debe llamar al teléfono gratuito del Civismo 900 226 226 para solicitar "
+"la recogida de los muebles y bajarlos los {}, a partir de las {} horas. La "
+"recogida se hará al día siguiente, pero sólo se retirarán los muebles y "
+"trastos que se hayan pedido a través de este servicio"
+
+#: views.py:825
+msgid "DILLUNS"
+msgstr "LUNES"
+
+#: views.py:827
+msgid "DIMARTS"
+msgstr "MARTES"
+
+#: views.py:829
+msgid "DIMECRES"
+msgstr "MIÉRCOLES"
+
+#: views.py:831
+msgid "DIJOUS"
+msgstr "JUEVES"
+
+#: views.py:833
+msgid "DIVENDRES"
+msgstr "VIERNES"
+
+#: views.py:835
+msgid "DISSABTE"
+msgstr "SÁBADO"
+
+#: views.py:837
+msgid "DIUMENGE"
+msgstr "DOMINGO"
+
+#: views.py:864
+msgid "No Message matches the given query."
+msgstr "No existe mensaje para la consulta dada"
+
+#: views.py:867
+msgid "The messages was previously answered"
+msgstr "El mensaje fue respondido con anterioridad"
+
+#~ msgid "the record can be claimed"
+#~ msgstr "la ficha se puede reclamar"
+
+#~ msgid "the record can not be claimed yet"
+#~ msgstr "la ficha no se puede reclamar aun"
+
+#~ msgid "RecordState is {} and {}."
+#~ msgstr "El estado de la ficha es {} y {}."

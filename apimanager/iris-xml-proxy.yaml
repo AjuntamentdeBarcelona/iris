@@ -1,0 +1,261 @@
+swagger: '2.0'
+info:
+  title: IRIS2 XML PROXY API
+  description: IRIS2 XML PROXY API for backwards compatibility with drupal services
+    or similar.
+  termsOfService: '-'
+  contact:
+    email: contact@snippets.local
+  license:
+    name: BSD License
+  version: 1.36.2
+host: 127.0.0.1:8000
+schemes:
+  - http
+basePath: /services/iris/api-public/xml-proxy
+consumes:
+  - application/xml
+  - text/plain
+  - application/json
+produces:
+  - text/xml
+  - application/json
+  - application/xlsx
+securityDefinitions:
+  Basic:
+    type: basic
+security:
+  - Basic: []
+paths:
+  /:
+    post:
+      operationId: _create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - ''
+    parameters: []
+  /apps_details/:
+    post:
+      operationId: apps_details_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - apps_details
+    parameters: []
+  /apps_details_mobile/:
+    post:
+      operationId: apps_details_mobile_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - apps_details_mobile
+    parameters: []
+  /configuration/:
+    post:
+      operationId: configuration_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - configuration
+    parameters: []
+  /create_record_card/:
+    post:
+      operationId: create_record_card_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - create_record_card
+    parameters: []
+  /create_record_card_drupal/:
+    post:
+      operationId: create_record_card_drupal_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - create_record_card_drupal
+    parameters: []
+  /detail/:
+    post:
+      operationId: detail_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - detail
+    parameters: []
+  /detail_drupal/:
+    post:
+      operationId: detail_drupal_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - detail_drupal
+    parameters: []
+  /details_last_updated/:
+    post:
+      operationId: details_last_updated_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - details_last_updated
+    parameters: []
+  /record_card_claim/:
+    post:
+      operationId: record_card_claim_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - record_card_claim
+    parameters: []
+  /record_card_status/:
+    post:
+      operationId: record_card_status_create
+      description: ''
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - record_card_status
+    parameters: []
+definitions: {}

@@ -1,0 +1,11 @@
+<p>{{ greeting }}, </p>
+{% if ans_exceeded %}
+  <p>{{ ans_exceeded_text }}</p>
+{% endif %}
+<p>{{ body|safe }}</p>
+
+{% if is_appointment %}
+<p>{{ appointment }}</p>
+{% endif %}
+<p>{{ goodbye|linebreaks }}</p>
+<p></p>

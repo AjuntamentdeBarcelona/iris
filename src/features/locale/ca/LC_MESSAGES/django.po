@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:25+0100\n"
+"PO-Revision-Date: 2020-03-16 17:39-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: models.py:15 models.py:38 models.py:94 models.py:107
+msgid "Description"
+msgstr "Descripció"
+
+#: models.py:71
+msgid "Any Character"
+msgstr "Qualsevol caràcter"
+
+#: models.py:72
+msgid "Only Letters"
+msgstr "Només lletres"
+
+#: models.py:73
+msgid "Any Number"
+msgstr "Qualsevol nombre"
+
+#: models.py:74
+msgid "Integer"
+msgstr "Enter"
+
+#: models.py:75
+msgid "Phone Number (9 digits)"
+msgstr "Número de telèfon (9 dígits)"
+
+#: models.py:76
+msgid "Postal Code (5 digits)"
+msgstr "Codi Postal (5 dígits)"
+
+#: models.py:77
+msgid "Date Format DD/MM/YYYY"
+msgstr "Format de data DD/MM/YYYY"
+
+#: models.py:78
+msgid "Hour Format HH:MM"
+msgstr "Format d'hora HH:MM"
+
+#: models.py:93
+msgid "ID"
+msgstr "ID"
+
+#: models.py:95
+msgid "Type"
+msgstr "Tipus"
+
+#: models.py:109
+msgid "Special"
+msgstr "Especial"
+
+#: models.py:111
+msgid "Explanatory Text"
+msgstr "Text explicatiu"
+
+#: models.py:112
+msgid "GET parameter for integrations"
+msgstr "Paràmetre GET per integracions"
+
+#: models.py:115
+msgid "This feature won't be show to citizens, only in backoffice."
+msgstr ""
+"Aquesta característica no es mostrarà als ciutadans, només es veurà al "
+"backoffice."
+
+#: models.py:118
+msgid "This feature will be filled with automatic values."
+msgstr "Aquest característica s'omplirà amb valors automàtics."
+
+#: serializers.py:33
+msgid ""
+"The description must be unique and there is another ValuesType with the "
+"same."
+msgstr ""
+"La descripció ha de ser única i hi ha un altre Tipus de Valor amb la "
+"mateixa."
+
+#: serializers.py:91
+msgid ""
+"The description must be unique and there is another Value with the same."
+msgstr "La descripció ha de ser única i hi ha un altre Valor amb la mateixa."
+
+#: serializers.py:186
+msgid "The selected Mask does not exist"
+msgstr "La màscara seleccionada no existeix"
+
+#: serializers.py:190
+msgid "The selected values_type does not exist"
+msgstr "El tipus de valor seleccionat no existeix"
+
+#: serializers.py:202
+msgid ""
+"The description must be unique and there is another Feature with the same."
+msgstr ""
+"La descripció ha de ser única i hi ha un altre Característica amb la "
+"mateixa."
+
+#: serializers.py:215
+msgid "Mask and ValuesType can not be assigned at the same time"
+msgstr "La màscara i el tipus de valor no es poden assignar a la vegada"
+
+#: serializers.py:219
+msgid "Mask or ValuesType must be assigned"
+msgstr "La màscara o el tipus de valor han d'estar assignats"
+
+#~ msgid "Enabled"
+#~ msgstr "Enabled"

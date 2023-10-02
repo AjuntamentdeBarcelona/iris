@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-08 18:43+0200\n"
+"PO-Revision-Date: 2020-01-27 16:38-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: emails.py:93
+msgid "EMAIL_REQUEST"
+msgstr "Petición "
+
+#: emails.py:131
+msgid "Requests from town council websites"
+msgstr "Peticiones desde las webs del ayuntamiento"
+
+#: templates/communications/emails/body.html:12
+#: templates/communications/emails/body.txt:4
+msgid ""
+"We sent you a communication because we need additional information for "
+"solving your request with locator"
+msgstr ""
+"Te enviamos esta comunicación debido a que se requiere información adicional "
+"para resolver una petición con localizador"
+
+#: templates/communications/emails/body.html:14
+msgid "We sent you a communication in relation to a request with locator"
+msgstr ""
+"Se te ha enviado una comunicación en relación a la petición ciudadana con localizador"
+
+#: templates/communications/emails/body.html:22
+#: templates/communications/emails/body.txt:10
+msgid "You can answer the message"
+msgstr "Puedes responder al mensaje"
+
+#: templates/communications/emails/body.html:22
+#: templates/communications/emails/body.txt:10
+msgid "here"
+msgstr "aquí"
+
+#: templates/communications/emails/subject.html:2
+msgid "IRIS Message"
+msgstr "Mensaje de IRIS"
+
+#: templates/communications/emails/subject.html:2
+msgid "related to record"
+msgstr "relacionada con la ficha"
+
+#: templates/profiles/base.html:72
+msgid "IRIS notifications"
+msgstr "Notificaciones IRIS"
+
+#: templates/profiles/base.html:88
+msgid ""
+"You have received this notification because your work group has it "
+"configured. "
+msgstr ""
+"Has recibido esta notificación porque tu grupo de trabajo la tiene "
+"configurada."
+
+#: templates/profiles/base.html:89
+msgid ""
+"If you don't want to receive this notifications anymore, ask for it to the "
+"IRIS administrators."
+msgstr ""
+"Si no quieres seguir recibiendo estas notificaciones, pregunta a los "
+"administradores de IRIS"
+
+#: templates/profiles/emails/allocated_records/body.html:4
+msgid "The record with code"
+msgstr "La ficha con código"
+
+#: templates/profiles/emails/allocated_records/body.html:4
+#: templates/profiles/emails/allocated_records/body.txt:3
+#: templates/profiles/emails/allocated_records/subject.html:2
+msgid "has been assigned to the group "
+msgstr "ha sido assignada al grupo"
+
+#: templates/profiles/emails/allocated_records/body.txt:3
+#: templates/profiles/emails/allocated_records/subject.html:2
+msgid "RecordCard"
+msgstr "Ficha"
+
+#: templates/profiles/emails/next_expire_records/body.html:4
+#: templates/profiles/emails/next_expire_records/body.txt:3
+msgid "List of records next to expire for group"
+msgstr "Listado de fichas cercanas a expirar del grupo"
+
+#: templates/profiles/emails/next_expire_records/body.txt:6
+msgid "Expire date for"
+msgstr "Fecha de expiración de"
+
+#: templates/profiles/emails/next_expire_records/subject.html:2
+msgid "Records next to expire"
+msgstr "Fichas cercanas a expirar"
+
+#: templates/profiles/emails/pend_communications/body.html:4
+#: templates/profiles/emails/pend_communications/body.txt:3
+msgid "List of records with pending communications for group"
+msgstr "Listado de fichas con comunicaciones pendientes del grupo"
+
+#: templates/profiles/emails/pend_communications/subject.html:2
+msgid "Records with pending communications"
+msgstr "Fichas con comunicaciones pendientes"
+
+#: templates/profiles/emails/pend_records/body.html:4
+#: templates/profiles/emails/pend_records/body.txt:2
+msgid "List of pending records to validate for group"
+msgstr "Listado de fichas pendientes de validar por el grupo"
+
+#: templates/profiles/emails/pend_records/subject.html:2
+msgid "Pending Records to Validate"
+msgstr "Fichas pendientes de validar"
+
+#: templates/profiles/emails/record_list.html:4
+msgid "Code"
+msgstr "Código"
+
+#: templates/profiles/emails/record_list.html:5
+msgid "Theme"
+msgstr "Temática"
+
+#: templates/profiles/emails/record_list.html:6
+msgid "Group"
+msgstr "Grupo"
+
+#: templates/profiles/emails/record_list.html:7
+msgid "Creation date"
+msgstr "Fecha creación"
+
+#: templates/profiles/emails/record_list.html:27
+msgid "Work this record on iris"
+msgstr "Trabaja esta ficha en IRIS"
+
+#: templates/record_cards/emails/internal_claim/body.html:11
+#: templates/record_cards/emails/internal_claim/body.txt:3
+msgid "Hello"
+msgstr "Hola"
+
+#: templates/record_cards/emails/internal_claim/body.html:12
+#: templates/record_cards/emails/internal_claim/body.txt:4
+msgid "The RecordCard"
+msgstr "La ficha"
+
+#: templates/record_cards/emails/internal_claim/body.html:12
+#: templates/record_cards/emails/internal_claim/body.txt:4
+msgid "has been cancelled for management reasons"
+msgstr "ha sido anulada por motivos de gestión"
+
+#: templates/record_cards/emails/internal_claim/body.html:13
+#: templates/record_cards/emails/internal_claim/body.txt:5
+msgid "A new RecordCard has been created. The new code is"
+msgstr "Se ha creado una nueva ficha. El nuevo código de la ficha es"
+
+#: templates/record_cards/emails/internal_claim/subject.html:2
+msgid "For management reasons a new recordcard has been created"
+msgstr "Por motivos de gestión se ha creado una nueva ficha"
+
+#~ msgid "IRIS operator"
+#~ msgstr "Operador de IRIS"
+
+#~ msgid "from group"
+#~ msgstr "del grupo"
+
+#~ msgid "has sent you the following message"
+#~ msgstr "Te ha enviado el siguiente mensaje"

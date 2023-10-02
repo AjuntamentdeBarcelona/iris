@@ -1,0 +1,16 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p> {% trans "Hello" %}, </p>
+<p> {% trans "The RecordCard" %} {{old_normalized_id}} {% trans "has been cancelled for management reasons"%}. </p>
+<p> {% trans "A new RecordCard has been created. The new code is" %} {{new_normalized_id}}. </p>
+
+</body>
+</html>

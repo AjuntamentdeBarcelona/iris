@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-30 16:48+0200\n"
+"PO-Revision-Date: 2020-04-30 17:35-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: models.py:25
+msgid "Internal conversation"
+msgstr "Conversación Interna"
+
+#: models.py:26
+msgid "External conversation"
+msgstr "Conversación Externa"
+
+#: models.py:27
+msgid "Applicant conversation"
+msgstr "Conversación con Solicitante"
+
+#: models.py:32
+msgid "Conversation Type"
+msgstr "Tipo de Conversación"
+
+#: models.py:33
+msgid "Creation Group"
+msgstr "Grupo de creación"
+
+#: models.py:35
+msgid "RecordCard"
+msgstr "Ficha"
+
+#: models.py:36
+msgid "Is opened"
+msgstr "Esta abierta"
+
+#: models.py:36
+msgid "Conversation is opened"
+msgstr "La conversación está abierta"
+
+#: models.py:37
+msgid "Require answer"
+msgstr "Requiere respuesta"
+
+#: models.py:38
+msgid "Indicates if an answer is expected"
+msgstr "Indicar si se espera una respuesta"
+
+#: models.py:40
+msgid "Groups involved"
+msgstr "Grupos involucrados"
+
+#: models.py:41
+msgid "Groups involved on conversation, if it's Internal Type"
+msgstr "Grupos involucrados en la conversación, si es de tipo interno"
+
+#: models.py:42
+msgid "External email"
+msgstr "Mail externo"
+
+#: models.py:43
+msgid "External email involved on conversation, if it's External Type"
+msgstr "Mail externo involucrado en la conversación, si es de tipo externo"
+
+#: models.py:94 models.py:105 models.py:114
+msgid "Conversation"
+msgstr "Conversación"
+
+#: models.py:95 models.py:106 models.py:115
+msgid "Group"
+msgstr "Grupo"
+
+#: models.py:96
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: models.py:104
+msgid "Creation date"
+msgstr "Fecha de creación"
+
+#: models.py:117
+msgid "State of the RecordCard on the creation of the message"
+msgstr "Estado de la ficha en la creación del mensaje"
+
+#: models.py:118
+msgid "Text Message"
+msgstr "Mensaje de texto"
+
+#: models.py:121
+msgid "Message hash"
+msgstr "Hash del mensaje"
+
+#: models.py:123
+msgid "Messages is answered"
+msgstr "El mensaje esta contestado"
+
+#: serializers.py:56 serializers.py:185
+msgid "The selected RecordCard does not exist"
+msgstr "La ficha seleccionada no existe"
+
+#: serializers.py:80
+#| msgid ""
+#| "Only the RecordCard Responsible profile can open new conversations"
+msgid ""
+"Only the RecordCard Responsible profile or a group with admin permissions "
+"can open new conversations"
+msgstr ""
+"Solo el perfil responsable de la ficha o un grupo con permisos de "
+"administración puede abrir nuevas conversaciones"
+
+#: serializers.py:94
+msgid "If conversation type is INTERNAL, the groups involved must be set"
+msgstr ""
+"Si el tipo de la conversación es INTERNO, los grupos involucrados se tienen "
+"que indicar"
+
+#: serializers.py:99
+msgid ""
+"The group that create the conversation can not be included in involved "
+"groups"
+msgstr ""
+"El grupo que crea la conversación no puede estar incluido en los grupos "
+"involucrados"
+
+#: serializers.py:104
+msgid "If conversation type is EXTERNAL, the external email must be set"
+msgstr ""
+"Si la conversación es de tipo externo, se debe indicar el email de contacto "
+"externo"
+
+#: serializers.py:110
+msgid ""
+"Conversation type can not be Applicant because applicant email is unknown"
+msgstr ""
+"La conversación no puede ser de tipo solicitante porque se desconoce el "
+"email del solicitante"
+
+#: serializers.py:167
+msgid "The selected group does not exist"
+msgstr "El grupo seleccionado no existe"
+
+#: serializers.py:172
+msgid "The selected conversation does not exist or it's closed"
+msgstr "La conversación seleccionada no existe o está cerrada"
+
+#: serializers.py:176
+msgid "The selected record_state does not exist"
+msgstr "El estado de la ficha seleccionado no existe"
+
+#: serializers.py:180
+msgid "The selected record file does not exist"
+msgstr "El fichero seleccionado no existe"
+
+#: serializers.py:218
+msgid "The conversation is closed and messages can not be added"
+msgstr "La conversación está cerrada y no se pueden añadir mensages"
+
+#: serializers.py:242
+msgid "The group can not add messages to this {} because it's not involved"
+msgstr ""
+"El grupo no puede añadir mensajes a la {} porque no esta involucrado en ella"
+
+#: serializers.py:267
+msgid "The attach of files is deactivated"
+msgstr "Se ha desactivado el poder adjuntar ficheros"
+
+#: serializers.py:272
+msgid "Files can only be added in conversations with external people"
+msgstr ""
+"Solo se puede adjuntar ficheros en conversaciones con personas externas"
+
+#: serializers.py:276
+msgid "There are repeated record files to add to the email"
+msgstr "Hay ficheros repetidos en los adjuntos al mail"
+
+#: serializers.py:279
+msgid "The record files selected must be one of record card files"
+msgstr "Los ficheros seleccionados tienen que ser ficheros de la ficha"
+
+#: views.py:112
+msgid "User's group is not involved in conversation"
+msgstr "El grupo del usuario no esta involucrado en la conversación"
+
+#: views.py:193
+msgid "Action can not be done with a closed or cancelled record"
+msgstr "La acción no se puede realizar con una ficha cerrada o cancelada"
+
+#: views.py:213
+msgid "No RecordCard matches the given query."
+msgstr "Ninguna ficha coincide con la consulta realizada."
+
+#~ msgid "No Message matches the given query."
+#~ msgstr "Ningún mensaje coincide con la consulta realizada."
+
+#~ msgid "The messages was previously answered"
+#~ msgstr "El mensaje se contestó anteriormente"
+
+#~ msgid "IRIS operator"
+#~ msgstr "El operador de IRIS"
+
+#~ msgid "from group"
+#~ msgstr "del grupo"
+
+#~ msgid "has sent you the following message"
+#~ msgstr "os ha enviado el siguiente mensaje"
+
+#~ msgid "You can answer the message"
+#~ msgstr "Puede responder el mensaje"
+
+#~ msgid "here"
+#~ msgstr "aquí"
+
+#~ msgid "IRIS Message"
+#~ msgstr "Mensaje de IRIS"
+
+#~ msgid "No Conversation matches the given query."
+#~ msgstr "Ninguna conversación coincide con la consulta realizada."

@@ -1,0 +1,14 @@
+{% load i18n %}
+
+{% if ans_exceeded %}
+    {{ ans_exceeded_text }}
+{% endif %}
+{{ body|safe }}
+{% if is_appointment %}
+    {{ appointment }}
+{% endif %}
+
+{{ signed }}
+{{ footer|safe }}
+{{ lopd }}
+

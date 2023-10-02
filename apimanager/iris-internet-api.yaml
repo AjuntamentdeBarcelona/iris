@@ -1,0 +1,260 @@
+swagger: '2.0'
+info:
+  title: IRIS2 Public Authenticated API
+  description: IRIS2 is a complete tool for managing communications between citizens
+    and institutions. It's the main citizen support software for the Ajuntament de
+    Barcelona.This is the public (accesible outside the corporate network) part of
+    its API.
+  termsOfService: '-'
+  contact:
+    email: iris@apsl.net
+  license:
+    name: BSD License
+  version: 1.5.0
+host: 127.0.0.1:8000
+schemes:
+  - http
+basePath: /services/iris/api-internet
+consumes:
+  - application/json
+produces:
+  - application/json
+  - application/xlsx
+securityDefinitions:
+  Basic:
+    type: basic
+security:
+  - Basic: []
+paths:
+  /cancel/{id}/:
+    post:
+      operationId: cancel_create
+      description: Endpoint to get back a record card sent to External processing
+        that the external service has cancelled
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ExternalProcessed'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '204':
+          description: RecordCard to external canceled
+        '400':
+          description: 'Bad request: Validation Error'
+        '403':
+          description: Acces not allowed
+        '404':
+          description: RecordCard is not available to external cancelling
+      tags:
+        - cancel
+      x-imi-roles:
+        external: Access from outside the VPN and only to External Processing endpoints
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /close/{id}/:
+    post:
+      operationId: close_create
+      description: Endpoint to get back a record card sent to External processing
+        that the external service has closed
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ExternalProcessed'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '204':
+          description: RecordCard to external closed
+        '400':
+          description: 'Bad request: Validation Error'
+        '403':
+          description: Acces not allowed
+        '404':
+          description: RecordCard is not available to external closing
+      tags:
+        - close
+      x-imi-roles:
+        external: Access from outside the VPN and only to External Processing endpoints
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /management/cancel/{id}/:
+    post:
+      operationId: management_cancel_create
+      description: Endpoint to get back a record card sent to External processing
+        that the external service has cancelled
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ExternalProcessed'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '204':
+          description: RecordCard to external canceled
+        '400':
+          description: 'Bad request: Validation Error'
+        '403':
+          description: Acces not allowed
+        '404':
+          description: RecordCard is not available to external cancelling
+      tags:
+        - management
+      x-imi-roles:
+        external: Access from outside the VPN and only to External Processing endpoints
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /management/close/{id}/:
+    post:
+      operationId: management_close_create
+      description: Endpoint to get back a record card sent to External processing
+        that the external service has closed
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ExternalProcessed'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '204':
+          description: RecordCard to external closed
+        '400':
+          description: 'Bad request: Validation Error'
+        '403':
+          description: Acces not allowed
+        '404':
+          description: RecordCard is not available to external closing
+      tags:
+        - management
+      x-imi-roles:
+        external: Access from outside the VPN and only to External Processing endpoints
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /management/return/{id}/:
+    post:
+      operationId: management_return_create
+      description: "Endpoint to get back a record card sent to External processing\
+        \ that the external service return because it's\nnot their business"
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ExternalProcessed'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '204':
+          description: RecordCard to external returned
+        '400':
+          description: 'Bad request: Validation Error'
+        '403':
+          description: Acces not allowed
+        '404':
+          description: RecordCard is not available to external returning
+      tags:
+        - management
+      x-imi-roles:
+        external: Access from outside the VPN and only to External Processing endpoints
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /return/{id}/:
+    post:
+      operationId: return_create
+      description: "Endpoint to get back a record card sent to External processing\
+        \ that the external service return because it's\nnot their business"
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ExternalProcessed'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '204':
+          description: RecordCard to external returned
+        '400':
+          description: 'Bad request: Validation Error'
+        '403':
+          description: Acces not allowed
+        '404':
+          description: RecordCard is not available to external returning
+      tags:
+        - return
+      x-imi-roles:
+        external: Access from outside the VPN and only to External Processing endpoints
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+definitions:
+  ExternalProcessed:
+    required:
+      - comment
+    type: object
+    properties:
+      comment:
+        title: Comment
+        type: string
+        minLength: 1

@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-18 10:48+0100\n"
+"PO-Revision-Date: 2019-12-12 10:55-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: filters.py:37
+msgid "Start date init"
+msgstr ""
+
+#: filters.py:38
+msgid "Start date end"
+msgstr ""
+
+#: filters.py:43
+msgid "Records with no ubication"
+msgstr ""
+
+#: filters.py:44
+msgid "Via Type"
+msgstr ""
+
+#: filters.py:45 filters.py:46
+msgid "Neighborhood"
+msgstr ""
+
+#: filters.py:47
+msgid "District"
+msgstr ""
+
+#: filters.py:48
+msgid "Street"
+msgstr ""
+
+#: filters.py:49
+msgid "Number"
+msgstr ""
+
+#: record_card_texts.py:27
+msgid ""
+"The requested petition {} is closed and has a claim. The status of the "
+"petition corresponding to this claim is displayed."
+msgstr ""
+
+#: record_card_texts.py:31
+msgid "The record that you were looking for is closed."
+msgstr ""
+
+#: record_card_texts.py:35
+msgid ""
+"If you have not received any answer, you do not agree with its resolution or "
+"you want to provide new information or documentation you can fill in your "
+"request again by doing a Claim."
+msgstr ""
+
+#: record_card_texts.py:43
+msgid "The record that you were looking for is not being processed."
+msgstr ""
+
+#: record_card_texts.py:67 record_card_texts.py:76
+msgid ""
+"This request is still within the expected time of resolution {} day/s, and "
+"for this reason we cannot accept its claim. It will be solved shortly."
+msgstr ""
+
+#: record_card_texts.py:86
+msgid ""
+"The petition has been canceled due to duplication or reiteration. The "
+"petition processed is {}. If desired, you can claim the processed petition."
+msgstr ""
+
+#: record_card_texts.py:98
+msgid ""
+"This request has been closed for more than {} days. To contact again with us "
+"you are required to go back to the main menu and open a new request."
+msgstr ""
+
+#: serializers.py:683
+msgid "The selected feature does not exist or is not enabled"
+msgstr ""
+
+#: serializers.py:716
+msgid "Value is not one of the feature options"
+msgstr ""
+
+#: serializers.py:732 serializers.py:1031 serializers.py:1046
+#: serializers.py:1057
+msgid "The selected district does not exist"
+msgstr ""
+
+#: serializers.py:744
+msgid "Address is required with this Element Detail"
+msgstr ""
+
+#: serializers.py:746
+msgid "Number is required with this Element Detail"
+msgstr ""
+
+#: serializers.py:768
+msgid "Mandatory characteristics missing"
+msgstr ""
+
+#: serializers.py:775 serializers.py:777
+msgid "Characteristics not related to the detail"
+msgstr ""
+
+#: serializers.py:793
+msgid "The number of attachments is greater than the number allowed"
+msgstr ""
+
+#: serializers.py:806
+msgid "Data is not a base64 valid string"
+msgstr ""
+
+#: serializers.py:824 serializers.py:830 serializers.py:1104
+msgid "The selected element detail does not exist or is not enabled"
+msgstr ""
+
+#: serializers.py:833
+msgid "The selected applicant does not exist or is not enabled"
+msgstr ""
+
+#: serializers.py:873
+msgid "Transaction value is not valid"
+msgstr ""
+
+#: serializers.py:909
+msgid "An applicant must be set"
+msgstr ""
+
+#: serializers.py:919
+msgid "Only one applicant can be set"
+msgstr ""
+
+#: serializers.py:932
+msgid "If {} is set, {} must be set too"
+msgstr ""
+
+#: serializers.py:1075
+msgid "Street is required with this Element Detail"
+msgstr ""
+
+#: serializers.py:1077
+msgid "Street2 is required with this Element Detail"
+msgstr ""
+
+#: serializers.py:1083
+msgid "The selected RecordCard does not exist or is not enabled"
+msgstr ""
+
+#: serializers.py:1087
+msgid "The selected response channel does not exist"
+msgstr ""
+
+#: serializers.py:1096
+msgid "This field is mandatory for giving an answer by Letter."
+msgstr ""
+
+#: serializers.py:1107 serializers.py:1110
+msgid "The selected input channel does not exist or is not enabled"
+msgstr ""
+
+#: serializers.py:1150 serializers.py:1151
+msgid "Citizen and social entity can not be filled at the same time"
+msgstr ""
+
+#: serializers.py:1154 serializers.py:1155
+msgid "Citizen or social entity must be filled to create the RecordCard"
+msgstr ""
+
+#: serializers.py:1183
+msgid ""
+"Please note that the incidence will be transferred to the responsible "
+"department.The deadline to resolve is {} hours. With this information we "
+"respond to your request"
+msgstr ""
+
+#: views.py:259 views.py:271
+msgid "Files can not be greather than {} KB"
+msgstr ""
+
+#: views.py:282
+msgid "Applicant can not be used to create a record because it's blocked"
+msgstr ""
+
+#: views.py:310
+msgid "The introduced location is wrong"
+msgstr ""
+
+#: views.py:544
+msgid "The claim has been created sucesfully!"
+msgstr ""
+
+#: views.py:806
+msgid ""
+"En aquest adreça la recollida es fa a través de contenidors. Consulteu la "
+"ubicació al telèfon del civisme 900 226 226 (trucada gratuita)"
+msgstr ""
+"In this address the collection is made through containers. Check the "
+"location on the civic phone number 900 226 226 (free call)"
+
+#: views.py:813
+msgid "Podeu deixar els mobles vells davant de la porteria el {} de {}"
+msgstr "You can leave the old furniture in front of the goal on {} of {}"
+
+#: views.py:816
+msgid ""
+"Cal trucar al telèfon gratuït del Civisme 900 226 226 per sol·licitar la "
+"recollida dels mobles i baixar-los els {}, a partir de les {} hores. La "
+"recollida es fará a l'endemà però nomès retiraran els mobles i trastos que "
+"s'hagin demanat a través d'aquest servei"
+msgstr ""
+"You need to call the toll free telephone of Civisme 900 226 226 to request "
+"the collection of the furniture and to lower it at {}, after {} hours. The "
+"pickup will be done the next day but they will only remove the furniture and "
+"items that have been ordered through this service."
+
+#: views.py:825
+msgid "DILLUNS"
+msgstr "MONDAY"
+
+#: views.py:827
+msgid "DIMARTS"
+msgstr "TUESDAY"
+
+#: views.py:829
+msgid "DIMECRES"
+msgstr "WEDNESDAY"
+
+#: views.py:831
+msgid "DIJOUS"
+msgstr "THURSDAY"
+
+#: views.py:833
+msgid "DIVENDRES"
+msgstr "FRIDAY"
+
+#: views.py:835
+msgid "DISSABTE"
+msgstr "SATURDAY"
+
+#: views.py:837
+msgid "DIUMENGE"
+msgstr "SUNDAY"
+
+#: views.py:864
+msgid "No Message matches the given query."
+msgstr ""
+
+#: views.py:867
+msgid "The messages was previously answered"
+msgstr ""

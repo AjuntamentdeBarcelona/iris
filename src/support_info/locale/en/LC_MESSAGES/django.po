@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:29+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:25
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: models.py:26
+msgid "Glossary"
+msgstr ""
+
+#: models.py:27
+msgid "Documentation"
+msgstr ""
+
+#: models.py:28
+msgid "Video"
+msgstr ""
+
+#: models.py:29
+msgid "News"
+msgstr ""
+
+#: models.py:40
+msgid "Self Training Courses"
+msgstr ""
+
+#: models.py:41
+msgid "General statistical DAIQ reports"
+msgstr ""
+
+#: models.py:42
+msgid "User Manuals"
+msgstr ""
+
+#: models.py:43
+msgid "Regulations"
+msgstr ""
+
+#: models.py:44
+msgid "Links"
+msgstr ""
+
+#: models.py:45
+msgid "Others"
+msgstr ""
+
+#: models.py:48
+msgid "Title"
+msgstr ""
+
+#: models.py:49
+msgid "Description"
+msgstr ""
+
+#: models.py:50
+msgid "Type"
+msgstr ""
+
+#: models.py:51
+msgid "Category"
+msgstr ""
+
+#: models.py:52
+msgid "Category for Documentation Type"
+msgstr ""
+
+#: models.py:53
+msgid "File"
+msgstr ""
+
+#: models.py:54
+msgid "Link"
+msgstr ""
+
+#: models.py:55
+msgid "Youtube link for Video Type or link for Document Type"
+msgstr ""
+
+#: models.py:67
+msgid "Support Info"
+msgstr ""
+
+#: serializers.py:35
+msgid "The selected Support Info does not exist"
+msgstr ""
+
+#: serializers.py:46
+msgid "Support info must be documentation type"
+msgstr ""

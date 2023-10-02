@@ -1,0 +1,31 @@
+AREA_ID|DESCRIPCIO|ORDEN
+12|Cultura|Cultura
+14|Educació|Educació
+4|Esports|Esports
+84|Feminismes / Dones i LGTBI|Feminismes / Dones i LGTBI
+61|Gestions municipals|Gestions municipals
+3|Hisenda|Hisenda
+7|Informació, tràmits i atenció al ciutadà|Informació, tràmits i atenció al ciutadà
+1|Manteniment de l'espai urbà|Manteniment de l'espai urbà
+13|Mobilitat|Mobilitat
+68|Nadal|Nadal
+15|Oci / lleure|Oci / lleure
+2|Prevenció i seguretat|Prevenció i seguretat
+18|Promoció econòmica, comerç i mercats|Promoció econòmica, comerç i mercats
+0|Recollida i neteja de l'espai urbà|Recollida i neteja de l'espai urbà
+5|Sanitat i salut pública|Sanitat i salut pública
+16|Serveis funeraris (cementiris i crematoris; tanatoris)|Serveis funeraris (cementiris i crematoris; tanatoris)
+21|Serveis socials|Serveis socials
+8|Transports públics|Transports públics
+6|Urbanisme|Urbanisme
+83|Agraïments|Agraïments
+9|Bitàcoles|Bitàcoles
+80|Administració IRIS (ús intern administradors)|Administració IRIS (ús intern administradors)
+43|Portal de tràmits (CONSULTES)|YYY Portal de tràmits
+23|Civisme (CONSULTES)|YYY Civisme
+24|Comerç (CONSULTES)|YYY Comerç
+79|Consultes web (CONSULTES)|YYY Consultes web
+35|Habitatge (CONSULTES)|YYY Habitatge
+58|Joventut (CONSULTES)|YYY Joventut
+29|Medi ambient (CONSULTES)|YYY Medi ambient
+32|Participació (CONSULTES)|YYY Participació

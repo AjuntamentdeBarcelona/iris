@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:25+0100\n"
+"PO-Revision-Date: 2019-07-12 15:42-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: data_checks/response_channels.py:10 models.py:323
+msgid "Email"
+msgstr "Email"
+
+#: data_checks/response_channels.py:11 models.py:325
+msgid "Letter"
+msgstr "Letter"
+
+#: data_checks/response_channels.py:12 models.py:324
+msgid "Sms"
+msgstr "Sms"
+
+#: data_checks/response_channels.py:13 models.py:326
+msgid "None"
+msgstr "None"
+
+#: data_checks/response_channels.py:14 models.py:328
+msgid "Telephone"
+msgstr "Telephone"
+
+#: data_checks/response_channels.py:15 models.py:327
+msgid "Immediate"
+msgstr "Immediate"
+
+#: filters.py:12
+#, fuzzy
+#| msgid "Creation date"
+msgid "Created at gte"
+msgstr "Creation date"
+
+#: filters.py:13
+#, fuzzy
+#| msgid "Creation date"
+msgid "Created at lte"
+msgstr "Creation date"
+
+#: filters.py:14
+#, fuzzy
+#| msgid "Expiration date"
+msgid "Experiation date gte"
+msgstr "Expiration date"
+
+#: filters.py:15
+#, fuzzy
+#| msgid "Expiration date"
+msgid "Experiation date lte"
+msgstr "Expiration date"
+
+#: mixins.py:7
+msgid "Active previous register exists"
+msgstr "Active previous register exists"
+
+#: mixins.py:59
+msgid "Enabled previous register exists"
+msgstr "Enabled previous register exists"
+
+#: models.py:19
+msgid "User ID"
+msgstr "User ID"
+
+#: models.py:24
+msgid "Creation date"
+msgstr "Creation date"
+
+#: models.py:25
+msgid "Last update"
+msgstr "Last update"
+
+#: models.py:36 models.py:147 models.py:230 models.py:251 models.py:264
+#: models.py:360 models.py:463 models.py:494 models.py:543 models.py:705
+#: models.py:738
+msgid "Description"
+msgstr "Description"
+
+#: models.py:52
+msgid "Incidència"
+msgstr "Incidència"
+
+#: models.py:53
+msgid "Queixa"
+msgstr "Queixa"
+
+#: models.py:54
+msgid "Suggeriment"
+msgstr "Suggeriment"
+
+#: models.py:55
+msgid "Agraïment"
+msgstr "Agraïment"
+
+#: models.py:56
+msgid "Petició de servei"
+msgstr "Petició de servei"
+
+#: models.py:57
+msgid "Consulta"
+msgstr "Consulta"
+
+#: models.py:70
+msgid "TRI"
+msgstr "TRI"
+
+#: models.py:71
+msgid "TRT"
+msgstr "TRT"
+
+#: models.py:83
+#, fuzzy
+#| msgid "Description"
+msgid "description"
+msgstr "Description"
+
+#: models.py:123
+#, fuzzy
+#| msgid "Pending to validate"
+msgid "Pending to be validated"
+msgstr "Pending to validate"
+
+#: models.py:124
+msgid "Planned"
+msgstr ""
+
+#: models.py:125
+#, fuzzy
+#| msgid "In resolution"
+msgid "In solution"
+msgstr "In resolution"
+
+#: models.py:126
+#, fuzzy
+#| msgid "Pending to validate"
+msgid "Pending to give a reply"
+msgstr "Pending to validate"
+
+#: models.py:127
+msgid "Closed"
+msgstr "Closed"
+
+#: models.py:128
+#, fuzzy
+#| msgid "Cancelled"
+msgid "Canceled"
+msgstr "Cancelled"
+
+#: models.py:129
+msgid "Not processed"
+msgstr "Not processed"
+
+#: models.py:130
+#, fuzzy
+#| msgid "External processing"
+msgid "Externally processed"
+msgstr "External processing"
+
+#: models.py:131
+msgid "External returned"
+msgstr "External returned"
+
+#: models.py:146 models.py:330 models.py:629 models.py:691 models.py:725
+#: models.py:737
+msgid "ID"
+msgstr "ID"
+
+#: models.py:148
+msgid "Acronym"
+msgstr ""
+
+#: models.py:149 models.py:244 models.py:332 models.py:464 models.py:518
+#: models.py:570 models.py:592
+msgid "Enabled"
+msgstr "Enabled"
+
+#: models.py:231
+msgid "Reason type"
+msgstr "Reason type"
+
+#: models.py:263
+msgid "Title"
+msgstr "Title"
+
+#: models.py:265
+msgid "Expiration date"
+msgstr "Expiration date"
+
+#: models.py:266
+msgid "Important"
+msgstr "Important"
+
+#: models.py:267
+msgid "Seen by"
+msgstr "Seen by"
+
+#: models.py:268
+msgid "Xaloc"
+msgstr "Xaloc"
+
+#: models.py:282
+msgid "Visible for all the profiles"
+msgstr "Visible for all the profiles"
+
+#: models.py:283
+msgid "Visible for the profiles responsible for the theme's area"
+msgstr "Visible for the profiles responsible for the theme's area"
+
+#: models.py:284
+msgid ""
+"Visible for the profiles responsible for the theme's area and a set of "
+"profiles for a concrete areas"
+msgstr ""
+"Visible for the profiles responsible for the theme's area and a set of "
+"profiles for a concrete areas"
+
+#: models.py:297
+msgid "Visibility options"
+msgstr "Visibility options"
+
+#: models.py:399
+msgid "Others"
+msgstr ""
+
+#: models.py:400
+msgid "Record card create"
+msgstr ""
+
+#: models.py:401
+msgid "Management"
+msgstr ""
+
+#: models.py:402
+msgid "Support"
+msgstr ""
+
+#: models.py:403
+msgid "Records"
+msgstr ""
+
+#: models.py:404
+msgid "Web"
+msgstr ""
+
+#: models.py:405
+msgid "Integrations"
+msgstr ""
+
+#: models.py:406
+msgid "Reports"
+msgstr ""
+
+#: models.py:407
+msgid "Deprecated"
+msgstr ""
+
+#: models.py:408
+msgid "Templates"
+msgstr ""
+
+#: models.py:465
+msgid "Description hash"
+msgstr "Description hash"
+
+#: models.py:498
+msgid "Allow citizen ND"
+msgstr "Allow citizen ND"
+
+#: models.py:499
+msgid "Requires Communication Media"
+msgstr "Requires Communication Media"
+
+#: models.py:500
+msgid "Requires register code"
+msgstr "Requires register code"
+
+#: models.py:545
+#, fuzzy
+#| msgid "Response"
+msgid "Send Response"
+msgstr "Response"
+
+#: models.py:617
+msgid "Closed directly"
+msgstr "Closed directly"
+
+#: models.py:618
+msgid "Direct External Processing"
+msgstr "Direct External Processing"
+
+#: models.py:619
+msgid "Planning, Resolution, Response"
+msgstr "Planning, Resolution, Response"
+
+#: models.py:620
+msgid "Resolution, Response"
+msgstr "Resolution, Response"
+
+#: models.py:621
+msgid "Evaluation, Resolution, Response"
+msgstr "Evaluation, Resolution, Response"
+
+#: models.py:622
+msgid "Response"
+msgstr "Response"
+
+#: models.py:623
+msgid "External Processing"
+msgstr "External Processing"
+
+#: models.py:624
+msgid "External Processing + Automatic Email"
+msgstr "External Processing + Automatic Email"
+
+#: models.py:625
+msgid "Resolution, External Processing"
+msgstr "Resolution, External Processing"
+
+#: models.py:626
+msgid "Resolution, External Processing + Automatic Email"
+msgstr "Resolution, External Processing + Automatic Email"
+
+#: models.py:692
+msgid "Name"
+msgstr "Name"
+
+#: models.py:693
+msgid "Allow derivation"
+msgstr "Allow derivation"
+
+#: models.py:726
+msgid "Street Code"
+msgstr ""
+
+#: models.py:727
+msgid "Number"
+msgstr ""
+
+#: models.py:728
+msgid "Service type"
+msgstr ""
+
+#: models.py:729
+#, fuzzy
+#| msgid "Description"
+msgid "Service description"
+msgstr "Description"
+
+#: models.py:730
+msgid "Enterprise name"
+msgstr ""
+
+#: serializers.py:39
+msgid ""
+"The description must be unique and there is another ApplicantType with the "
+"same."
+msgstr ""
+
+#: serializers.py:56
+msgid ""
+"The description must be unique and there is another ResponseType with the "
+"same."
+msgstr ""
+
+#: serializers.py:82 serializers.py:111
+msgid ""
+"The description must be unique and there is another RecordType with the same."
+msgstr ""
+
+#: serializers.py:139
+msgid "The selected Media Type does not exists"
+msgstr ""
+
+#: serializers.py:149 serializers.py:256
+msgid ""
+"The description must be unique and there is another CommunicationMedia with "
+"the same."
+msgstr ""
+
+#: serializers.py:400
+msgid ""
+"The description must be unique and there is another Support with the same."
+msgstr ""
+
+#: serializers.py:477
+msgid ""
+"The description must be unique and there is another ResolutionType with the "
+"same."
+msgstr ""
+
+#~ msgid "In planning"
+#~ msgstr "In planning"
+
+#~ msgid "Pending answer"
+#~ msgstr "Pending answer"

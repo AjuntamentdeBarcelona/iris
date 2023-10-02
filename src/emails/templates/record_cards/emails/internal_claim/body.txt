@@ -1,0 +1,5 @@
+{% load i18n %}
+
+{% trans "Hello" %},
+{% trans "The RecordCard" %} {{old_normalized_id}} {% trans "has been cancelled for management reasons"%}.
+{% trans "A new RecordCard has been created. The new code is" %} {{new_normalized_id}}.

@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-15 20:04+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: filters.py:9 filters.py:24
+msgid "Done at gte"
+msgstr ""
+
+#: filters.py:10 filters.py:25
+msgid "Done at lte"
+msgstr ""
+
+#: filters.py:26
+msgid "Data start year"
+msgstr ""
+
+#: filters.py:27
+msgid "Data start month"
+msgstr ""
+
+#: filters.py:28
+msgid "Validated"
+msgstr ""
+
+#: filters.py:29
+msgid "Year/month of trimester"
+msgstr ""
+
+#: models.py:35
+msgid "Record File"
+msgstr ""
+
+#: models.py:40
+msgid "Oldest date limit"
+msgstr ""
+
+#: models.py:41
+msgid "Newest date limit"
+msgstr ""
+
+#: models.py:42
+msgid "Trimestre"
+msgstr ""
+
+#: models.py:43
+msgid "Year"
+msgstr ""
+
+#: serializers.py:30
+msgid "Email send"
+msgstr ""
+
+#: serializers.py:31
+msgid "Calculate average close days for theme"
+msgstr ""
+
+#: serializers.py:32
+msgid "Calculate last month indicators"
+msgstr ""
+
+#: serializers.py:34
+msgid "Generate BI report"
+msgstr ""
+
+#: serializers.py:35
+msgid "Generate Open Data report"
+msgstr ""
+
+#: serializers.py:36
+msgid "Generate BiMap report"
+msgstr ""
+
+#: serializers.py:37
+msgid "Generate BI report file"
+msgstr ""
+
+#: serializers.py:39
+msgid "Generate MIB report file"
+msgstr ""
+
+#: serializers.py:40
+msgid "Send next to expire group notification"
+msgstr ""
+
+#: serializers.py:41
+msgid "Send pending validate group notification"
+msgstr ""
+
+#: serializers.py:42
+msgid "Send pending communications group notification"
+msgstr ""
+
+#: serializers.py:43
+msgid "Check element detail record movement after deletion"
+msgstr ""
+
+#: serializers.py:44
+msgid "Check group record movement after deletion"
+msgstr ""
+
+#: serializers.py:45
+msgid "Remove auxiliary file uploads"
+msgstr ""
+
+#: serializers.py:46
+msgid "Set messages as expired"
+msgstr ""
+
+#: serializers.py:75
+msgid "Month/s {} of year"
+msgstr ""
+
+#: serializers.py:76
+msgid "Every month of year"
+msgstr ""
+
+#: serializers.py:77
+msgid "Day/s: {} of month"
+msgstr ""
+
+#: serializers.py:78
+msgid "Every day of month"
+msgstr ""
+
+#: serializers.py:79
+msgid "Every hour"
+msgstr ""
+
+#: serializers.py:80
+msgid "hour: {}"
+msgstr ""
+
+#: serializers.py:81
+msgid "minute: {}"
+msgstr ""
+
+#: serializers.py:82
+msgid "Every minute"
+msgstr ""
+
+#: services/pdf/hooks.py:44
+msgctxt "Stair abbreviation"
+msgid "Esc. {}"
+msgstr ""
+
+#: services/mail/hooks.py:82
+msgid "Record has been marked for not sending answer."
+msgstr ""

@@ -1,0 +1,5 @@
+ca-certificates
+curl
+gettext
+locales
+sqlite

@@ -1,0 +1,2391 @@
+swagger: '2.0'
+info:
+  title: IRIS2 Public API
+  description: IRIS2 is a complete tool for managing communications between citizens
+    and institutions. It's the main citizen support software for the Ajuntament de
+    Barcelona.This is the public (accesible outside the corporate network) part of
+    its API.
+  termsOfService: '-'
+  contact:
+    email: contact@snippets.local
+  license:
+    name: BSD License
+  version: 1.36.0
+host: 127.0.0.1:8000
+schemes:
+  - http
+basePath: /services/iris/api-public
+consumes:
+  - application/json
+produces:
+  - application/json
+  - application/xlsx
+securityDefinitions:
+  Basic:
+    type: basic
+security:
+  - Basic: []
+paths:
+  /applicant_types/:
+    get:
+      operationId: applicant_types_list
+      description: Endpoint to retrieve a list of applicant types
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/ApplicantTypePublic'
+      tags:
+        - applicant_types
+    parameters: []
+  /areas:
+    get:
+      operationId: areas_list
+      description: List of Areas for ATE application
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/AreaPublic'
+      tags:
+        - areas
+    parameters: []
+  /communications/{hash}/:
+    post:
+      operationId: communications_create
+      description: Endpoint to create a message as the answer of a communication send
+        from the IRIS2 backoffice.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/MessageShortHash'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/MessageHashCreate'
+        '400':
+          description: 'Bad request: Validation Error'
+        '404':
+          description: Message to response not found
+        '409':
+          description: Message previously answered
+      tags:
+        - communications
+    parameters:
+      - name: hash
+        in: path
+        required: true
+        type: string
+  /details:
+    get:
+      operationId: details_list
+      description: "Paginated list of ElementDetails that can be displayed on the\
+        \ ATE.\nThe list can be filtered by area_id and element_id and searched by\
+        \ description.\nWhen the list is filtered by area_id, the pagination is omited."
+      parameters:
+        - name: search
+          in: query
+          description: A search term.
+          required: false
+          type: string
+        - name: element_id
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: area_id
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: keywords
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/ElementDetailRegularPublic'
+      tags:
+        - details
+    parameters: []
+  /details/last_updated/:
+    get:
+      operationId: details_last_updated_list
+      description: Endpoint to retrieve the last time that an ElementDetail of ATE
+        application has been updated.
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+      tags:
+        - details
+    parameters: []
+  /details/{id}/fields:
+    get:
+      operationId: details_fields_read
+      description: "Retrieve the detail of an ElementDetail. The ElementDetail must\
+        \ be on ATE, WEB_DIRECT or CONSULTES_DIRECTO\napplication."
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/ElementDetailRetrievePublic'
+        '404':
+          description: 'Not found: resource not exists'
+      tags:
+        - details
+    parameters:
+      - name: id
+        in: path
+        description: A unique integer value identifying this element detail.
+        required: true
+        type: integer
+  /districts:
+    get:
+      operationId: districts_list
+      description: Endpoint to retrieve a list of districts
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/DistrictPublic'
+      tags:
+        - districts
+    parameters: []
+  /elements:
+    get:
+      operationId: elements_list
+      description: List of Element for ATE application. If area_id is in query params,
+        it only returns the element of this area.
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/ElementPublic'
+      tags:
+        - elements
+    parameters: []
+  /elements/favourites:
+    get:
+      operationId: elements_favourites_list
+      description: List of favorited Elements for ATE application
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            None)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/ElementPublic'
+      tags:
+        - elements
+    parameters: []
+  /furniture_pick_up/:
+    get:
+      operationId: furniture_pick_up_list
+      description: "List of furniture pickups. In addition to the pickup infomation,\
+        \ a text will be included with the instructions.\nList can be filtered by\
+        \ street code and number (together)."
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/FurniturePickUp'
+      tags:
+        - furniture_pick_up
+    parameters: []
+  /geobcn_num/:
+    get:
+      operationId: geobcn_num_list
+      description: View for testing all files from each batch sent
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+      tags:
+        - geobcn_num
+    parameters: []
+  /geocod/districts/:
+    get:
+      operationId: geocod_districts_list
+      description: ''
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+      tags:
+        - geocod
+    parameters: []
+  /geocod/neighborhood/:
+    get:
+      operationId: geocod_neighborhood_list
+      description: ''
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+      tags:
+        - geocod
+    parameters: []
+  /geocod/streets/:
+    get:
+      operationId: geocod_streets_list
+      description: ''
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+      tags:
+        - geocod
+    parameters: []
+  /geocod/type_streets/:
+    get:
+      operationId: geocod_type_streets_list
+      description: ''
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+      tags:
+        - geocod
+    parameters: []
+  /incidences:
+    post:
+      operationId: incidences_create
+      description: Endpoint to create a RecordCard by the ATE
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/RecordCardCreatePublic'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/RecordCardCreatePublic'
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - incidences
+    parameters: []
+  /incidences/state/{id}:
+    get:
+      operationId: incidences_state_read
+      description: Endpoint to retrieve the state of a RecordCard.
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/RecordCardRetrieveStatePublic'
+        '404':
+          description: 'Not found: resource not exists'
+      tags:
+        - incidences
+    parameters:
+      - name: id
+        in: path
+        description: A unique integer value identifying this record card.
+        required: true
+        type: integer
+  /incidences/{id}:
+    get:
+      operationId: incidences_read
+      description: Endpoint to retrieve a RecordCard by ID
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/RecordCardRetrievePublic'
+        '404':
+          description: 'Not found: resource not exists'
+      tags:
+        - incidences
+    parameters:
+      - name: id
+        in: path
+        description: A unique integer value identifying this record card.
+        required: true
+        type: integer
+  /incidences/{reference}/claim/:
+    post:
+      operationId: incidences_claim_create
+      description: Public endpoint ot create a claim on a record_card.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ClaimDescription'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/ClaimResponse'
+        '400':
+          description: 'Bad request: Validation Error'
+        '409':
+          description: Claim can't be created
+      tags:
+        - incidences
+    parameters:
+      - name: reference
+        in: path
+        required: true
+        type: string
+  /input_channels/:
+    get:
+      operationId: input_channels_list
+      description: Endpoint to retrieve a list of input channels
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/InputChannelPublic'
+      tags:
+        - input_channels
+    parameters: []
+  /mario/:
+    get:
+      operationId: mario_list
+      description: "Endpoint that works as a proxy between the ATE ElementDetail search\
+        \ and the Mario Service. If the number of words\nif lower than the parameter\
+        \ MARIO_PARAULES_CERCA_KEYWORDS , the search is done by keywords."
+      parameters:
+        - name: tematica
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: Mario details
+        '404':
+          description: Details not found at Mario
+      tags:
+        - mario
+    parameters: []
+  /mobile/record_cards/:
+    post:
+      operationId: mobile_record_cards_create
+      description: Endpoint to create a RecordCard from xml_proxy/drupal apps.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/RecordCardMobileCreatePublic'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/RecordCardMobileCreatePublic'
+        '400':
+          description: 'Bad request: Validation Error'
+      tags:
+        - mobile
+    parameters: []
+  /parameters/:
+    get:
+      operationId: parameters_list
+      description: Endpoint to retrieve a list of parameters
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/ParameterPublic'
+      tags:
+        - parameters
+    parameters: []
+  /parameters/{parameter}/:
+    get:
+      operationId: parameters_read
+      description: Endpoint to retrieve the detail of a parameter
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/ParameterPublic'
+        '404':
+          description: 'Not found: resource not exists'
+      tags:
+        - parameters
+    parameters:
+      - name: parameter
+        in: path
+        required: true
+        type: string
+  /record_types/:
+    get:
+      operationId: record_types_list
+      description: Endpoint to retrieve a list of record types
+      parameters:
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 100, max:
+            30)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/RecordTypePublic'
+      tags:
+        - record_types
+    parameters: []
+  /ssi/records/:
+    get:
+      operationId: ssi_records_list
+      description: List of record cards that can be displayed at SSI, as element detail
+        has allows_ssi=True
+      parameters:
+        - name: id
+          in: query
+          description: ''
+          required: false
+          type: number
+        - name: area_id
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: element_id
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: start_date_ini
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: start_date_end
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: keywords
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: closed_records
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: show_ubication
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: record_type_id
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: via_type
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: neighborhood
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: neighborhood_id
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: district_id
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: street
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: number
+          in: query
+          description: ''
+          required: false
+          type: string
+        - name: page_size
+          in: query
+          description: 'Indicates the number of items per page (default: 4000000000,
+            max: 4000000000)'
+          required: false
+          type: integer
+        - name: page
+          in: query
+          description: 'Requested page (default: 1)'
+          required: false
+          type: integer
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            required:
+              - count
+              - results
+            type: object
+            properties:
+              count:
+                type: integer
+              next:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              previous:
+                type: string
+                format: uri
+                x-nullable: 'true'
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/RecordCardSSIPublic'
+      tags:
+        - ssi
+    parameters: []
+  /surveys/{survey}/{record_id}:
+    get:
+      operationId: surveys_read
+      description: "Recovers the questions for rating the service received within\
+        \ a record card.\nThe answer has three parts: questions, ready and closed,\
+        \ which define what questions\n must be answered, if the surveys is answered\
+        \ yet and if the record card is closed.\n\n*Additional considerations*\n*\
+        \ The survey can be completed when ready = false and closed = true.\n* If\
+        \ the survey cannot be answered, the question list will be empty."
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/SurveyOptions'
+        '404':
+          description: ''
+      tags:
+        - surveys
+    parameters:
+      - name: record_id
+        in: path
+        required: true
+        type: string
+      - name: survey
+        in: path
+        required: true
+        type: string
+  /surveys/{survey}/{record_id}/answer:
+    post:
+      operationId: surveys_answer_create
+      description: "Gives answer to a given survey. Its mandatory to answer all the\
+        \ questions recovered in the surveys read endpoint.\nThe survey can be answered\
+        \ if the associated record card is closed and is not rated yet.\n\n*Additional\
+        \ considerations*\n* If the value of the rating is under a certain number,\
+        \ requires to specify a reason for the bad qualification.\n* The minimum number\
+        \ for requiring a bad rating reason is defined by the survey and returned\
+        \ in the SurveyOptions."
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/QuestionAnswer'
+        - name: Accept-Language
+          in: header
+          description: Request language
+          type: string
+          enum:
+            - es
+            - ca
+            - en
+      responses:
+        '201':
+          description: Survey answered
+        '404':
+          description: Group with profile_ctrl_user_id does not exist
+        '400':
+          description: Bad Request
+        '409':
+          description: You can rate the service only one time per record
+      tags:
+        - surveys
+    parameters:
+      - name: record_id
+        in: path
+        required: true
+        type: string
+      - name: survey
+        in: path
+        required: true
+        type: string
+definitions:
+  ApplicantTypePublic:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      description:
+        title: Description
+        type: string
+        readOnly: true
+        minLength: 1
+  AreaPublic:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      description:
+        title: Description
+        type: string
+        readOnly: true
+        minLength: 1
+      area_code:
+        title: Area Code
+        type: string
+        readOnly: true
+        minLength: 1
+      areaIcon:
+        title: Areaicon
+        type: string
+        readOnly: true
+        minLength: 1
+  MessageShortHash:
+    required:
+      - text
+    type: object
+    properties:
+      text:
+        title: Text Message
+        type: string
+        minLength: 1
+  File:
+    required:
+      - filename
+    type: object
+    properties:
+      filename:
+        title: Filename
+        type: string
+        maxLength: 30
+        minLength: 1
+      file:
+        title: File
+        type: string
+        readOnly: true
+        format: uri
+  MessageHashCreate:
+    required:
+      - record_state_id
+      - text
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      created_at:
+        title: Creation date
+        type: string
+        format: date-time
+        readOnly: true
+      user_id:
+        title: User ID
+        type: string
+        readOnly: true
+        minLength: 1
+      conversation_id:
+        title: Conversation id
+        type: integer
+        x-nullable: true
+      group_id:
+        title: Group id
+        type: integer
+        x-nullable: true
+      record_state_id:
+        title: Record state id
+        type: integer
+      text:
+        title: Text Message
+        type: string
+        minLength: 1
+      attachments:
+        type: array
+        items:
+          $ref: '#/definitions/File'
+  ElementDetailRegularPublic:
+    required:
+      - detailId
+      - areaId
+      - element
+      - elementId
+      - detail
+      - theme
+      - application
+      - requiresAppointment
+      - headText
+      - head_text
+      - footer_text
+      - requiresUbication
+      - favourite
+      - average_close_days
+      - description_ca
+      - description_es
+      - description_en
+      - short_description_ca
+      - short_description_es
+      - short_description_en
+      - element_ca
+      - element_es
+      - element_en
+    type: object
+    properties:
+      detailId:
+        title: Detailid
+        type: integer
+      area:
+        title: Area
+        type: string
+        readOnly: true
+      areaId:
+        title: Areaid
+        type: integer
+      element:
+        title: Element
+        type: string
+        minLength: 1
+      elementId:
+        title: Elementid
+        type: integer
+      detail:
+        title: Detail
+        type: string
+        minLength: 1
+      theme:
+        title: Theme
+        type: string
+        minLength: 1
+      application:
+        title: Application
+        type: string
+        minLength: 1
+      recordType:
+        title: Recordtype
+        type: string
+        readOnly: true
+      recordIcon:
+        title: Recordicon
+        type: string
+        readOnly: true
+      iconName:
+        title: Iconname
+        type: string
+        readOnly: true
+      requiresAppointment:
+        title: Requiresappointment
+        type: boolean
+      headText:
+        title: Headtext
+        type: string
+        minLength: 1
+      head_text:
+        title: Head text
+        type: string
+        minLength: 1
+      footer_text:
+        title: Footer text
+        type: string
+        minLength: 1
+      characteristics:
+        title: Characteristics
+        type: string
+        readOnly: true
+      requiresUbication:
+        title: Requiresubication
+        type: boolean
+      favourite:
+        title: Favourite
+        type: boolean
+      average_close_days:
+        title: Average close days
+        type: integer
+      description_ca:
+        title: Description ca
+        type: string
+        minLength: 1
+      description_es:
+        title: Description es
+        type: string
+        minLength: 1
+      description_en:
+        title: Description en
+        type: string
+        minLength: 1
+      short_description_ca:
+        title: Short description ca
+        type: string
+        minLength: 1
+      short_description_es:
+        title: Short description es
+        type: string
+        minLength: 1
+      short_description_en:
+        title: Short description en
+        type: string
+        minLength: 1
+      element_ca:
+        title: Element ca
+        type: string
+        minLength: 1
+      element_es:
+        title: Element es
+        type: string
+        minLength: 1
+      element_en:
+        title: Element en
+        type: string
+        minLength: 1
+      fav_for_app:
+        title: Fav for app
+        type: string
+        readOnly: true
+      area_ca:
+        title: Area ca
+        type: string
+        readOnly: true
+      area_es:
+        title: Area es
+        type: string
+        readOnly: true
+      area_en:
+        title: Area en
+        type: string
+        readOnly: true
+  ElementDetailRetrievePublic:
+    type: object
+    properties:
+      detailId:
+        title: Detailid
+        type: string
+        readOnly: true
+      area:
+        title: Area
+        type: string
+        readOnly: true
+      areaId:
+        title: Areaid
+        type: string
+        readOnly: true
+      element:
+        title: Element
+        type: string
+        readOnly: true
+      elementId:
+        title: Elementid
+        type: string
+        readOnly: true
+      detail:
+        title: Detail
+        type: string
+        readOnly: true
+      theme:
+        title: Theme
+        type: string
+        readOnly: true
+      application:
+        title: Application
+        type: string
+        readOnly: true
+      mandatoryFields:
+        title: Mandatoryfields
+        type: string
+        readOnly: true
+      mandatory_fields:
+        title: Mandatory fields
+        type: string
+        readOnly: true
+      mandatory_drupal_fields:
+        title: Mandatory drupal fields
+        type: string
+        readOnly: true
+      characteristics:
+        title: Characteristics
+        type: string
+        readOnly: true
+      head_text:
+        title: Head text
+        type: string
+        readOnly: true
+        minLength: 1
+      footer_text:
+        title: Footer text
+        type: string
+        readOnly: true
+        minLength: 1
+      recordType:
+        title: Recordtype
+        type: string
+        readOnly: true
+      record_type_id:
+        title: Record type id
+        type: string
+        readOnly: true
+      immediate_response:
+        title: Immediate response
+        description: If checked, the response to the record will be required on its
+          creation
+        type: boolean
+        readOnly: true
+      response_channels:
+        title: Response channels
+        type: string
+        readOnly: true
+      external_process_type:
+        title: External process type
+        type: string
+        readOnly: true
+      max_bytes_files_size:
+        title: Max bytes files size
+        type: string
+        readOnly: true
+      average_close_days:
+        title: Average Close Days
+        description: Average of days to close records of this theme.Null if it's not
+          calculated
+        type: integer
+        readOnly: true
+      extension_files:
+        title: Extension files
+        type: string
+        readOnly: true
+  DistrictPublic:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+        readOnly: true
+      name:
+        title: Name
+        type: string
+        readOnly: true
+        minLength: 1
+  ElementPublic:
+    type: object
+    properties:
+      element:
+        title: Element
+        type: string
+        readOnly: true
+      elementId:
+        title: Elementid
+        type: string
+        readOnly: true
+      area:
+        title: Area
+        type: string
+        readOnly: true
+      areaId:
+        title: Areaid
+        type: string
+        readOnly: true
+      areaIcon:
+        title: Areaicon
+        type: string
+        readOnly: true
+  FurniturePickUp:
+    required:
+      - street_code
+      - number
+      - service_type
+    type: object
+    properties:
+      street_code:
+        title: Street Code
+        type: string
+        maxLength: 20
+        minLength: 1
+      number:
+        title: Number
+        type: string
+        maxLength: 15
+        minLength: 1
+      service_type:
+        title: Service type
+        type: string
+        maxLength: 1
+        minLength: 1
+      service_description:
+        title: Service description
+        type: string
+        maxLength: 25
+      enterprise_name:
+        title: Enterprise name
+        type: string
+        maxLength: 40
+  RecordFeatureCreatePublic:
+    required:
+      - id
+      - value
+    type: object
+    properties:
+      id:
+        title: Id
+        type: integer
+      value:
+        title: Value
+        type: string
+        minLength: 1
+  UbicationCreatePublic:
+    title: Location
+    type: object
+    properties:
+      id:
+        title: Id
+        type: integer
+        x-nullable: true
+      latitude:
+        title: Latitude
+        type: string
+        maxLength: 20
+      longitude:
+        title: Longitude
+        type: string
+        maxLength: 20
+      geocode:
+        title: Geocode
+        type: integer
+        x-nullable: true
+      via_type:
+        title: Via type
+        type: string
+        maxLength: 35
+      address:
+        title: Address
+        type: string
+        maxLength: 120
+      number:
+        title: Number
+        type: string
+        maxLength: 60
+      stair:
+        title: Stair
+        type: string
+        maxLength: 20
+      floor:
+        title: Floor
+        type: string
+        maxLength: 20
+      door:
+        title: Door
+        type: string
+        maxLength: 20
+      district:
+        title: District
+        type: integer
+        x-nullable: true
+  RecordCardCreatePublic:
+    required:
+      - detailId
+      - comments
+    type: object
+    properties:
+      detailId:
+        title: Detailid
+        type: integer
+      comments:
+        title: Comments
+        type: string
+        minLength: 1
+      transaction:
+        title: Transaction
+        type: string
+        minLength: 1
+      device:
+        title: Device
+        type: integer
+      applicant:
+        title: Applicant
+        type: integer
+      nameCitizen:
+        title: Namecitizen
+        type: string
+        x-nullable: true
+      firstSurname:
+        title: Firstsurname
+        type: string
+        x-nullable: true
+      secondSurname:
+        title: Secondsurname
+        type: string
+        x-nullable: true
+      typeDocument:
+        title: Typedocument
+        type: integer
+        enum:
+          - 0
+          - 1
+          - 2
+        x-nullable: true
+      numberDocument:
+        title: Numberdocument
+        type: string
+        x-nullable: true
+      birthYear:
+        title: Birthyear
+        type: integer
+        minimum: 1900
+        x-nullable: true
+      sex:
+        title: Sex
+        type: string
+        enum:
+          - m
+          - f
+          - u
+        x-nullable: true
+      socialReason:
+        title: Socialreason
+        type: string
+        maxLength: 60
+        x-nullable: true
+      contactPerson:
+        title: Contactperson
+        type: string
+        maxLength: 120
+        x-nullable: true
+      cif:
+        title: Cif
+        type: string
+        maxLength: 15
+        x-nullable: true
+      authorization:
+        title: Authorization
+        type: boolean
+        default: false
+      origin:
+        title: Origin
+        type: string
+        default: ATENCIO EN LINIA
+        minLength: 1
+      district:
+        title: District
+        type: integer
+        enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+        x-nullable: true
+      language:
+        title: Language
+        type: string
+        enum:
+          - es
+          - en
+          - ca
+        x-nullable: true
+      email:
+        title: Email
+        type: string
+        format: email
+        x-nullable: true
+      telephone:
+        title: Telephone
+        type: string
+        x-nullable: true
+      characteristics:
+        type: array
+        items:
+          $ref: '#/definitions/RecordFeatureCreatePublic'
+      location:
+        $ref: '#/definitions/UbicationCreatePublic'
+      pictures:
+        type: array
+        items:
+          $ref: '#/definitions/File'
+  RecordStatePublic:
+    title: Record state
+    type: object
+    properties:
+      description:
+        title: Description
+        type: string
+        readOnly: true
+      pk:
+        title: ID
+        type: integer
+        enum:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+        readOnly: true
+  RecordCardRetrieveStatePublic:
+    required:
+      - record_state
+    type: object
+    properties:
+      normalized_record_id:
+        title: Normalized Record Id
+        type: string
+        readOnly: true
+        minLength: 1
+      record_state:
+        $ref: '#/definitions/RecordStatePublic'
+      created_at:
+        title: Creation date
+        type: string
+        format: date-time
+        readOnly: true
+      can_be_claimed:
+        title: Can be claimed
+        type: string
+        readOnly: true
+      text_es:
+        title: Text es
+        type: string
+        readOnly: true
+      text_en:
+        title: Text en
+        type: string
+        readOnly: true
+      text_ca:
+        title: Text ca
+        type: string
+        readOnly: true
+      close_cancel_date:
+        title: Close cancel date
+        type: string
+        readOnly: true
+      claim_record:
+        title: Claim record
+        type: string
+        readOnly: true
+      can_response_message:
+        title: Can response message
+        type: string
+        readOnly: true
+  RecordCardRetrievePublic:
+    required:
+      - average_close_days
+    type: object
+    properties:
+      incidenceId:
+        title: Incidenceid
+        type: string
+        readOnly: true
+      code:
+        title: Code
+        type: string
+        readOnly: true
+      stateId:
+        title: Stateid
+        type: string
+        readOnly: true
+      state:
+        title: State
+        type: string
+        readOnly: true
+      comments:
+        title: Comments
+        type: string
+        readOnly: true
+      transaction:
+        title: Transaction
+        type: string
+        readOnly: true
+      task:
+        title: Task
+        type: string
+        readOnly: true
+      characteristics:
+        title: Characteristics
+        type: string
+        readOnly: true
+      location:
+        title: Location
+        type: string
+        readOnly: true
+      pictures:
+        title: Pictures
+        type: string
+        readOnly: true
+      average_close_days:
+        title: Average close days
+        type: integer
+      close_cancel_date:
+        title: Close cancel date
+        type: string
+        readOnly: true
+  ClaimDescription:
+    required:
+      - description
+    type: object
+    properties:
+      description:
+        title: Description
+        type: string
+        minLength: 1
+      email:
+        title: Email
+        type: string
+        minLength: 1
+  ClaimResponse:
+    required:
+      - reference
+      - reason
+    type: object
+    properties:
+      reference:
+        title: Reference
+        type: string
+        minLength: 1
+      reason:
+        title: Reason
+        type: string
+        minLength: 1
+  InputChannelPublic:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      description:
+        title: Description
+        type: string
+        readOnly: true
+        minLength: 1
+  CitizenPublic:
+    title: Citizen
+    required:
+      - name
+      - first_surname
+      - dni
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      name:
+        title: Name
+        type: string
+        maxLength: 60
+        minLength: 1
+      first_surname:
+        title: First Surname
+        type: string
+        maxLength: 60
+        minLength: 1
+      second_surname:
+        title: Second Surname
+        type: string
+        maxLength: 60
+      sex:
+        title: Sex
+        type: string
+        enum:
+          - m
+          - f
+          - u
+      doc_type:
+        title: Document Type
+        type: integer
+        enum:
+          - 0
+          - 1
+          - 2
+      dni:
+        title: DNI
+        type: string
+        maxLength: 15
+        minLength: 1
+      birth_year:
+        title: Birth year
+        type: integer
+        maximum: 2021
+        minimum: 1900
+        x-nullable: true
+      district_id:
+        title: District id
+        type: integer
+        x-nullable: true
+      language:
+        title: Language
+        type: string
+        enum:
+          - es
+          - en
+          - ca
+  SocialEntityPublic:
+    title: Social entity
+    required:
+      - social_reason
+      - cif
+      - contact
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      social_reason:
+        title: Social Reason
+        type: string
+        maxLength: 60
+        minLength: 1
+      cif:
+        title: CIF
+        type: string
+        maxLength: 15
+        minLength: 1
+      contact:
+        title: Contact
+        type: string
+        maxLength: 120
+        minLength: 1
+      district_id:
+        title: District id
+        type: integer
+        x-nullable: true
+      language:
+        title: Language
+        type: string
+        enum:
+          - es
+          - en
+          - ca
+  RecordCardResponsePublic:
+    title: Record card response
+    required:
+      - address_mobile_email
+      - response_channel_id
+    type: object
+    properties:
+      address_mobile_email:
+        title: Address mobile email
+        type: string
+        minLength: 1
+      response_channel_id:
+        title: Response channel id
+        type: integer
+      postal_code:
+        title: Postal code
+        type: string
+        maxLength: 10
+      language:
+        title: Language
+        type: string
+        enum:
+          - es
+          - en
+          - ca
+      record_card_id:
+        title: Record card id
+        type: integer
+        x-nullable: true
+  UbicationMobile:
+    title: Ubication
+    required:
+      - number
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      geocode_validation:
+        title: Geocode Validation
+        type: string
+        maxLength: 60
+      street:
+        title: Street
+        type: string
+        maxLength: 120
+      number:
+        title: Number
+        type: string
+      stair:
+        title: Stair
+        type: string
+        maxLength: 20
+      floor:
+        title: Floor
+        type: string
+        maxLength: 20
+      door:
+        title: Door
+        type: string
+        maxLength: 20
+      latitude:
+        title: Latitude
+        type: string
+        maxLength: 20
+        x-nullable: true
+      longitude:
+        title: Longitude
+        type: string
+        maxLength: 20
+        x-nullable: true
+      district_id:
+        title: District id
+        type: integer
+        x-nullable: true
+      neighborhood:
+        title: Neighborhood
+        type: string
+        maxLength: 80
+      neighborhood_b:
+        title: Neighborhood B
+        type: string
+        maxLength: 80
+      neighborhood_id:
+        title: Neighborhood ID
+        type: string
+        maxLength: 10
+      statistical_sector:
+        title: Statistical Sector
+        type: string
+        maxLength: 80
+  Base64Attachment:
+    required:
+      - filename
+      - data
+    type: object
+    properties:
+      filename:
+        title: Filename
+        type: string
+        maxLength: 50
+        minLength: 1
+      data:
+        title: Data
+        type: string
+        minLength: 1
+  RecordCardMobileCreatePublic:
+    required:
+      - description
+      - element_detail_id
+      - input_channel_id
+      - applicant_type_id
+      - ubication
+    type: object
+    properties:
+      description:
+        title: Description
+        type: string
+        minLength: 1
+      element_detail_id:
+        title: Element detail id
+        type: integer
+      input_channel_id:
+        title: Input channel id
+        type: integer
+      applicant_type_id:
+        title: Applicant type id
+        type: integer
+      citizen:
+        $ref: '#/definitions/CitizenPublic'
+      social_entity:
+        $ref: '#/definitions/SocialEntityPublic'
+      features:
+        type: array
+        items:
+          $ref: '#/definitions/RecordFeatureCreatePublic'
+      record_card_response:
+        $ref: '#/definitions/RecordCardResponsePublic'
+      ubication:
+        $ref: '#/definitions/UbicationMobile'
+      pictures:
+        type: array
+        items:
+          $ref: '#/definitions/Base64Attachment'
+      organization:
+        title: Organization
+        type: string
+        maxLength: 100
+  ParameterPublic:
+    type: object
+    properties:
+      parameter:
+        title: Parameter
+        type: string
+        readOnly: true
+        minLength: 1
+      valor:
+        title: Valor
+        type: string
+        readOnly: true
+        minLength: 1
+      description:
+        title: Description
+        type: string
+        readOnly: true
+        minLength: 1
+      name:
+        title: Name
+        type: string
+        readOnly: true
+        minLength: 1
+  RecordTypePublic:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      description:
+        title: Description
+        type: string
+        readOnly: true
+        minLength: 1
+  RecordCardSSIPublic:
+    required:
+      - area
+      - area_id
+      - element
+      - element_id
+      - element_detail
+      - record_state
+      - record_type
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      created_at:
+        title: Creation date
+        type: string
+        format: date-time
+        readOnly: true
+      area:
+        title: Area
+        type: string
+        minLength: 1
+      area_id:
+        title: Area id
+        type: integer
+      element:
+        title: Element
+        type: string
+        minLength: 1
+      element_id:
+        title: Element id
+        type: integer
+      element_detail:
+        title: Element detail
+        type: string
+        minLength: 1
+      element_detail_id:
+        title: Element detail id
+        type: string
+        readOnly: true
+      normalized_record_id:
+        title: Normalized Record Id
+        type: string
+        readOnly: true
+        minLength: 1
+      record_state:
+        title: Record state
+        type: string
+        minLength: 1
+      record_state_id:
+        title: Record state id
+        type: string
+        readOnly: true
+      record_type:
+        title: Record type
+        type: string
+        minLength: 1
+      record_type_id:
+        title: Record type id
+        type: string
+        readOnly: true
+      ubication:
+        title: Ubication
+        type: string
+        readOnly: true
+      start_date_process:
+        title: Start Date Process
+        type: string
+        format: date
+        readOnly: true
+      closing_date:
+        title: Closing date
+        type: string
+        format: date-time
+        readOnly: true
+  QuestionReason:
+    required:
+      - text
+    type: object
+    properties:
+      text:
+        title: Text
+        type: string
+        minLength: 1
+      pk:
+        title: ID
+        type: integer
+        readOnly: true
+  Question:
+    required:
+      - text
+      - reasons
+    type: object
+    properties:
+      text:
+        title: Text
+        type: string
+        minLength: 1
+      pk:
+        title: ID
+        type: integer
+        readOnly: true
+      reasons:
+        type: array
+        items:
+          $ref: '#/definitions/QuestionReason'
+  SurveyOptions:
+    required:
+      - questions
+      - ready
+      - closed
+      - can_answer
+    type: object
+    properties:
+      questions:
+        type: array
+        items:
+          $ref: '#/definitions/Question'
+      ready:
+        title: Ready
+        description: If true, the survey has been rated.
+        type: boolean
+      closed:
+        title: Closed
+        description: If true, the record card is closed and ready to answer.
+        type: boolean
+      can_answer:
+        title: Can answer
+        description: If true, the survey can be answered.
+        type: boolean
+      min_for_reason:
+        title: Min for reason
+        type: integer
+        default: 4
+  QuestionAnswer:
+    required:
+      - question
+      - value
+    type: object
+    properties:
+      question:
+        title: Question
+        type: integer
+      value:
+        title: Value
+        type: integer
+        maximum: 10
+        minimum: 0
+      reason:
+        title: Reason
+        type: integer
+        x-nullable: true

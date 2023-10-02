@@ -1,0 +1,400 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:25+0100\n"
+"PO-Revision-Date: 2020-03-16 16:31-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: data_checks/response_channels.py:10 models.py:323
+msgid "Email"
+msgstr "Email"
+
+#: data_checks/response_channels.py:11 models.py:325
+msgid "Letter"
+msgstr "Carta"
+
+#: data_checks/response_channels.py:12 models.py:324
+msgid "Sms"
+msgstr "Sms"
+
+#: data_checks/response_channels.py:13 models.py:326
+msgid "None"
+msgstr "Ninguno"
+
+#: data_checks/response_channels.py:14 models.py:328
+msgid "Telephone"
+msgstr "Teléfono"
+
+#: data_checks/response_channels.py:15 models.py:327
+msgid "Immediate"
+msgstr "Inmediato"
+
+#: filters.py:12
+msgid "Created at gte"
+msgstr "Fecha de creación mayor o igual que"
+
+#: filters.py:13
+msgid "Created at lte"
+msgstr "Fecha de creación menor o igual que"
+
+#: filters.py:14
+msgid "Experiation date gte"
+msgstr "Fecha de expiración mayor o igual que"
+
+#: filters.py:15
+msgid "Experiation date lte"
+msgstr "Fecha de expiración menor o igual que"
+
+#: mixins.py:7
+msgid "Active previous register exists"
+msgstr "Ya existe un registro activo previo"
+
+#: mixins.py:59
+msgid "Enabled previous register exists"
+msgstr "Ya existe un registro habilitado previo"
+
+#: models.py:19
+msgid "User ID"
+msgstr "User ID"
+
+#: models.py:24
+msgid "Creation date"
+msgstr "Fecha de creación"
+
+#: models.py:25
+msgid "Last update"
+msgstr "Última actualización"
+
+#: models.py:36 models.py:147 models.py:230 models.py:251 models.py:264
+#: models.py:360 models.py:463 models.py:494 models.py:543 models.py:705
+#: models.py:738
+msgid "Description"
+msgstr "Descripción"
+
+#: models.py:52
+msgid "Incidència"
+msgstr "Incidencia"
+
+#: models.py:53
+msgid "Queixa"
+msgstr "Queja"
+
+#: models.py:54
+msgid "Suggeriment"
+msgstr "Sugerimento"
+
+#: models.py:55
+msgid "Agraïment"
+msgstr "Agradecimiento"
+
+#: models.py:56
+msgid "Petició de servei"
+msgstr "Petición de servicio"
+
+#: models.py:57
+msgid "Consulta"
+msgstr "Consulta"
+
+#: models.py:70
+msgid "TRI"
+msgstr "TRI"
+
+#: models.py:71
+msgid "TRT"
+msgstr "TRT"
+
+#: models.py:83
+msgid "description"
+msgstr "Descripción"
+
+#: models.py:123
+msgid "Pending to be validated"
+msgstr "Pendiente de validación"
+
+#: models.py:124
+msgid "Planned"
+msgstr "En planificación"
+
+#: models.py:125
+msgid "In solution"
+msgstr "En resolución"
+
+#: models.py:126
+msgid "Pending to give a reply"
+msgstr "Pendiente de respuesta"
+
+#: models.py:127
+msgid "Closed"
+msgstr "Cerrada"
+
+#: models.py:128
+msgid "Canceled"
+msgstr "Anulada"
+
+#: models.py:129
+msgid "Not processed"
+msgstr "No tramitada"
+
+#: models.py:130
+#| msgid "Externaly processed"
+msgid "Externally processed"
+msgstr "Tramitación externa"
+
+#: models.py:131
+msgid "External returned"
+msgstr "Devuelta de tramitación externa"
+
+#: models.py:146 models.py:330 models.py:629 models.py:691 models.py:725
+#: models.py:737
+msgid "ID"
+msgstr "ID"
+
+#: models.py:148
+msgid "Acronym"
+msgstr "Siglas"
+
+#: models.py:149 models.py:244 models.py:332 models.py:464 models.py:518
+#: models.py:570 models.py:592
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: models.py:231
+msgid "Reason type"
+msgstr "Tipo de motivo"
+
+#: models.py:263
+msgid "Title"
+msgstr "Título"
+
+#: models.py:265
+msgid "Expiration date"
+msgstr "Fecha de expiración"
+
+#: models.py:266
+msgid "Important"
+msgstr "Importante"
+
+#: models.py:267
+msgid "Seen by"
+msgstr "Visto por"
+
+#: models.py:268
+msgid "Xaloc"
+msgstr "Xaloc"
+
+#: models.py:282
+msgid "Visible for all the profiles"
+msgstr "Visible para todos los perfiles"
+
+#: models.py:283
+msgid "Visible for the profiles responsible for the theme's area"
+msgstr "Visible para los perfiles respnsables de las temáticas del área"
+
+#: models.py:284
+msgid ""
+"Visible for the profiles responsible for the theme's area and a set of "
+"profiles for a concrete areas"
+msgstr ""
+"Visible para los perfiles responsables de las temáticas del área y un "
+"conjunto de perfiles para un área concreta"
+
+#: models.py:297
+msgid "Visibility options"
+msgstr "Opciones de visibilidad"
+
+#: models.py:399
+msgid "Others"
+msgstr "Otros"
+
+#: models.py:400
+msgid "Record card create"
+msgstr "Ficha creada"
+
+#: models.py:401
+msgid "Management"
+msgstr "Administración"
+
+#: models.py:402
+msgid "Support"
+msgstr "Soporte"
+
+#: models.py:403
+msgid "Records"
+msgstr "Fichas"
+
+#: models.py:404
+msgid "Web"
+msgstr "Web"
+
+#: models.py:405
+msgid "Integrations"
+msgstr "Integraciones"
+
+#: models.py:406
+msgid "Reports"
+msgstr "Informes"
+
+#: models.py:407
+msgid "Deprecated"
+msgstr "Deprecado"
+
+#: models.py:408
+msgid "Templates"
+msgstr "Plantillas"
+
+#: models.py:465
+msgid "Description hash"
+msgstr "Hash de la descripción"
+
+#: models.py:498
+msgid "Allow citizen ND"
+msgstr "Permite ciudadano ND"
+
+#: models.py:499
+msgid "Requires Communication Media"
+msgstr "Requiere medio de comunicación"
+
+#: models.py:500
+msgid "Requires register code"
+msgstr "Requiere código de registro"
+
+#: models.py:545
+msgid "Send Response"
+msgstr "Enviar respuesta"
+
+#: models.py:617
+msgid "Closed directly"
+msgstr "Ficha cerrada directamente"
+
+#: models.py:618
+msgid "Direct External Processing"
+msgstr "Tramitación externa directamente"
+
+#: models.py:619
+msgid "Planning, Resolution, Response"
+msgstr "Planificación, Resolución, Respuesta"
+
+#: models.py:620
+msgid "Resolution, Response"
+msgstr "Resolución, Respuesta"
+
+#: models.py:621
+msgid "Evaluation, Resolution, Response"
+msgstr "Evaluación, Resolución, Respuesta"
+
+#: models.py:622
+msgid "Response"
+msgstr "Respuesta"
+
+#: models.py:623
+msgid "External Processing"
+msgstr "Tramitación externa"
+
+#: models.py:624
+msgid "External Processing + Automatic Email"
+msgstr "Tramitación externa + email automático"
+
+#: models.py:625
+msgid "Resolution, External Processing"
+msgstr "Resolución, tramitación externa"
+
+#: models.py:626
+msgid "Resolution, External Processing + Automatic Email"
+msgstr "Resolución, tramitación externa + email automático"
+
+#: models.py:692
+msgid "Name"
+msgstr "Name"
+
+#: models.py:693
+msgid "Allow derivation"
+msgstr "Permite derivación"
+
+#: models.py:726
+msgid "Street Code"
+msgstr "Código calle"
+
+#: models.py:727
+msgid "Number"
+msgstr "Número"
+
+#: models.py:728
+msgid "Service type"
+msgstr "Tipo servicio"
+
+#: models.py:729
+msgid "Service description"
+msgstr "Descripción del servicio"
+
+#: models.py:730
+msgid "Enterprise name"
+msgstr "Nombre empresa"
+
+#: serializers.py:39
+msgid ""
+"The description must be unique and there is another ApplicantType with the "
+"same."
+msgstr ""
+"La descripción debe ser única y hay otro tipo de solicitante con la misma."
+
+#: serializers.py:56
+msgid ""
+"The description must be unique and there is another ResponseType with the "
+"same."
+msgstr ""
+"La descripción debe ser única y hay otro tipo de respuesta con la misma."
+
+#: serializers.py:82 serializers.py:111
+msgid ""
+"The description must be unique and there is another RecordType with the "
+"same."
+msgstr "La descripción debe ser única y hay otro tipo de ficha con la misma."
+
+#: serializers.py:139
+msgid "The selected Media Type does not exists"
+msgstr "El tipo de medio seleccionado no existe"
+
+#: serializers.py:149 serializers.py:256
+msgid ""
+"The description must be unique and there is another CommunicationMedia with "
+"the same."
+msgstr ""
+"La descripción debe ser única y hay otro medio de comunicación con la misma."
+
+#: serializers.py:400
+msgid ""
+"The description must be unique and there is another Support with the same."
+msgstr "La descripción debe ser única y hay otro soporte con la misma."
+
+#: serializers.py:477
+msgid ""
+"The description must be unique and there is another ResolutionType with the "
+"same."
+msgstr ""
+"La descripción debe ser única y hay otro tipo de resolución con la misma."
+
+#~ msgid "Won't be done"
+#~ msgstr "No se puede hacer"
+
+#~ msgid "In planning"
+#~ msgstr "En planificación"
+
+#~ msgid "Pending answer"
+#~ msgstr "Pendiente de respuesta"
+
+#~ msgid "Sign Up"
+#~ msgstr "Registro"

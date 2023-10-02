@@ -1,0 +1,622 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:29+0100\n"
+"PO-Revision-Date: 2020-01-29 12:02-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: actions/theme_delete.py:55
+msgid ""
+"ElementDetail changed from {} to {} because of the deletion of the previous "
+"one."
+msgstr "El detall ha canviat de {} a {} degut a l'esborrat del primer."
+
+#: filters.py:16
+msgid "Created at init"
+msgstr "Data creació inici"
+
+#: filters.py:18
+msgid "Created at end"
+msgstr "Data creació final"
+
+#: models.py:54 models.py:447 models.py:575
+msgid "Description"
+msgstr "Descripció"
+
+#: models.py:55
+msgid "Area Code"
+msgstr "Codi d'Àrea"
+
+#: models.py:57
+msgid "Query tree Area"
+msgstr "Consulta l'arbre de l'àrea"
+
+#: models.py:58 models.py:97
+msgid "Icon Name"
+msgstr "Nom de l'icona"
+
+#: models.py:59
+msgid "Favourite"
+msgstr "Favorit"
+
+#: models.py:94
+msgid "Element Code"
+msgstr "Codi Element"
+
+#: models.py:96
+msgid "Favorite"
+msgstr "Favorit"
+
+#: models.py:137
+msgid "Last update"
+msgstr "Darrera actualització"
+
+#: models.py:141
+msgid "Process"
+msgstr "Pròces"
+
+#: models.py:143
+msgid "Detail code"
+msgstr "Codi detall"
+
+#: models.py:145
+msgid "Deletion date"
+msgstr "Data d'eliminació"
+
+#: models.py:149
+msgid "Description shown on PDA"
+msgstr "Descripció a mostrar a la PDA"
+
+#: models.py:151
+msgid "Description shown on APP"
+msgstr "Descripció a mostrar a la APP"
+
+#: models.py:157
+msgid ""
+"Maximum time, expressed in hours, between the creation time of two record "
+"cards for considering them similar"
+msgstr ""
+"Temps màxim, expressant en hores, entre el temps de creació de dues fitxes "
+"per considerar-les similars"
+
+#: models.py:161
+msgid ""
+"Maximum distance, expressed in meters, between the ubications of two record "
+"cards for considering them similar."
+msgstr ""
+"Distància màxima, expressada en metres, entre les ubicacions de dues fitxes "
+"per considerar-les similars."
+
+#: models.py:165
+msgid ""
+"Maximum distance starting from the record card ubication, expressed in "
+"meters, in which an operator can resolve the task using the IRIS smartphone "
+"app."
+msgstr ""
+"Distància màxima començant des de la ubicació de la fitxa, expressada en "
+"metres, a la que un operador pot resoldre la tasca utilitzant la aplicació "
+"mòbil d'IRIS."
+
+#: models.py:169
+msgid ""
+"Maximum hours in which the town council commits to resolve an issues "
+"belonging this theme."
+msgstr ""
+"Màxim d'hores en que l'ajuntament es compromet a resoldre els assumptes "
+"relacionats en aquesta temàtica."
+
+#: models.py:171
+msgid "Record type"
+msgstr "Tipus de fitxa"
+
+#: models.py:172
+msgid "Limit this detail to records of this type."
+msgstr "Limita la temàtica a fitxes d'aquest tipus"
+
+#: models.py:175
+msgid "Autovalidate records"
+msgstr "Fitxes autovalidables"
+
+#: models.py:176
+msgid ""
+"If checked, the record cards will be validated automatically on its creation."
+msgstr ""
+"Si està marcat, les fitxes es validaran automàticament durant la seva "
+"creació."
+
+#: models.py:179
+msgid "Requires Citizen"
+msgstr "Requereix ciutadà"
+
+#: models.py:180
+msgid ""
+"If checked, the citizen data will be required for creating a record card."
+msgstr ""
+"Si està marcat, les dades del ciutadà són obligatòries per a poder crear una "
+"fitxa."
+
+#: models.py:183
+msgid "Requires Ubication"
+msgstr "Requereix Ubicació"
+
+#: models.py:184
+msgid ""
+"If checked, an address will be required as ubication for creating a record "
+"card."
+msgstr ""
+"Si està marcat, la ubicació serà obligatòria per a poder crear una fitxa."
+
+#: models.py:188
+msgid "Requires full address"
+msgstr "Requereix l'adreça completa"
+
+#: models.py:189
+msgid ""
+"If checked, a full adress with floor and door will be required as ubication "
+"for creating a record card."
+msgstr ""
+"Si està marcat, la adreça completa amb pis i porta serà obligatòria per a "
+"poder crear una fitxa."
+
+#: models.py:193
+msgid "Requires District Ubication"
+msgstr "Requereix districte a la ubicació"
+
+#: models.py:194
+msgid ""
+"If checked, a district will be required as ubication for creating a record "
+"card."
+msgstr ""
+"Si està marcat, el districte a la ubicació serà obligatòri per a poder crear "
+"una fitxa."
+
+#: models.py:197
+msgid "Aggrupation first"
+msgstr "Agrupació primer"
+
+#: models.py:198
+msgid ""
+"If checked, the aggrupation data will be selected as default on the website."
+msgstr ""
+"Si està marcat, les dades de l'agrupació sortiran seleccionades per defecte "
+"a la web."
+
+#: models.py:201
+msgid "Immediate response"
+msgstr "Resposta Inmediata"
+
+#: models.py:202
+msgid "If checked, the response to the record will be required on its creation"
+msgstr ""
+"Si està marcada, la resposta de la fitxa serà requerida a la seva creació"
+
+#: models.py:205
+msgid "First instance response"
+msgstr "Resposta en primera instància"
+
+#: models.py:206
+msgid ""
+"If checked, a first instance response will be given for the record cards "
+"belonging to this theme."
+msgstr ""
+"Si està marcat, una resposta en primera instància serà donada a les fitxes "
+"que pertanyen a aquesta temàtica."
+
+#: models.py:209
+msgid "Requires Appointment"
+msgstr "Requereix cita"
+
+#: models.py:210
+msgid ""
+"If checked, an appointment will be required for creating records for this "
+"theme."
+msgstr ""
+"Si està marcada, serà necessària una cita per a crear fitxes d'aquesta "
+"temàtica."
+
+#: models.py:213
+msgid "Allow theme change on resolution"
+msgstr "Permet canvi de temàtica en la resolució"
+
+#: models.py:214
+msgid ""
+"If checked, the records belonging to this theme could change its theme on "
+"resolution."
+msgstr ""
+"Si està marcat, les fitxes incloses en aquest temàtica poden canviar de "
+"temàtica durant la resolució."
+
+#: models.py:217
+msgid "Allow reassignment even if validated"
+msgstr "Permet reassignació inclús si està validada"
+
+#: models.py:218
+msgid "If checked, the record could be reassigned even if validated."
+msgstr "Si està marcat, la fitxa pot ser reassignada inclús si està validada."
+
+#: models.py:221
+msgid "Allow claims on SLA time"
+msgstr "Permet reclamacions dins el temps SLA"
+
+#: models.py:222
+msgid "If checked, claims could be created on the SLA time."
+msgstr "Si està marcada, es podran crear reclamacions dins el temps d'SLA."
+
+#: models.py:225
+msgid "Created by external system"
+msgstr "Creada per sistema extern"
+
+#: models.py:226
+msgid ""
+"If true, the record cards of this theme must be created by external systems."
+msgstr ""
+"Si està marcat, les fitxes d'aquesta temàtica han d'estar creada per un "
+"sistema extern."
+
+#: models.py:229
+msgid "Custom answer"
+msgstr "Resposta personalitzada"
+
+#: models.py:230
+msgid ""
+"If true, the operator must write a custom answer for each record type of the "
+"theme."
+msgstr ""
+"Si està marcada, l'operador ha d'escriure una resposta personalitzada per a "
+"cada tipus de fitxa de la temàtica"
+
+#: models.py:233
+msgid "Show PDA resolution time"
+msgstr "Mostra el temps de resolució al PDA"
+
+#: models.py:236
+msgid "Allow multiderivation on reassignment"
+msgstr "Permet multiderivació en la reassignació"
+
+#: models.py:242
+msgid ""
+"Max number of days for validating a record card, modify the theme or "
+"reassign outside its environment."
+msgstr ""
+"Nombre màxim de dies per validar una fitxa, modificar la temàtica o "
+"reassignar-la fora de l'àmbit"
+
+#: models.py:246
+msgid "Publication date"
+msgstr "Data de publicació"
+
+#: models.py:252
+msgid "Protocol ID"
+msgstr "Id de protocol"
+
+#: models.py:253
+msgid "Itaca ID for the desired protocol."
+msgstr "ID del protocol d'Itaca"
+
+#: models.py:260
+msgid "Show on Open Data"
+msgstr "Mostra al portal Open Data"
+
+#: models.py:261
+msgid "Records from this theme could be shown on Open Data portal."
+msgstr "Les fitxes d'aquesta temàtica poden ser mostradas al poral Open Data"
+
+#: models.py:262 models.py:272
+msgid "Location on Open Data"
+msgstr "Localització al portal Open Data"
+
+#: models.py:263
+msgid "Records will shown its location on Open Data portal."
+msgstr "Les fitxes mostraran la seva localització al portal Open Data"
+
+#: models.py:266
+msgid "Sensible Location on Open Data (Only census section)"
+msgstr "Localitzacions sensibles al portal Open Data (només cens)"
+
+#: models.py:267
+msgid "Records will shown sensible locations on Open Data portal."
+msgstr "Les fitxes mostraran localitzacions sensibles al portal Open Data"
+
+#: models.py:270
+msgid "Show on SSI"
+msgstr "Mostra a SSI"
+
+#: models.py:271
+msgid "Records from this theme could be shown on SSI."
+msgstr "Les fitxes d'aquesta temàtica es podrien mostrar a SSI"
+
+#: models.py:273
+msgid "Records will shown its location on SSI."
+msgstr "Les fitxes mostraran la seva localització a SSI"
+
+#: models.py:276
+msgid "Sensible Location on SSI (Only census section)"
+msgstr "Localitzacions sensibles a SSI (només a la secció del cens)"
+
+#: models.py:277
+msgid "Records will shown sensible locations on SSI."
+msgstr "Mostrarà localitzacions sensibles a SSI"
+
+#: models.py:279
+msgid "Head text"
+msgstr "Text de capçalera"
+
+#: models.py:280
+msgid "Footer text"
+msgstr "Text del footer"
+
+#: models.py:281
+msgid "Links"
+msgstr "Enllaços"
+
+#: models.py:282
+msgid "GDPR"
+msgstr "GDPR"
+
+#: models.py:287
+msgid "Validate and manage by sending the card to an external service"
+msgstr "Validar y enviar una fitxa amb un servei extern"
+
+#: models.py:290
+msgid "Active"
+msgstr "Actiu"
+
+#: models.py:291
+msgid "If checked, the theme can be used in RecordCard creation"
+msgstr "Si està marcat, la temàtica es pot utilitzar en l'alta de fitxes"
+
+#: models.py:292
+msgid "Activation Date"
+msgstr "Data d'activació"
+
+#: models.py:293
+msgid "Date from which the theme will be active"
+msgstr "Data a partir de la que la temàtica estarà activa"
+
+#: models.py:294
+msgid "Visible"
+msgstr "Visible"
+
+#: models.py:295
+msgid "If checked, the theme can be shown in theme tree"
+msgstr "Si està marcat, la temàtica es pot mostrar a l'arbre de temàtiques"
+
+#: models.py:296
+msgid "Visible Date"
+msgstr "Data de visibilitat"
+
+#: models.py:297
+msgid "Date from which the theme will be visible"
+msgstr "Data a partir de la que la temàtica serà visible"
+
+#: models.py:298
+msgid "Average Close Days"
+msgstr "Mitjà de dies de tancament"
+
+#: models.py:299
+msgid ""
+"Average of days to close records of this theme.Null if it's not calculated"
+msgstr ""
+"Mitjà de dies per tancar les fitxes d'aquesta temàtica. Nul si no està "
+"calculat"
+
+#: models.py:302
+msgid "Pending communications notifications"
+msgstr "Notificació de fitxes amb comunicacions pendents"
+
+#: models.py:303
+msgid "Send reminder of pending notifications on communications"
+msgstr "Enviar notificació de fitxes amb comunicacions pendents"
+
+#: models.py:304
+msgid "Allow english language"
+msgstr "Permetre idioma anglès"
+
+#: models.py:305
+msgid "If checked, allows to select english as the language of the response"
+msgstr ""
+"Si està marcat, permet seleccionar l'anglès com a idioma de la resposta de "
+"les fitxes"
+
+#: models.py:354
+msgid "If inmmediate response is True, this field is required!"
+msgstr "Les temàtiques de resposta immediata sempre han de tenir un protocol"
+
+#: models.py:413 models.py:448 models.py:479 models.py:500 models.py:524
+#: models.py:551 models.py:590 models.py:616 models.py:649
+msgid "Enabled"
+msgstr "Habilitat"
+
+#: models.py:480
+msgid "Favorited"
+msgstr "Favorit"
+
+#: models.py:499 models.py:523 models.py:550 models.py:589 models.py:666
+msgid "Group"
+msgstr "Grup"
+
+#: models.py:521 models.py:546 models.py:585 models.py:614 models.py:647
+#: models.py:665
+msgid "Element Detail"
+msgstr "Temàtica"
+
+#: models.py:522 models.py:547 models.py:587
+msgid "Record State"
+msgstr "Estat de la fitxa"
+
+#: models.py:525
+msgid "Derivation Type"
+msgstr "Tipus de derivació"
+
+#: models.py:549
+msgid "District"
+msgstr "Districte"
+
+#: models.py:583
+msgid "Zone"
+msgstr "Zona"
+
+#: models.py:584
+msgid "Polygon Code"
+msgstr "Codi polígon"
+
+#: models.py:615
+msgid "Response Channel"
+msgstr "Canal de Resposta"
+
+#: models.py:617
+msgid "Application"
+msgstr "Aplicació"
+
+#: models.py:631
+msgid "ResponseChannel None is not valid for a no immediate response theme"
+msgstr ""
+"El canal de Resposta 'CAP' no és vàlid per a una temàtica sense resposta "
+"immediata"
+
+#: models.py:648
+msgid "Theme Group"
+msgstr "Grup temàtic"
+
+#: models.py:681
+msgid "Only Open RecordCards"
+msgstr "Només fitxes obertes"
+
+#: models.py:682
+msgid "Process finished"
+msgstr "Pròces finalitzat"
+
+#: models.py:683
+msgid "Shows if RecordCard details reassignations has finished correctly"
+msgstr ""
+"Mostra si la reassignació del detall de les fitxes ha finalitzat correctament"
+
+#: serializers.py:27
+msgid ""
+"The description must be unique and there is or was another theme group with "
+"the same."
+msgstr ""
+"Les descripcions han de ser úniques i ja existeix o va existir un altre grup "
+"temàtica amb la mateixa"
+
+#: serializers.py:46
+msgid ""
+"The description must be unique and there is or was another area with the "
+"same."
+msgstr ""
+"Les descripcions han de ser úniques i ja existeix o va existir un altra àrea "
+"amb la mateixa"
+
+#: serializers.py:58 serializers.py:116 serializers.py:137 serializers.py:170
+msgid "The selected element detail does not exists"
+msgstr "La temàtica seleccionada no existeix"
+
+#: serializers.py:71
+msgid "The selected area does not exists"
+msgstr "L'àrea seleccionada no existeix"
+
+#: serializers.py:84
+msgid ""
+"The description must be unique and there is or was another element with the "
+"same."
+msgstr ""
+"La descripcions ha de ser úniques i ja existeix o va existir un altre "
+"element amb la mateixa"
+
+#: serializers.py:121 serializers.py:147 serializers.py:178
+msgid "The selected record state does not exists"
+msgstr "L'estat de la fitxa seleccionat no existeix"
+
+#: serializers.py:126 serializers.py:152 serializers.py:174 serializers.py:183
+msgid "The selected group does not exists"
+msgstr "El group seleccionat no existeix"
+
+#: serializers.py:142
+msgid "The selected district does not exists"
+msgstr "El districte seleccionat no existeix"
+
+#: serializers.py:221 serializers.py:998
+msgid "The selected element does not exists"
+msgstr "El element seleccionat no existeix"
+
+#: serializers.py:224
+msgid "The selected record does not exists"
+msgstr "El tipus de fitxa seleccionat no existeix"
+
+#: serializers.py:228
+msgid "The selected external service does not exists"
+msgstr "El servei extern seleccionat no existe"
+
+#: serializers.py:270 serializers.py:1007
+msgid ""
+"The description must be unique and there is another detail with the same."
+msgstr ""
+"Les descripcions han de ser úniques i ja existeix un altre detall amb la "
+"mateixa."
+
+#: serializers.py:331
+msgid ""
+"The external service is only accepted for external management workflows."
+msgstr ""
+"Només es poden enviar a serveis externs les temàtiques amb processos de "
+"tramitació externa."
+
+#: serializers.py:354
+msgid "Polygon codes can not be repeated: {}"
+msgstr "Els codis de polígon no es poden repetir: {}"
+
+#: serializers.py:359
+msgid "All polygon derivations must be from the same zone: {}"
+msgstr "Totes les derivacions de polígon han de ser de la mateixa zona: {}"
+
+#: serializers.py:434
+msgid "If district derivations are set, this field must be set"
+msgstr "Si hi ha derivacions per districte, aquest camp es obligatori"
+
+#: serializers.py:832 serializers.py:837
+msgid ""
+"Theme can not be set to active because there is mandatory information missing"
+msgstr ""
+"La temàtica no es pot activar perquè hi ha informació obligatòria sense "
+"completar"
+
+#: serializers.py:967 serializers.py:971
+msgid "The selected ElementDetail does not exist or it's deleted"
+msgstr "La temàtica seleccionada no existeix o ha estat esborrada"
+
+#: serializers.py:983
+msgid "Deleted detail and Reasignation detail can not be the same"
+msgstr "L'element esborrat i l'element a reassignar no poden ser el mateix"
+
+#: views.py:225
+msgid "ElementDetail can not be deleted as it's used in an open RecordCard"
+msgstr ""
+"La temàtica no es pot eliminar perquè s'està utilitzant en, almenys, una "
+"fitxa oberta"
+
+#, fuzzy
+#~ msgid ""
+#~ "Theme can not be set to active because there are mandatory information "
+#~ "missing"
+#~ msgstr ""
+#~ "La temàtica no es pot activar perquè hi ha informació obligatòria sense "
+#~ "completar"
+
+#, fuzzy
+#~ msgid ""
+#~ "You have to set a derivation for all the existentdistricts at states {}"
+#~ msgstr "S'ha d'especificar una derivació per a cada districte existent"

@@ -1,0 +1,294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-18 10:48+0100\n"
+"PO-Revision-Date: 2020-03-02 11:51-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: filters.py:37
+msgid "Start date init"
+msgstr "Data d'inici inicial"
+
+#: filters.py:38
+msgid "Start date end"
+msgstr "Data d'inici final"
+
+#: filters.py:43
+msgid "Records with no ubication"
+msgstr "Fitxes sense ubicació"
+
+#: filters.py:44
+msgid "Via Type"
+msgstr "Tipus de via"
+
+#: filters.py:45 filters.py:46
+msgid "Neighborhood"
+msgstr "Barri"
+
+#: filters.py:47
+msgid "District"
+msgstr "Districte"
+
+#: filters.py:48
+msgid "Street"
+msgstr "Carrer"
+
+#: filters.py:49
+msgid "Number"
+msgstr "Número"
+
+#: record_card_texts.py:27
+msgid ""
+"The requested petition {} is closed and has a claim. The status of the "
+"petition corresponding to this claim is displayed."
+msgstr ""
+"La petició buscada {} està tancada i té una reclamació. Es mostra l'estat de "
+"la petició corresponent a aquesta reclamació."
+
+#: record_card_texts.py:31
+msgid "The record that you were looking for is closed."
+msgstr "La petició que estava cercant es troba tancada. "
+
+#: record_card_texts.py:35
+msgid ""
+"If you have not received any answer, you do not agree with its resolution or "
+"you want to provide new information or documentation you can fill in your "
+"request again by doing a Claim."
+msgstr ""
+"Si no ha rebut la resposta sol·licitada, no està d'acord amb la seva "
+"resolució, o vol aportar nova informació o documentació pot tornar a donar-"
+"la d'alta fent una reclamació."
+
+#: record_card_texts.py:43
+msgid "The record that you were looking for is not being processed."
+msgstr "La petició que estava cercant no s'està tramitant."
+
+#: record_card_texts.py:67 record_card_texts.py:76
+msgid ""
+"This request is still within the expected time of resolution {} day/s, and "
+"for this reason we cannot accept its claim. It will be solved shortly."
+msgstr ""
+"La seva petició està encara dins del procés de resolució que és de {} dia/"
+"es, i per aquest motiu no podem acceptar la seva reclamació. En breu estarà "
+"resolta."
+
+#: record_card_texts.py:86
+msgid ""
+"The petition has been canceled due to duplication or reiteration. The "
+"petition processed is {}. If desired, you can claim the processed petition."
+msgstr ""
+"La seva fitxa ha estat anul·lada per duplicitat o reiteració. La fitxa "
+"tramitada és la {}.\n"
+"Si voleu podeu reclamar la fitxa tramitada."
+
+#: record_card_texts.py:98
+msgid ""
+"This request has been closed for more than {} days. To contact again with us "
+"you are required to go back to the main menu and open a new request."
+msgstr ""
+"Aquesta petició s'ha tancat fa més de {} dies. Per contactar novament amb "
+"nosaltres cal tornar al menú principal i crear una nova petició."
+
+#: serializers.py:683
+msgid "The selected feature does not exist or is not enabled"
+msgstr "La característica seleccionada no existeix o no està habilitada"
+
+#: serializers.py:716
+msgid "Value is not one of the feature options"
+msgstr "El valor enviat no és una de les opcions de la característica"
+
+#: serializers.py:732 serializers.py:1031 serializers.py:1046
+#: serializers.py:1057
+msgid "The selected district does not exist"
+msgstr "El districte seleccionat no existeix"
+
+#: serializers.py:744
+msgid "Address is required with this Element Detail"
+msgstr "L'adreça és obligatòria amb aquesta temàtica"
+
+#: serializers.py:746
+msgid "Number is required with this Element Detail"
+msgstr "El número és obligatori amb aquesta temàtica"
+
+#: serializers.py:768
+msgid "Mandatory characteristics missing"
+msgstr "Falten característiques obligatòries"
+
+#: serializers.py:775 serializers.py:777
+msgid "Characteristics not related to the detail"
+msgstr "Característiques no relacionades amb el detall"
+
+#: serializers.py:793
+msgid "The number of attachments is greater than the number allowed"
+msgstr "El número de fitxers adjunts és major que el nombre permès"
+
+#: serializers.py:806
+msgid "Data is not a base64 valid string"
+msgstr "Les dades no són un fitxer en base64 vàlid"
+
+#: serializers.py:824 serializers.py:830 serializers.py:1104
+msgid "The selected element detail does not exist or is not enabled"
+msgstr "La temàtica seleccionada no existeix o no està habilitada"
+
+#: serializers.py:833
+msgid "The selected applicant does not exist or is not enabled"
+msgstr "El sol·licitant seleccionat no existeix o no està habilitat"
+
+#: serializers.py:873
+msgid "Transaction value is not valid"
+msgstr "El valor transacció no és vàlid"
+
+#: serializers.py:909
+msgid "An applicant must be set"
+msgstr "S'ha d'incloure un sol·licitant"
+
+#: serializers.py:919
+msgid "Only one applicant can be set"
+msgstr "Només s'ha d'incloure un sol·licitant"
+
+#: serializers.py:932
+msgid "If {} is set, {} must be set too"
+msgstr "Si {} s'ha emplenat, {} s'ha d'emplenar també"
+
+#: serializers.py:1075
+msgid "Street is required with this Element Detail"
+msgstr "L'adreça és obligatòria amb aquesta temàtica"
+
+#: serializers.py:1077
+msgid "Street2 is required with this Element Detail"
+msgstr "L'adreça és obligatòria amb aquesta temàtica"
+
+#: serializers.py:1083
+msgid "The selected RecordCard does not exist or is not enabled"
+msgstr "La fitxa seleccionada no existeix o no està habilitada"
+
+#: serializers.py:1087
+msgid "The selected response channel does not exist"
+msgstr "El canal de resposta seleccionat no existeix"
+
+#: serializers.py:1096
+msgid "This field is mandatory for giving an answer by Letter."
+msgstr "El camp és obligatori per a una resposta per carta"
+
+#: serializers.py:1107 serializers.py:1110
+msgid "The selected input channel does not exist or is not enabled"
+msgstr "El canal d'entrada seleccionat no existeix o no està habilitat"
+
+#: serializers.py:1150 serializers.py:1151
+msgid "Citizen and social entity can not be filled at the same time"
+msgstr "El ciutadà i l'entitat social no es poden completar a la vegada"
+
+#: serializers.py:1154 serializers.py:1155
+msgid "Citizen or social entity must be filled to create the RecordCard"
+msgstr ""
+"El ciutadà o l'entitat social s'han d'emplenar per a poder crear la fitxa"
+
+#: serializers.py:1183
+msgid ""
+"Please note that the incidence will be transferred to the responsible "
+"department.The deadline to resolve is {} hours. With this information we "
+"respond to your request"
+msgstr ""
+"Us informem que la incidència es traspassarà al departament\n"
+"responsable. El termini previst per resoldre-la és de {} hores. Amb aquesta\n"
+"informació donem per contestada la vostra petició."
+
+#: views.py:259 views.py:271
+msgid "Files can not be greather than {} KB"
+msgstr "Els fitxers no poden ser més grans que {} KB"
+
+#: views.py:282
+msgid "Applicant can not be used to create a record because it's blocked"
+msgstr ""
+"El sol·licitant no es pot utilitzar per a crear fitxes perquè està bloquejat"
+
+#: views.py:310
+msgid "The introduced location is wrong"
+msgstr "La localització introduïda és incorrecta"
+
+#: views.py:544
+msgid "The claim has been created sucesfully!"
+msgstr "La reclamació s'ha creat correctament!"
+
+#: views.py:806
+msgid ""
+"En aquest adreça la recollida es fa a través de contenidors. Consulteu la "
+"ubicació al telèfon del civisme 900 226 226 (trucada gratuita)"
+msgstr ""
+"En aquest adreça la recollida es fa a través de contenidors. Consulteu la "
+"ubicació al telèfon del civisme 900 226 226 (trucada gratuita)"
+
+#: views.py:813
+msgid "Podeu deixar els mobles vells davant de la porteria el {} de {}"
+msgstr "Podeu deixar els mobles vells davant de la porteria el {} de {}"
+
+#: views.py:816
+msgid ""
+"Cal trucar al telèfon gratuït del Civisme 900 226 226 per sol·licitar la "
+"recollida dels mobles i baixar-los els {}, a partir de les {} hores. La "
+"recollida es fará a l'endemà però nomès retiraran els mobles i trastos que "
+"s'hagin demanat a través d'aquest servei"
+msgstr ""
+"Cal trucar al telèfon gratuït del Civisme 900 226 226 per sol·licitar la "
+"recollida dels mobles i baixar-los els {}, a partir de les {} hores. La "
+"recollida es fará a l'endemà però nomès retiraran els mobles i trastos que "
+"s'hagin demanat a través d'aquest servei"
+
+#: views.py:825
+msgid "DILLUNS"
+msgstr "DILLUNS"
+
+#: views.py:827
+msgid "DIMARTS"
+msgstr "DIMARTS"
+
+#: views.py:829
+msgid "DIMECRES"
+msgstr "DIMECRES"
+
+#: views.py:831
+msgid "DIJOUS"
+msgstr "DIJOUS"
+
+#: views.py:833
+msgid "DIVENDRES"
+msgstr "DIVENDRES"
+
+#: views.py:835
+msgid "DISSABTE"
+msgstr "DISSABTE"
+
+#: views.py:837
+msgid "DIUMENGE"
+msgstr "DIUMENGE"
+
+#: views.py:864
+msgid "No Message matches the given query."
+msgstr "No existeix el missatge que correspongui a la consulta donada"
+
+#: views.py:867
+msgid "The messages was previously answered"
+msgstr "El missatge va ser respost amb anterioritat"
+
+#~ msgid "the record can be claimed"
+#~ msgstr "la fitxa pot ser reclamada"
+
+#~ msgid "the record can not be claimed yet"
+#~ msgstr "la fitxa no pot ser reclamada"
+
+#~ msgid "RecordState is {} and {}."
+#~ msgstr "L'estat de la fitxa és {} i {}."

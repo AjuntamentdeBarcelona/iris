@@ -1,0 +1,12 @@
+{% load i18n %}
+
+{% if show_header %}
+    {% trans "We sent you a communication because we need additional information for solving your request with locator"%} {{ record_card.normalized_record_id }}:
+{% endif %}
+
+{{text|safe}}
+
+{% if show_link and require_answer %}
+    {% trans "You can answer the message" %} {% trans "here" %}: {{answer_url}}
+{% endif %}
+{{ signature|safe }}

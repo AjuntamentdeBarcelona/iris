@@ -1,0 +1,1949 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-27 09:52+0200\n"
+"PO-Revision-Date: 2020-03-16 17:55-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: base_views.py:83 base_views.py:225
+msgid "You don't have permissions to do this actions"
+msgstr "No tens permissos per a realitzar aquesta acció"
+
+#: base_views.py:267 mixins.py:245 views.py:765 views.py:2303
+msgid "Post data are invalid"
+msgstr "Les dades del post són invàlides"
+
+#: filters.py:71
+msgid "Applicant Name"
+msgstr "Nom del sol·licitant"
+
+#: filters.py:76
+msgid "Applicant Surname"
+msgstr "Cognom del sol·licitant"
+
+#: filters.py:81
+msgid "Applicant Second Surname"
+msgstr "Segon cognom del sol·licitant"
+
+#: filters.py:84
+msgid "Applicant Social Reason"
+msgstr "Raó social del sol·licitant"
+
+#: filters.py:90
+msgid "Applicant DNI"
+msgstr "DNI Sol·licitant"
+
+#: filters.py:95
+msgid "Applicant CIF"
+msgstr "CIF Sol·licitant"
+
+#: filters.py:98
+msgid "Applicant Address Response"
+msgstr "Adreça de resposta del sol·licitant"
+
+#: filters.py:100
+msgid "Applicant Phone Response"
+msgstr "Telèfon de resposta del sol·licitant"
+
+#: filters.py:102
+msgid "Applicant Email Response"
+msgstr "Email de resposta del sol·licitant"
+
+#: filters.py:105
+msgid "Created at init"
+msgstr "Inici data de creació"
+
+#: filters.py:106
+msgid "Created at end"
+msgstr "Fi data de creació"
+
+#: filters.py:107
+msgid "Closing date init"
+msgstr "Inici data de tancament"
+
+#: filters.py:108
+msgid "Closing date end"
+msgstr "Fi data de tancament"
+
+#: filters.py:109
+msgid "Ans limit date at init"
+msgstr "Inici data límit ans"
+
+#: filters.py:110
+msgid "Ans limit date at end"
+msgstr "Fi data límit ans"
+
+#: filters.py:113 filters.py:116
+msgid "Responsible Profile Description"
+msgstr "Descripció perfil responsable"
+
+#: filters.py:118
+msgid "Creation Profile"
+msgstr "Perfil creador"
+
+#: filters.py:120
+msgid "Incharge Profile"
+msgstr "Perfil encarregat"
+
+#: filters.py:122
+msgid "Advanced Responsible Profile"
+msgstr "Perfil responsable avançat"
+
+#: filters.py:126
+msgid "User id"
+msgstr "Identificador usuari"
+
+#: filters.py:127
+msgid "Normalized record id contains"
+msgstr "Codi fitxa conte"
+
+#: filters.py:140 models.py:66 serializers.py:1909
+msgid "Neighborhood"
+msgstr "Barri"
+
+#: filters.py:144
+msgid "Create operator"
+msgstr "Operador creació"
+
+#: filters.py:145
+msgid "Validate operator"
+msgstr "Operador validació"
+
+#: filters.py:146
+msgid "Plan operator"
+msgstr "Operador planificació"
+
+#: filters.py:147
+msgid "Resolute operator"
+msgstr "Operador resolució"
+
+#: filters.py:148
+msgid "Close operator"
+msgstr "Operador Tancament"
+
+#: filters.py:152
+msgid "Ariadna Record"
+msgstr "Registre Ariadna"
+
+#: filters.py:393
+msgid "Applicant Identifier"
+msgstr "Identificador del sol·licitant"
+
+#: filters.py:416 filters.py:417 models.py:214
+msgid "DNI"
+msgstr "DNI"
+
+#: filters.py:418 models.py:206
+msgid "Name"
+msgstr "Nom"
+
+#: filters.py:419 models.py:207
+msgid "First Surname"
+msgstr "Primer cognom"
+
+#: filters.py:421 models.py:208
+msgid "Second Surname"
+msgstr "Segon cognom"
+
+#: filters.py:424
+msgid "Full name"
+msgstr "Nom complet"
+
+#: filters.py:427 filters.py:428 models.py:287
+msgid "CIF"
+msgstr "CIF"
+
+#: filters.py:429
+msgid "Raó social"
+msgstr "Raó social"
+
+#: models.py:60 models.py:1576
+msgid "Via Type"
+msgstr "Tipus de carrer"
+
+#: models.py:61
+msgid "Official Street Name"
+msgstr "Nom oficial del carrer"
+
+#: models.py:62 models.py:503 serializers.py:1911
+msgid "Street"
+msgstr "Carrer"
+
+#: models.py:63
+msgid "Street 2"
+msgstr "Segona part direcció"
+
+#: models.py:64
+msgid "Nexus"
+msgstr "Nexe"
+
+#: models.py:67
+msgid "Neighborhood B"
+msgstr "Barri B"
+
+#: models.py:68
+msgid "Neighborhood ID"
+msgstr "ID del barri"
+
+#: models.py:69 models.py:221 models.py:291 serializers.py:1908
+msgid "District"
+msgstr "Districte"
+
+#: models.py:71
+msgid "Statistical Sector"
+msgstr "Sector estadístic"
+
+#: models.py:73 models.py:513 models.py:533 models.py:567 models.py:1438
+#: models.py:1464 models.py:1504 models.py:1550 models.py:1575 models.py:1624
+#: models.py:1763 models.py:1853 models.py:1932
+msgid "Enabled"
+msgstr "Habilitat"
+
+#: models.py:74
+msgid "Geocode Validation"
+msgstr "Validació Geocode"
+
+#: models.py:75
+msgid "Geocodeo District ID"
+msgstr "Id del districte Geocode"
+
+#: models.py:76
+msgid "Research Zone"
+msgstr "Zona de recerca"
+
+#: models.py:78 models.py:1580
+msgid "Stair"
+msgstr "Escala"
+
+#: models.py:79 models.py:505 models.py:1578
+msgid "Floor"
+msgstr "Pis"
+
+#: models.py:80 models.py:506 models.py:1579
+msgid "Door"
+msgstr "Posta"
+
+#: models.py:81
+msgid "Letter"
+msgstr "Lletra"
+
+#: models.py:83
+msgid "Coordinate X"
+msgstr "Coordenada X"
+
+#: models.py:84
+msgid "Coordinate Y"
+msgstr "Coordenada Y"
+
+#: models.py:85
+msgid "Coordinate UTM X"
+msgstr "Coordenada UTM X"
+
+#: models.py:86
+msgid "Coordinate UTM Y"
+msgstr "Coordenada UTM Y"
+
+#: models.py:87
+msgid "Latitude"
+msgstr "Latitud"
+
+#: models.py:88
+msgid "Longitude"
+msgstr "Longitud"
+
+#: models.py:89
+msgid "Xetrs89a"
+msgstr "Xetrs89a"
+
+#: models.py:90
+msgid "Yetrs89a"
+msgstr "Yetrs89a"
+
+#: models.py:92
+msgid "Numbering type"
+msgstr "Tipus de numeració"
+
+#: models.py:94
+msgid "Temp error"
+msgstr "Error temporal"
+
+#: models.py:95
+msgid "Polygon Code"
+msgstr "Codi de polígon"
+
+#: models.py:105
+msgid "District: {}"
+msgstr "Districte: {}"
+
+#: models.py:144 models.py:561 models.py:1499
+msgid "Ubication"
+msgstr "Ubicació"
+
+#: models.py:145
+msgid "Letter post f"
+msgstr "Lletra post f"
+
+#: models.py:146
+msgid "Num post f"
+msgstr ""
+
+#: models.py:147
+msgid "Dist post"
+msgstr ""
+
+#: models.py:148
+msgid "Codi illa"
+msgstr ""
+
+#: models.py:149
+msgid "Solar"
+msgstr ""
+
+#: models.py:150
+msgid "Codi parc"
+msgstr ""
+
+#: models.py:189
+msgid "Male"
+msgstr "Masculí"
+
+#: models.py:190
+msgid "Female"
+msgstr "Femení"
+
+#: models.py:191
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: models.py:199
+msgid "NIF"
+msgstr "NIF"
+
+#: models.py:200
+msgid "NIE"
+msgstr "NIE"
+
+#: models.py:201
+msgid "PASS"
+msgstr "PASS"
+
+#: models.py:209
+msgid "Full normal name"
+msgstr "Nom complet normalitzat"
+
+#: models.py:210
+msgid "Normalized Name"
+msgstr "Nom normalitzat"
+
+#: models.py:211
+msgid "Normalized First Surname"
+msgstr "Primer cognom normalitzat"
+
+#: models.py:212
+msgid "Normalized Second Surname"
+msgstr "Segón cognom normalitzat"
+
+#: models.py:215
+msgid "Birth Year"
+msgstr "Any de naixement"
+
+#: models.py:217
+msgid "Sex"
+msgstr "Sexe"
+
+#: models.py:218 models.py:288 models.py:497 models.py:1568
+msgid "Language"
+msgstr "Idioma"
+
+#: models.py:219 models.py:289 models.py:1626
+msgid "Response"
+msgstr "Resposta"
+
+#: models.py:222
+msgid "Document Type"
+msgstr "Tipus de document"
+
+#: models.py:223 models.py:292
+msgid "MIB Code"
+msgstr "Codi MIB"
+
+#: models.py:224 models.py:293
+msgid "Blocked"
+msgstr "Bloquejat"
+
+#: models.py:241
+msgid "Citizen ND logic is not enabled, couldn't check for existing dni"
+msgstr ""
+
+#: models.py:245 models.py:247
+msgid "The inserted dni was previously assigned to another citizen"
+msgstr "El DNI introduït ja ha estat assignat a un altre ciutadà"
+
+#: models.py:283
+msgid "Social Reason"
+msgstr "Raó Social"
+
+#: models.py:284
+msgid "Normal Social Reason"
+msgstr "Raó Social normalitzada"
+
+#: models.py:285
+msgid "Contact"
+msgstr "Contacte"
+
+#: models.py:314 models.py:316
+msgid "The inserted cif was previously assigned to another social_entity"
+msgstr "El cif introduït ja ha estat assignat a un altre entitat social"
+
+#: models.py:333
+msgid "Internal operator document"
+msgstr "Document operador intern"
+
+#: models.py:334 models.py:526 models.py:571 models.py:1508
+msgid "Applicant Type"
+msgstr "Tipus de sol·licitant"
+
+#: models.py:335 models.py:529
+msgid "Input Channel"
+msgstr "Canal d'entrada"
+
+#: models.py:355
+msgid "Citizen"
+msgstr "Ciutadà"
+
+#: models.py:356
+msgid "Social Entity"
+msgstr "Entitat social"
+
+#: models.py:358
+msgid "Flag CA"
+msgstr "Flag CA"
+
+#: models.py:359
+msgid "Pend to anonymize"
+msgstr "Pendent d'anonimitzar"
+
+#: models.py:375
+msgid ""
+"Citizen and Social Entity can not be null at the same time. Please set a "
+"value for one or the other."
+msgstr ""
+"El ciutadà i la entitat social no poden estar buits a la vegada. Per favor, "
+"asigna un valor a un o a l'altre."
+
+#: models.py:379
+msgid ""
+"Citizen and Social Entity can not be set at the same time. Please deselect "
+"one or the other."
+msgstr ""
+"El ciutadà i la entitat social no poden estar assignats a la vegada. Per "
+"favor, asigna valor només a un."
+
+#: models.py:496 models.py:524
+msgid "Applicant"
+msgstr "Sol·licitant"
+
+#: models.py:498
+msgid "Phone Number"
+msgstr "Número de telèfon"
+
+#: models.py:499
+msgid "Mobile Number"
+msgstr "Número de mòbil"
+
+#: models.py:500
+msgid "Email"
+msgstr "Email"
+
+#: models.py:502
+msgid "Street Type"
+msgstr "Tipus de carrer"
+
+#: models.py:504 models.py:1570 serializers.py:1912
+msgid "Number"
+msgstr "Nombre"
+
+#: models.py:507
+msgid "Scale"
+msgstr "Escala"
+
+#: models.py:508
+msgid "Postal Code"
+msgstr "Codi Posta"
+
+#: models.py:509 models.py:1571
+msgid "Municipality"
+msgstr "Municipi"
+
+#: models.py:510 models.py:1572
+msgid "Province"
+msgstr "Provincia"
+
+#: models.py:514
+msgid "Authorization"
+msgstr "Autorització"
+
+#: models.py:527
+msgid "Application"
+msgstr "Aplicació"
+
+#: models.py:530 models.py:577 models.py:1512
+msgid "Communication Media"
+msgstr "Mitjà de comunicació"
+
+#: models.py:534
+msgid "Normalized ID"
+msgstr "Id normalitzat"
+
+#: models.py:548 models.py:1545 serializers.py:1902
+msgid "Creation date"
+msgstr "Data de creació"
+
+#: models.py:550 models.py:1494 serializers.py:1918
+msgid "Description"
+msgstr "Descripció"
+
+#: models.py:551 models.py:553 models.py:1495 serializers.py:1915
+msgid "Element Detail"
+msgstr "Detall de temàtica"
+
+#: models.py:555
+msgid "Field for traceability and report purpose. Not edit"
+msgstr "Camp per trazabilitat i informes. No editar"
+
+#: models.py:556 models.py:1496
+msgid "Request"
+msgstr "Petició"
+
+#: models.py:557 models.py:1497 serializers.py:1920
+msgid "Responsible profile"
+msgstr "Perfil responsable"
+
+#: models.py:559
+msgid "Reasigned"
+msgstr "Reassignada"
+
+#: models.py:560
+msgid "Shows if RecordCard has been manually reasigned or not"
+msgstr "Indica si la fitxa ha estat reassignada manualment o no"
+
+#: models.py:563 models.py:1501
+msgid "Process"
+msgstr "Procès"
+
+#: models.py:564 models.py:1502
+msgid "Record State"
+msgstr "Estat de la fitxa"
+
+#: models.py:566 models.py:1503
+msgid "Record Type"
+msgstr "Tipus de fitxa"
+
+#: models.py:568 models.py:1505
+msgid "Mayorship"
+msgstr "Alcaldia"
+
+#: models.py:569 models.py:1506
+msgid "Normalized Record Id"
+msgstr "Id de fitxa normalitzat"
+
+#: models.py:570 models.py:1507
+msgid "Alarm"
+msgstr "Alarma"
+
+#: models.py:573 models.py:1509
+msgid "Auxiliary"
+msgstr "Auxiliar"
+
+#: models.py:574 models.py:1510 serializers.py:1903
+msgid "Closing date"
+msgstr "Data de tancament"
+
+#: models.py:575 models.py:1511
+msgid "ANS limit date"
+msgstr "Data limit ANS"
+
+#: models.py:576
+msgid "ANS limit near expire"
+msgstr "Data límit ANS a punt d'expirar"
+
+#: models.py:579 models.py:1514
+msgid "Communication Media Date"
+msgstr "Data mitjà de comunicació"
+
+#: models.py:580 models.py:1515
+msgid "Communication Media Detail"
+msgstr "Detall mitjà de comunicació"
+
+#: models.py:582 models.py:1517
+msgid "Record Parent Claimed"
+msgstr "Fitxa pare reclamada"
+
+#: models.py:583 models.py:1518
+msgid "Reassignment not Allowed"
+msgstr "Reassignació no permessa"
+
+#: models.py:584 models.py:1519
+msgid "Urgent"
+msgstr "Urgent"
+
+#: models.py:585 models.py:1520
+msgid "Page origin"
+msgstr "Pàgina original"
+
+#: models.py:586 models.py:1521
+msgid "Email external derivation"
+msgstr "Email extern derivació"
+
+#: models.py:587 models.py:1522
+msgid "User displayed"
+msgstr "Visualitzat per l'usuari"
+
+#: models.py:588 models.py:1523
+msgid "Historicized"
+msgstr "Historificada"
+
+#: models.py:589 models.py:1524
+msgid "Allow Multiderivation"
+msgstr "Permet multiderivació"
+
+#: models.py:590 models.py:1525 models.py:1885
+msgid "Start Date Process"
+msgstr "Data inici procès"
+
+#: models.py:591 models.py:1526
+msgid "Appointment Time"
+msgstr "Hora de la cita"
+
+#: models.py:592 models.py:1527
+msgid "Similar process"
+msgstr "Procès Similar"
+
+#: models.py:593 models.py:594
+msgid "Possible Similar Records"
+msgstr "Possibles fitxes similars"
+
+#: models.py:595 models.py:1528
+msgid "Response State"
+msgstr "Estat de la resposta"
+
+#: models.py:596 models.py:1529
+msgid "Notify quality"
+msgstr "Notificar qualitat"
+
+#: models.py:597 models.py:1530
+msgid "Multi complaint"
+msgstr "Multi queixa"
+
+#: models.py:598
+msgid "MultiRecord From"
+msgstr "Multifitxa desde"
+
+#: models.py:600
+msgid "Is MultiRecord"
+msgstr "És multifitxa"
+
+#: models.py:601 models.py:1531
+msgid "LOPD"
+msgstr "LOPD"
+
+#: models.py:603
+msgid "CI Date"
+msgstr "Data CI"
+
+#: models.py:604
+msgid "Support Numbers"
+msgstr "Nombres de soport"
+
+#: models.py:609 models.py:1532 models.py:1883 models.py:1897 models.py:1929
+msgid "Workflow"
+msgstr "Procès"
+
+#: models.py:612
+msgid "Pend Applicant Response"
+msgstr "Resposta de sol·licitant pendent"
+
+#: models.py:613
+msgid "Applicant Response"
+msgstr "Resposta sol·licitant"
+
+#: models.py:614
+msgid "Pend Response to Record Responsible"
+msgstr "Pendent de respondre al responsable de la fitxa"
+
+#: models.py:615
+msgid "Response to Record Responsible"
+msgstr "Resposta al responsable de la fitxa"
+
+#: models.py:616
+msgid "Response Time Expired"
+msgstr "Temps de resposta caducitat"
+
+#: models.py:618
+msgid "Claim From"
+msgstr "Reclamació desde"
+
+#: models.py:620
+msgid "Number of claims"
+msgstr "Nombre de reclamacions"
+
+#: models.py:621
+msgid "Citizen alarm"
+msgstr "Alarma ciutadà"
+
+#: models.py:622
+msgid "Citizen web alarm"
+msgstr "Alarma ciutadà web"
+
+#: models.py:623
+msgid "Cancel Request"
+msgstr "Petició de cancelació"
+
+#: models.py:626
+msgid "Department on creation"
+msgstr "Departament a la creació"
+
+#: models.py:627
+msgid "Department on cancelation"
+msgstr "Departament a la cancelació"
+
+#: models.py:628 models.py:1534
+msgid "Creation group"
+msgstr "Perfil creador"
+
+#: models.py:630
+msgid "Organization"
+msgstr "Organització"
+
+#: models.py:783
+msgid "The number of claims is greater or equal than the configured limit"
+msgstr ""
+"S'ha superat el nombre de reclamacions i només podrà respondre el "
+"responsable del teu ámbit."
+
+#: models.py:789
+msgid "The record has overcome the limit of days to response"
+msgstr "S'ha superat el nombre de dies per respondre la fitxa"
+
+#: models.py:804
+msgid "User's group not detected"
+msgstr "Grup de l'usuari no detectat"
+
+#: models.py:859
+msgid "Automatically closed record because response has not to be sent"
+msgstr "Fitxa tancada automàticament perquè no s'ha d'enviar resposta"
+
+#: models.py:1056
+msgid "Automatic reasignation by derivation"
+msgstr "Reasignació automàtica per derivació"
+
+#: models.py:1309
+msgid "Copying files"
+msgstr "Copiant fitxers"
+
+#: models.py:1384 models.py:1493 models.py:1548 models.py:1566 models.py:1623
+#: models.py:1662 models.py:1747 models.py:1779 models.py:1850
+msgid "Record Card"
+msgstr "Fitxa"
+
+#: models.py:1386
+msgid "Validation User"
+msgstr "Usuari validació"
+
+#: models.py:1387
+msgid "Planification User"
+msgstr "Usuari planificació"
+
+#: models.py:1388
+msgid "Resolution User"
+msgstr "Usuari resolució"
+
+#: models.py:1389
+msgid "Resolution Comment"
+msgstr "Comentari resolució"
+
+#: models.py:1390
+msgid "Closing User"
+msgstr "Usuari tancament"
+
+#: models.py:1397 models.py:1411 models.py:1436 models.py:1462
+msgid "RecordCard"
+msgstr "Fitxa"
+
+#: models.py:1398
+msgid "Block expire time"
+msgstr "Temps d'expiració del bloqueig"
+
+#: models.py:1412 models.py:1546 models.py:1828 models.py:1930
+msgid "Group"
+msgstr "Grup"
+
+#: models.py:1413
+msgid "RecordCard Previous State"
+msgstr "Estat previ de la fitxa"
+
+#: models.py:1415
+msgid "RecordCard Next State"
+msgstr "Següent estat de la fitxa"
+
+#: models.py:1417
+msgid "Automatic"
+msgstr "Automàtic"
+
+#: models.py:1418
+msgid "Set to true if the state change has been done automatically"
+msgstr ""
+"Marcat com a vertader si el canvi d'estat de la fitxa ha estat automàtic"
+
+#: models.py:1435 models.py:1461
+msgid "Feature"
+msgstr "Característica"
+
+#: models.py:1437 models.py:1463
+msgid "Value"
+msgstr "Valor"
+
+#: models.py:1439 models.py:1465
+msgid "Is theme feature"
+msgstr "La característica pertany a la temàtica"
+
+#: models.py:1440 models.py:1466
+msgid "Shows if the related feature is from the current record theme"
+msgstr "Indica si la característica relacionada pertany a la temàtica actual"
+
+#: models.py:1547 models.py:1785
+msgid "Reason"
+msgstr "Motiu"
+
+#: models.py:1551 models.py:1786 models.py:1933
+msgid "Comment"
+msgstr "Comentari"
+
+#: models.py:1564
+msgid "Response Channel"
+msgstr "Canal de resposta"
+
+#: models.py:1569
+msgid "Address, Mobile or Email"
+msgstr "Adreça, mòbil o correu electrònic"
+
+#: models.py:1573
+msgid "Postal code"
+msgstr "Codi Postal"
+
+#: models.py:1574
+msgid "Answered"
+msgstr "Resposta"
+
+#: models.py:1577
+msgid "Via Name"
+msgstr "Nom del carrer"
+
+#: models.py:1581
+msgid "Correct Response Data"
+msgstr "Dades de resposta correctes"
+
+#: models.py:1618
+msgid "Response worked"
+msgstr "Resposta treballada"
+
+#: models.py:1619
+msgid "Template Changed"
+msgstr "Plantilla modificada"
+
+#: models.py:1620
+msgid "Others"
+msgstr "Altres"
+
+#: models.py:1625
+msgid "Avoid send answer"
+msgstr "Evitar enviar resposta"
+
+#: models.py:1627
+msgid "Send Date"
+msgstr "Data enviament"
+
+#: models.py:1628
+msgid "Text date"
+msgstr "Data text"
+
+#: models.py:1629
+msgid "Worked"
+msgstr "Treballada"
+
+#: models.py:1654
+msgid "From Record Creation"
+msgstr "Des de la creació de la fitxa"
+
+#: models.py:1655
+msgid "From Record Detail"
+msgstr "Desdel detall de la fitxa"
+
+#: models.py:1656
+msgid "From Record Communications"
+msgstr "Des de comunicacions de ficha"
+
+#: models.py:1657
+msgid "From Public Web"
+msgstr "Desde web pública"
+
+#: models.py:1658
+msgid "From Response"
+msgstr "Des de la Resposta"
+
+#: models.py:1659
+msgid "IRIS1"
+msgstr "IRIS1"
+
+#: models.py:1663
+msgid "Record File"
+msgstr "Fitxer de fitxa"
+
+#: models.py:1666 models.py:1749
+msgid "File Type"
+msgstr "Tipus de fitxer"
+
+#: models.py:1780
+msgid "User Group"
+msgstr "Grup de l'usuari"
+
+#: models.py:1781
+msgid "Previuos Responsible Group"
+msgstr "Grup responsable anterior"
+
+#: models.py:1783
+msgid "Next Responsible Group"
+msgstr "Grup responsable següent"
+
+#: models.py:1802
+msgid ""
+"Previous responsibe profile and next responsible profile can not be the same"
+msgstr ""
+"El perfil responsable i el nou perfil responsable no poden ser el mateix"
+
+#: models.py:1818
+msgid ""
+"Selected next group responsible of record card is not one of the possible "
+"options"
+msgstr ""
+"El nou perfil responsable de la fitxa escollit no és una de les opcions "
+"possibles"
+
+#: models.py:1824
+msgid "The selected RecordCard can not be reassigned"
+msgstr "La fitxa seleccionada no pot ser reassignada"
+
+#: models.py:1829
+msgid "Year"
+msgstr "Any"
+
+#: models.py:1830
+msgid "Month"
+msgstr "Mes"
+
+#: models.py:1832
+msgid "Record Entries"
+msgstr "Entrades de fitxes"
+
+#: models.py:1833
+msgid "Pending Validation"
+msgstr "Pendent de validació"
+
+#: models.py:1834
+msgid "Processing"
+msgstr "Processant"
+
+#: models.py:1835
+msgid "closed"
+msgstr "tancada"
+
+#: models.py:1836
+msgid "Cancelled"
+msgstr "Anul·lada"
+
+#: models.py:1837
+msgid "External Processing"
+msgstr "Processament extern"
+
+#: models.py:1838
+msgid "Pending records"
+msgstr "Fitxes pendents"
+
+#: models.py:1839
+msgid "Average Close Days"
+msgstr "Mitja de dies de tancament"
+
+#: models.py:1840
+msgid "Average Age Days"
+msgstr "Mitja edat fitxes (dies)"
+
+#: models.py:1852 serializers.py:1919
+msgid "State"
+msgstr "Estat"
+
+#: models.py:1854
+msgid "Close Date"
+msgstr "Data de tancament"
+
+#: models.py:1855
+msgid "Visual User"
+msgstr "Usuari visual"
+
+#: models.py:1856
+msgid "Theme modified"
+msgstr "Temàtica modificada"
+
+#: models.py:1884 models.py:1898
+msgid "Service or person in charge"
+msgstr "Servei o persona encarregada"
+
+#: models.py:1899
+msgid "Resolution Type"
+msgstr "Tipus de resolució"
+
+#: models.py:1900
+msgid "Resolution Date"
+msgstr "Data de resolució"
+
+#: models.py:1925
+msgid "Planning"
+msgstr "Planificació"
+
+#: models.py:1926
+msgid "Resolution"
+msgstr "Resolució"
+
+#: models.py:1931
+msgid "Task"
+msgstr "Tasca"
+
+#: record_actions/actions.py:143 record_actions/actions.py:232
+msgid "User has no permissions to do this action"
+msgstr "No tens permissos per a realitzar aquesta acció"
+
+#: record_actions/actions.py:194
+msgid "Only can move to its own ambit themes."
+msgstr "Només es pot canviar a les temàtiques del seu àmbit"
+
+#: record_actions/actions.py:202
+msgid "Cannot change theme on validated record cards."
+msgstr "No es pot canviar la temàtica perquè les fitxes estan validades."
+
+#: record_actions/actions.py:250
+msgid "Action can not be done because the RecordCard is closed or cancelled."
+msgstr ""
+"L'acció no es pot dur a terme perquè la fitxa està tancada o anul·lada."
+
+#: record_actions/actions.py:259
+msgid "User has permissions to cancel the request"
+msgstr "L'usuari té permisos per a anul·lar la fitxa"
+
+#: record_actions/actions.py:278
+msgid ""
+"User can not open a conversation because it's not the responsible profile of "
+"the record"
+msgstr ""
+"L'usuari no pot començar una nova conversa perquè no és del grup responsable "
+"de la fitxa"
+
+#: record_actions/claim_validate.py:31
+msgid ""
+"A claim can not be created due to RecordCard state is not closed or "
+"cancelled.Current Record State is {}"
+msgstr ""
+"No es pot crear una reclamació perquè l'estat de la fitxa no és tancada o "
+"anul·lada. L'estat actual de la fitxa és {}"
+
+#: record_actions/claim_validate.py:37
+msgid "A claim can not be created due to RecordCard has an existent claim"
+msgstr "No es pot crear una reclamació perquè ja existeix una reclamació"
+
+#: record_actions/claim_validate.py:47
+msgid ""
+"A claim can not be created due to RecordCard claim date limit has been "
+"overcome.Claim date limit was {}"
+msgstr ""
+"No es pot crear una reclamació perquè la data límit per a reclamacions s'ha "
+"superat. La data límit de reclamació era {}."
+
+#: record_actions/claim_validate.py:57
+msgid ""
+"A claim can not be created due to RecordCard Applicant is blocked.Applicant "
+"is {}"
+msgstr ""
+"No es pot crear una reclamació perquè el sol·licitant està bloquejat. El "
+"sol·licitant és {}"
+
+#: record_actions/claim_validate.py:69
+msgid "There are a few hours left to claim. ANS limit date: {}"
+msgstr "Queden unes hores per a poder reclamar. Data límit ANS: {}."
+
+#: record_actions/claim_validate.py:72
+msgid "It remains {} days to claim."
+msgstr "Queden {} dies per a poder reclamar."
+
+#: record_actions/claim_validate.py:74
+msgid ""
+"A claim can not be created due to RecordCard ANS date limit has not "
+"overcome. {}"
+msgstr ""
+"No es pot crear una reclamació perquè la data límit del ANS no s'ha superat. "
+"{}"
+
+#: record_actions/copy_minio_files.py:52
+msgid "File {} was copied from record {}"
+msgstr "El fitxer {} s'ha copiat de la fitxa {}"
+
+#: record_actions/reasignations.py:69
+msgid "Group {} can not tramit record {}"
+msgstr "El grup {} no pot tramitar la fitxa {}"
+
+#: record_actions/reasignations.py:102
+msgid "RecordCard is set as 'No Reasignable'."
+msgstr ""
+"Fitxa marcada com a no reassignable i només podràs reassignar dintre del teu "
+"àmbit."
+
+#: record_actions/reasignations.py:110
+msgid "Only a coordinator is allowed to send the response"
+msgstr "Només un coordinador pot enviar la resposta"
+
+#: record_actions/reasignations.py:128
+msgid ""
+"RecordCard {} can not be reasigned outside group's ambit after validation "
+"because it's theme does not allow it."
+msgstr ""
+"La fitxa {} no es pot reassignar a fora de l'àmbit després de la validació "
+"perquè la seva temàtica no ho permet."
+
+#: record_actions/reasignations.py:133
+msgid ""
+"RecordCard {} can not be reasigned outside group's ambit because the period "
+"to do it has overcome. To be reasigned, the record must be cancelled by "
+"expiration"
+msgstr ""
+"La fitxa {} no es pot reassignar fora de l'àmbit perquè s'ha sobrepassat el "
+"periode per fer-ho. Per a reassignar-la fora de l'àmbit, s'ha d'anul·lar la "
+"fitxa per caducitat."
+
+#: record_actions/reasignations.py:140
+msgid ""
+"RecordCard {} can not be reasigned outside group's ambit because it has been "
+"claimed more than {} times"
+msgstr ""
+"La fitxa {} no es pot reassignar a fora de l'àmbit perquè ha estat reclamada "
+"més de {} cops."
+
+#: record_actions/state_machine.py:49
+msgid "Validate Record Card"
+msgstr "Validar fitxa"
+
+#: record_actions/state_machine.py:60
+msgid "Cancel Record Card"
+msgstr "Anul·lar fitxa"
+
+#: record_actions/state_machine.py:70
+msgid "Attach applicant"
+msgstr "Afegir Sol·licitant"
+
+#: record_actions/state_machine.py:79
+msgid "Answer Record Card"
+msgstr "Respondre fitxa"
+
+#: record_actions/state_machine.py:89
+msgid "Planify Record Card"
+msgstr "Planificar fitxa"
+
+#: record_actions/state_machine.py:103
+msgid "Record Card Resolution"
+msgstr "Resolució de fitxa"
+
+#: record_actions/state_machine.py:116
+msgid "External Returned Record Card"
+msgstr "Retorn extern de fitxa"
+
+#: record_actions/state_machine.py:126
+msgid "External Close Record Card"
+msgstr "Tancament extern de fitxa"
+
+#: record_actions/state_machine.py:136
+msgid "External Cancel Record Card"
+msgstr "Cancelació externa de fitxa"
+
+#: record_actions/update_fields.py:92
+msgid "RecordCard description was updated. Previous description was: {}."
+msgstr ""
+"La descripció de la fitxa s'ha actualitzat. La descripció anterior era: {}."
+
+#: record_actions/update_fields.py:100
+msgid "It was mark before the update"
+msgstr "Estava marcat abans de l'actualització"
+
+#: record_actions/update_fields.py:102
+msgid "It was unmark before the update"
+msgstr "No estava marcat abans de l'actualització"
+
+#: record_actions/update_fields.py:103
+msgid "RecordCard mayorship flag was updated. {}."
+msgstr "El check d'alcaldia s'ha actualitzat. {}."
+
+#: record_actions/update_fields.py:117
+msgid "There were no previous features."
+msgstr "No hi havia característiques prèvies."
+
+#: record_actions/update_fields.py:120
+msgid ""
+"RecordCard special features have been changed. Previous special features are"
+msgstr ""
+"Les característiques especials de la fitxa s'han modificat. Les "
+"característiques anteriors eren"
+
+#: record_actions/update_fields.py:122
+msgid "RecordCard features have been changed. Previous features are"
+msgstr ""
+"Les característiques de la fitxa s'han modificat. Les característiques "
+"anteriors eren"
+
+#: record_actions/update_fields.py:131
+msgid "RecordCard has not previous response"
+msgstr "La fitxa no tenia resposta prèvia."
+
+#: record_actions/update_fields.py:134
+msgid ""
+"RecordCard response was updated. Previous response has to be sent to {} by "
+"{}."
+msgstr ""
+"La resposta de la fitxa s'ha actualitzat. La resposta prèvia s'havia "
+"d'enviar a {} per {}."
+
+#: record_actions/update_fields.py:142
+msgid "RecordCard has not previous ubication"
+msgstr "La fitxa no tenia ubicació prèvia"
+
+#: record_actions/update_fields.py:144
+msgid "RecordCard ubication was updated. Previous ubication was: {} {} {} {}."
+msgstr ""
+"La ubicació de la fitxa s'ha actualitzat la ubicació prèvia era: {} {} {} {}."
+
+#: serializers.py:61 serializers.py:1002
+msgid "Element Detail is required for ubication validation"
+msgstr "La temàtica és obligatòria per a la validació de la ubicació"
+
+#: serializers.py:95
+msgid "Via type is required with this Element Detail"
+msgstr "El tipus de via és obligatori amb aquesta temàtica"
+
+#: serializers.py:97
+msgid "Street is required with this Element Detail"
+msgstr "El carrer és obligatori amb aquesta temàtica"
+
+#: serializers.py:99
+msgid "Street2 is required with this Element Detail"
+msgstr "El número és obligatori amb aquesta temàtica"
+
+#: serializers.py:111
+msgid "District is required with this Element Detail"
+msgstr "El districte de via és obligatori amb aquesta temàtica"
+
+#: serializers.py:175
+msgid ""
+"Citizen ND logic is not enabled, not allowed to create citizens with dni ND"
+msgstr "El grup de l'usuari no té permesa la creació de ciutadans amb DNI ND"
+
+#: serializers.py:178
+msgid "User group is not allowed to create citizens with dni ND"
+msgstr "El grup de l'usuari no té permesa la creació de ciutadans amb DNI ND"
+
+#: serializers.py:180 serializers.py:233 serializers.py:621 serializers.py:769
+#: views.py:822
+msgid "This field is required"
+msgstr "Aquest cap és obligatori"
+
+#: serializers.py:337
+msgid "The selected record_type does not exist or is not enabled"
+msgstr "Els tipus de fitxa seleccionats no existeixen o no estan disponibles"
+
+#: serializers.py:353 serializers.py:1067
+msgid "The selected applicant type does not exist or is not enabled"
+msgstr "El tipus de sol·lcitant triat no existeix o està desactivat"
+
+#: serializers.py:357 serializers.py:1033
+msgid "The selected input_channel does not exist or is not enabled"
+msgstr "El canal d'entrada triat no existeix o està desactivat"
+
+#: serializers.py:371
+msgid "The internal operator alredy exists"
+msgstr "L'operador intern ja existeix"
+
+#: serializers.py:398
+msgid "This combination has alredy been set"
+msgstr "Aquesta combinació ja s'ha introduït"
+
+#: serializers.py:501
+msgid "User has no permission to set this attribute"
+msgstr "No tens permissos per a omplir aquest atribut"
+
+#: serializers.py:515
+msgid "RecordCard Response Response Channel does not allow attachments"
+msgstr "El canal de resposta de la fitxa no permet arxius adjunts"
+
+#: serializers.py:521
+msgid "All files must be related to response's RecordCard"
+msgstr "Tots els fitxers han de ser de la fitxa de la resposta"
+
+#: serializers.py:583
+msgid "RecordCard is required"
+msgstr "La fitxa és obligatòria"
+
+#: serializers.py:609
+msgid "RecordCard Theme does not allow english language at response"
+msgstr "La temàtica de la fitxa no permet l'anglès com a idioma de la resposta"
+
+#: serializers.py:626 serializers.py:775
+msgid "This response channel is not allowed for this record card theme"
+msgstr "Aquest canal de resposta no està permés per la temática de la fitxa"
+
+#: serializers.py:645
+msgid "Response Channel not allowed for immediate response"
+msgstr "Canal de resposta no permès per a resposta inmmediata"
+
+#: serializers.py:691
+msgid ""
+"Response Channel can not be 'None' because applicant is an internal operator "
+"that requires the response"
+msgstr ""
+"El canal de resposta no pot ser 'CAP' perquè el sol·licitant és un operador "
+"intern que requereix resposta"
+
+#: serializers.py:703 serializers.py:1079
+msgid "The selected RecordCard does not exist or is not enabled"
+msgstr "La fitxa triada no existeix o està desactivat"
+
+#: serializers.py:732
+msgid "This field is mandatory for giving an answer by email."
+msgstr "Aquest camp és obligatori per donar una resposta per email."
+
+#: serializers.py:735
+msgid "This field is mandatory for giving an answer by SMS or Telephone."
+msgstr "Aquest camp és obligatori per donar una resposta per SMS o telèfon."
+
+#: serializers.py:749
+msgid "This field is mandatory for giving an answer by Letter."
+msgstr "Aquest camp és obligatori per donar una resposta per carta."
+
+#: serializers.py:895
+msgid "The number of features is not the required at the ElementDetail"
+msgstr "El nombre de característica no és el requerit per la temàtica"
+
+#: serializers.py:919
+msgid "This feature is mandatory. Value must be set."
+msgstr "Aquesta característica és obligatoria. S'ha d'emplenar el valor."
+
+#: serializers.py:924
+msgid "This feature must be set."
+msgstr "Aquesta característica s'ha d'afegir"
+
+#: serializers.py:933
+msgid "Characteristic not related to the detail"
+msgstr ""
+
+#: serializers.py:1007
+msgid "Address is required with this Element Detail"
+msgstr "El carrer és obligatori amb aquesta temàtica"
+
+#: serializers.py:1028
+msgid "The selected record_type does not exist"
+msgstr "El tipus de fitxa escollit no existeix"
+
+#: serializers.py:1038
+msgid "The selected support does not exist or is not enabled"
+msgstr "El support triat no existeix o està desactivat"
+
+#: serializers.py:1044 serializers.py:2003
+msgid "The selected element_detail does not exist"
+msgstr "La temática triada no existeix"
+
+#: serializers.py:1054
+msgid "The selected record_state does not exist or is not enabled"
+msgstr "L'estat de la fitxa triat no existeix o està desactivat"
+
+#: serializers.py:1060
+msgid "The selected Communication Media does not exist or is not enabled"
+msgstr "El mitjà de comunicació escollit no existeix o està deshabilitat"
+
+#: serializers.py:1115
+msgid "The selected applicant does not exist or is not enabled"
+msgstr "El sol·lcitant triat no existeix o està desactivat"
+
+#: serializers.py:1169
+msgid "Request not detected"
+msgstr "Petició HTTP no detectada"
+
+#: serializers.py:1183
+msgid "Element Detail can not be used because is not active"
+msgstr "Aquesta temàtica no està activa i no es poden crear fitxes"
+
+#: serializers.py:1219
+msgid "Input Channel 'QUIOSC' can not be used in a record creation/update"
+msgstr ""
+"El canal d'entrada 'QUIOSC' no es pot utilitzar en la creació ni "
+"l'actualització"
+
+#: serializers.py:1225
+msgid "Input Channel is not allowed for user group"
+msgstr "El canal d'entrada no està permès pel perfil de l'usuari"
+
+#: serializers.py:1229
+msgid "Support is not allowed for the selected input channel"
+msgstr "El suport no està permès pel canal d'entrada seleccionat"
+
+#: serializers.py:1233
+msgid "If input channel does not allow mayorship, this can not be set to True"
+msgstr ""
+"Si el canal d'entrada no permet l'alcaldia, la fitxa no es pot marcar com a "
+"tal"
+
+#: serializers.py:1245
+msgid ""
+"If support Communication Media has been selected, a comunication media has "
+"to be set"
+msgstr ""
+"Si s'ha escollit el suport 'Mitjà de comunicació', s'ha d'indicar un mitjà "
+"de comunicació"
+
+#: serializers.py:1248
+msgid ""
+"If support Communication Media has been selected, a the publish date has to "
+"be set"
+msgstr ""
+"Si s'ha escollit el suport 'Mitjà de comunicació', s'ha d'indicar una data "
+"de publicació"
+
+#: serializers.py:1264
+msgid "Register code is required for the selected support"
+msgstr "El codi de registre és requerit pel support escollit"
+
+#: serializers.py:1269
+msgid "Register Code selected does not exist"
+msgstr "El codi de registre escollit no existeix"
+
+#: serializers.py:1279
+msgid "User's group is not allowed to create multirecords"
+msgstr "El grup de l'usuari no pot té permis per crear multifitxes"
+
+#: serializers.py:1282
+msgid "The RecordCard selected has alredy a multirecord"
+msgstr "La fitxa escollida ja té una multifitxa"
+
+#: serializers.py:1297
+msgid "Applicant id must be set"
+msgstr "L'identificador del sol·licitant s'ha d'especificar"
+
+#: serializers.py:1302
+msgid "Applicant is required"
+msgstr "El solicitant es obligatori"
+
+#: serializers.py:1306
+msgid "Applicant can not be used to create a record because it's blocked"
+msgstr ""
+"El sol·licitant no es pot utilitzar per crear fitxes perquè està bloquejat"
+
+#: serializers.py:1318
+msgid "User's group is not allowed to set mayorship"
+msgstr "El grup de l'usuari no pot marcar una fitxa per alcaldia"
+
+#: serializers.py:1327
+msgid "User without an assigned group can not create RecordCards"
+msgstr "Un usuari sense grup assignat no pot crear fitxes"
+
+#: serializers.py:1332
+msgid "User assigned to Anonymoys Group can not create RecordCards"
+msgstr "Un usuari amb el grup anònim assignat no pot crear fitxes"
+
+#: serializers.py:1340
+msgid "InputChannel is not allowed to user's group"
+msgstr "El canal d'entrada no està permés pel perfil de l'usuari"
+
+#: serializers.py:1355
+msgid ""
+"Citizen ND logic not enabled, not allowed to createa record card with a "
+"citizen with dni ND"
+msgstr ""
+"El grup de l'usuari no té permesa la creació d'una fitxa amb un ciutadà amb "
+"DNI ND"
+
+#: serializers.py:1364
+msgid ""
+"The selected support does not allow the creation of a record card with a "
+"citizen with dni ND"
+msgstr ""
+"El suport escollit no permet la creació d'una fitxa amb un ciutadà amb DNI ND"
+
+#: serializers.py:1371
+msgid ""
+"The user group does not allow the creation of a record card with a citizen "
+"with dni ND"
+msgstr ""
+"El grupo de l'usuari no té permesa la creació d'una fitxa amb un ciutadà amb "
+"DNI ND"
+
+#: serializers.py:1796
+msgid "{} can not be changed because record card is closed or cancelled"
+msgstr "{} no es pot modificar perquè la fitxa està tancada o anul·lada"
+
+#: serializers.py:1800
+msgid "{} can not be changed because user has not admin permission"
+msgstr "{} no es pot modificar perquè l'usuari no té permisos d'administrador"
+
+#: serializers.py:1817
+msgid "User's group is not allowed to change recordcard response channel"
+msgstr "El grup de l'usuari no té permís per canviar el canal de resposta"
+
+#: serializers.py:1900
+#| msgid "RecordCard"
+msgid "Record"
+msgstr "Fitxa"
+
+#: serializers.py:1901
+#| msgid "Record Type"
+msgid "Record type"
+msgstr "Tipus de fitxa"
+
+#: serializers.py:1904
+msgid "Days opened"
+msgstr ""
+
+#: serializers.py:1905
+msgid "Days from creation"
+msgstr "Departament a la creació"
+
+#: serializers.py:1910
+msgid "Street type"
+msgstr "Tipus de carrer"
+
+#: serializers.py:1913
+msgid "Area"
+msgstr ""
+
+#: serializers.py:1914
+msgid "Element"
+msgstr "Detall"
+
+#: serializers.py:1916
+msgid "Special attributes (desc)"
+msgstr "Carac. especials (desc)"
+
+#: serializers.py:1917
+msgid "Special attibuttes"
+msgstr "Carac. especials"
+
+#: serializers.py:1921
+msgid "Answer type"
+msgstr "Tipos Resposta"
+
+#: serializers.py:1922
+msgid "Answer"
+msgstr "Resposta"
+
+#: serializers.py:1923
+msgid "Quality comment"
+msgstr "Comentari qualitat"
+
+#: serializers.py:2037
+msgid "Element Detail can not be changed because RecordCard has been validated"
+msgstr "La temàtica no es pot canviar perquè la fitxa ha estat validada"
+
+#: serializers.py:2055
+msgid "Element Detail has not been changed"
+msgstr "La temàtica no s'ha modificat"
+
+#: serializers.py:2059
+msgid "Element Detail is not one of the change possibilities"
+msgstr "La temàtica no es troba entre les possibilitats de canvi"
+
+#: serializers.py:2064
+msgid ""
+"Element Detail can not been changed because user has not permission to "
+"change elementdetail to a different area"
+msgstr ""
+"La temàtica no es pot modificar perquè l'usuari no té permisos per a "
+"modificar la temàtica a una àrea diferent"
+
+#: serializers.py:2104
+msgid "Theme changed from '{}' to '{}'."
+msgstr "Temàtica modificada de '{}' a '{}'."
+
+#: serializers.py:2258
+msgid "Features {} will not be taken into account"
+msgstr "Les característiques {} no es tindràn en compte"
+
+#: serializers.py:2346
+msgid "RecordCard set to urgent"
+msgstr "Fitxa marcada com urgent"
+
+#: serializers.py:2350
+msgid "RecordCard set to NO urgent"
+msgstr "Fitxa marcada com a NO urgent"
+
+#: serializers.py:2425
+msgid "The selected RecordState does not exist or is not enabled"
+msgstr "L'estat de la fitxa triat no existeix o està desactivat"
+
+#: serializers.py:2445
+msgid "The selected Reason does not exist or is not enabled"
+msgstr "El motiu triat no existeix o està desactivat"
+
+#: serializers.py:2460
+msgid "Group is needed for data validation"
+msgstr "Es necessita el grup de la cancelació per a la validació de les dades"
+
+#: serializers.py:2480
+msgid ""
+"A RecordCard pending to validate can not be cancelled with Reason "
+"'Validation By Error ({})'"
+msgstr ""
+"Una fitxa pendent de validar no pot ser anul·lada amb motiu 'Validada per "
+"error ({})'"
+
+#: serializers.py:2484
+msgid ""
+"A RecordCard that has expired can not be cancelled with Reason 'Validation "
+"By Error ({})'. RecordCard must be cancelled by Reason 'Expiration ({})'"
+msgstr ""
+"Una fitxa que ha cacucat no pot ser anul·lada amb motiu 'Validada per Error "
+"({})'. La fitxa s'ha d'anul·lar per 'Caducitat ({})'"
+
+#: serializers.py:2489
+msgid ""
+"The group {} is not allowed to cancel the RecordCard by 'Validation by "
+"Error' because it's not its responsible profile or a superior of it"
+msgstr ""
+"El grup {} no pot anul·lar la fitxa per 'Validació per error' perquè no és "
+"el responsable de la fitxa ni un superior d'aquest"
+
+#: serializers.py:2493
+msgid ""
+"RecordCard can not be cancelled by 'Validation by Error' because it has "
+"exceeded the maximum number of days on it's ambit"
+msgstr ""
+"La fitxa no es pot anul·lar per \"Validació per Error\" perquè ha excedit el "
+"màxim nombre de dies al seu àmbit"
+
+#: serializers.py:2503
+msgid ""
+"A RecordCard that has not expired can not be cancelled with Reason "
+"'Cancelled because expiration ({})'"
+msgstr ""
+"Una fitxa que no ha cacucat no pot ser anul·lada amb motiu 'Anul·lada per "
+"caducitat ({})'"
+
+#: serializers.py:2513
+msgid "Duplicated record card is mandatory for cancel by duplicity."
+msgstr "Es obligatori introduir la fitxa duplicada per anul·lar per caducitat."
+
+#: serializers.py:2519
+msgid "RecordCard with code {} does not exist"
+msgstr "La fitxa amb codi {} no existeix"
+
+#: serializers.py:2524
+msgid ""
+"RecordCard can not be cancelled because of duplicity reason due to different "
+"applicants"
+msgstr ""
+"La fitxa no pot ser anul·lada per duplicitat ja que tenen diferents "
+"solicitants"
+
+#: serializers.py:2528
+msgid ""
+"RecordCard can not be cancelled because of duplicity due to duplicated "
+"record card has been cancelled previously"
+msgstr ""
+"La fitxa no pot ser anul·lada per duplicitat ja que la fitxa duplicada ha "
+"estat cancelada prèviament"
+
+#: serializers.py:2532
+msgid ""
+"RecordCard can not be cancelled because of duplicity due to duplicated "
+"record card code is its own one"
+msgstr ""
+"La fitxa no pot ser anul·lada per duplicitat ja que la fitxa perquè el codi "
+"és el de la mateixa fitxa "
+
+#: serializers.py:2597
+msgid "User has to be asigned to a group to be able to do a reasignation"
+msgstr "L'usuari ha de tenir un grup assignat per a poder fer la reassignació"
+
+#: serializers.py:2614
+msgid ""
+"Allow multiderivation can not be set because record's theme does not allow it"
+msgstr ""
+"No es pot permetre la derivació després de la reasignació perquè la temàtica "
+"no ho permet"
+
+#: serializers.py:2658
+msgid "File extension is not allowed"
+msgstr "L'extensió del fitxer no està permesa"
+
+#: serializers.py:2667
+msgid "The selected record card does not exist or is not enabled"
+msgstr "La fitxa triada no existeix o està desactivat"
+
+#: serializers.py:2694
+msgid "Only the responsible profile of the Record Card can upload a file"
+msgstr "Només el grup responsable pot pujar arxius a un fitxa"
+
+#: serializers.py:2709
+msgid ""
+"The file can not be uploaded because the record has the maximum number of "
+"files {}"
+msgstr ""
+"El fitxer no es pot pujar perquè la fitxa ja té el nombre màxim de fitxers {}"
+
+#: serializers.py:2764
+msgid "Incorrect value. Choose an enabled Resolution Type"
+msgstr "Valor incorrecte. Escolliu un tipus de resolució habilitat"
+
+#: serializers.py:2771
+msgid ""
+"A RecordCard that requires an appointment needs the appointment date&time"
+msgstr "Una fitxa que requereix una cita necessita la data i el dia d'aquesta"
+
+#: serializers.py:2776
+msgid "A RecordCard that requires an appointment needs the appointment person"
+msgstr ""
+"Una fitxa que requereix una cita necessita la persona encarregada de la cita"
+
+#: tasks.py:106
+msgid "Files from record {} could not be copied"
+msgstr "Els fitxers de la fitxa {} no s'han pogut copiar"
+
+#: views.py:598 views.py:632 views.py:1417 views.py:1479
+msgid "Action can not be done with a closed or cancelled record"
+msgstr ""
+"L'acció no es pot dur a terme perquè la fitxa està tancada o anul·lada."
+
+#: views.py:1317
+msgid "You don't have mayorship permissions to do this actions"
+msgstr "No tens permissos de gabinet d'alcaldia per a realitzar aquesta acció"
+
+#: views.py:1603
+msgid "Cannot send the record card to the external management service"
+msgstr "Ha fallat l'enviament al sistema extern, torna a provar en uns segons."
+
+#: views.py:1625
+msgid ""
+"RecordCard could not be validated with indicated Record because they are not "
+"similar"
+msgstr ""
+"La fitxa no es pot validar amb la possible fitxa similar perquè que no són "
+"similars"
+
+#: views.py:1650
+msgid ""
+"RecordCard could not be validated due to its validation time has expired."
+"Validation date: {}"
+msgstr ""
+"La fitxa no es pot validar perquè s'ha sobrepassat el seu temps de "
+"validació. La data de validació era: {}"
+
+#: views.py:1938 views.py:2845 views.py:2895
+msgid ""
+"User's group can not answer the RecordCard as it's not an ambit coordinator"
+msgstr ""
+"El grup de l'usuari no pot respondre la fitxa perquè no és un coordinador "
+"d'àmbit"
+
+#: views.py:2008
+msgid "You can only answer records in pending answer state."
+msgstr ""
+"Només pots respondre fitxes que estiguin en l'estat pendent de resposta."
+
+#: views.py:2029
+msgid "You must write an answer for all records before closing this process."
+msgstr ""
+"Has d'escriure respostes per a totes les fitxes abans de tancar el procés."
+
+#: views.py:2257 views.py:2520
+msgid "Action can not be done with a cancelled record"
+msgstr "L'acció no es pot dur a terme perquè la fitxa està anul·lada."
+
+#: views.py:2576
+msgid ""
+"You are not allow to perform the action with a closed or cancelled record"
+msgstr ""
+"No tens permisos per a dur a terme l'acció per a una fitxa tancada o "
+"anul·lada."
+
+#: views.py:2612
+msgid ""
+"Only the responsible profile of the Record Card or DAIR can delete a file"
+msgstr "Només el grup responsable de la fitxa o el DAIR pot borrar una fitxa"
+
+#: views.py:2616
+msgid "The file {} was deleted."
+msgstr "El fitxer {} va ser esborrat."
+
+#: views.py:2751
+msgid "You have to change to one of the themes of your ambit before."
+msgstr ""
+"No pot avançar aquesta tasca perquè no està assignada a una temàtica del seu "
+"àmbit. Per solucionar aquest problema, ha de tornar a carregar la tasca, ja "
+"que potser un altre usuari ha fet canvis."
+
+#: views.py:2787
+msgid "Resoluted at {} by {}"
+msgstr "Resolt a {} per {}"
+
+#: views.py:2900
+msgid "Resend answer"
+msgstr "Resposta reenviada al sol·licitant."
+
+#: views.py:2954 views.py:2972
+msgid ""
+"RecordCard could not be solved due to it is expired.Days for setting "
+"citizens: {}"
+msgstr ""
+"La fitxa no es pot validar perquè s'ha sobrepassat el seu temps de "
+"caducitat. La data de validació era: {}"
+
+#~ msgid "Treatment"
+#~ msgstr "Tractament"
+
+#~ msgid "ANS overcome"
+#~ msgstr "ANS sobrepassat"
+
+#~ msgid "Element Detail can not be used because is not visible"
+#~ msgstr "Aquesta temàtica no està visible"
+
+#~ msgid ""
+#~ "RecordCard can not be cancelled by 'Cancelled because expiration' because "
+#~ "it has exceeded the maximum number of days on it's ambit"
+#~ msgstr ""
+#~ "La fitxa no es pot anul·lar per \"Anul·lació per caducitat\" perquè no ha "
+#~ "excedit el màxim nombre de dies al seu àmbit"
+
+#~ msgid ""
+#~ "RecordCard can not be cancelled by 'Cancelled because expiration' because "
+#~ "it has not been the minimum number of days on it's ambit"
+#~ msgstr ""
+#~ "La fitxa no es pot anul·lar per \"Anul·lació per caducitat\" perquè no ha "
+#~ "estat el nombre mínim dies al seu àmbit"
+
+#~ msgid "Create profile"
+#~ msgstr "Perfil creador"
+
+#~ msgid ""
+#~ "Element Detail can not been changed because it will cause a derivation "
+#~ "outside group's ambit"
+#~ msgstr ""
+#~ "La temàtica no es pot modificar perquè causaria una derivació fora de "
+#~ "l'àmbit del grup"
+
+#~ msgid ""
+#~ "A claim can not be created due to RecordCard state is not closed or "
+#~ "cancelled."
+#~ msgstr ""
+#~ "No es pot crear una reclamació perquè l'estat de la fitxa no és tancada o "
+#~ "cancelada."
+
+#~ msgid ""
+#~ "This request was closed more than {} days ago. To contact us again you "
+#~ "have to go back to the main menu and create a new request."
+#~ msgstr ""
+#~ "Aquest petició s'ha tancat fa més de {} dies. Per contar novament amb "
+#~ "nosaltres cal tornar al menú principal i crear una nova petició."
+
+#~ msgid ""
+#~ "Your request is still within the resolution process, which is {} day/s "
+#~ "andfor this reason we cannot accept your claim. It will be resolved "
+#~ "shortly."
+#~ msgstr ""
+#~ "La seva petició està encara dins del procés de resolució que és de {} dia/"
+#~ "es i per aquest motiu no podem acceptar la seva reclamació. En breu "
+#~ "estarà resolta."
+
+#~ msgid "RecordCard is blocked"
+#~ msgstr "Fitxa bloquejada"
+
+#~ msgid "Record Card blocked"
+#~ msgstr "Fitxa bloquejada"
+
+#~ msgid "Record Card unblocked"
+#~ msgstr "Fitxa desbloquejada"
+
+#~ msgid ""
+#~ "RecordCard could not be validated due to its validation time has expired"
+#~ msgstr ""
+#~ "La fitxa no es pot validar perquè s'ha sobrepassat el seu temps de "
+#~ "validació"
+
+#~ msgid "Month Indicators of {}-{} have been alredy calculated!"
+#~ msgstr "Els indicadors mensuals de {}-{} s'han calculat prèviament"
+
+#~ msgid "User's group is not allowed to change mayorship"
+#~ msgstr "El grup de l'usuari no té permís per canviar el flag d'alcaldia"
+
+#~ msgid "User's group is not allowed to change support"
+#~ msgstr "El grup de l'usuari no té permís per canviar el suport"
+
+#~ msgid "User's group is not allowed to change communication media detail"
+#~ msgstr ""
+#~ "El grup de l'usuari no té permís per canviar el detall del mitjà de "
+#~ "comunicació"
+
+#~ msgid "User's group is not allowed to change communication media date"
+#~ msgstr ""
+#~ "El grup de l'usuari no té permís per canviar la data del mitjà de "
+#~ "comunicació"
+
+#~ msgid "User's group is not allowed to change communication media"
+#~ msgstr ""
+#~ "El grup de l'usuari no té permís per canviar el mitjà de comunicació"
+
+#~ msgid ""
+#~ "Element Detail can not been changed because it will cause a derivation "
+#~ "and the record card does not allow reassignations"
+#~ msgstr ""
+#~ "La temàtica no es pot modificar perquè causaria una derivació i la fitxa "
+#~ "no permet reassignacions"
+
+#~ msgid "Element Detail is not allowed on Group Ambit"
+#~ msgstr "La temàtica no està permesa a l'àmbit del grup"
+
+#~ msgid "RecordCard Reasignability can only be updated by Dair Group"
+#~ msgstr ""
+#~ "El flag per permetre o no la reasignació de la fitxa només pot ser "
+#~ "actualitzat pel DAIR"
+
+#~ msgid ""
+#~ "RecordCard {} can not be reasigned outside group's ambit because its "
+#~ "validation time has expired. Validation date: {}"
+#~ msgstr ""
+#~ "La fitxa {} no es pot reassignar fora de l'àmbit perquè s'ha sobrepassat "
+#~ "el seu temps de validació. La data de validació era: {}"
+
+#~ msgid "Record Card to External Processing Email"
+#~ msgstr "Fitxa a Processament Extern amb email"
+
+#~ msgid "Input channel id must be set"
+#~ msgstr "L'identificador del canal d'entrada s'ha d'especificar"
+
+#~ msgid "Applicant id must be a valid one"
+#~ msgstr "L'identificador del sol·licitant ha de ser un vàild"
+
+#~ msgid "Support id must be a valid one"
+#~ msgstr "L'identificar del suport ha de ser un vàlid"

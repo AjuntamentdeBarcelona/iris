@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-16 16:29+0100\n"
+"PO-Revision-Date: 2020-03-16 17:46-0015\n"
+"Last-Translator: b'  <carlos@carlos.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: models.py:25
+msgid "Frequently Asked Questions"
+msgstr "Preguntes Freqüents"
+
+#: models.py:26
+msgid "Glossary"
+msgstr "Glossari"
+
+#: models.py:27
+msgid "Documentation"
+msgstr "Documentació"
+
+#: models.py:28
+msgid "Video"
+msgstr "Video"
+
+#: models.py:29
+msgid "News"
+msgstr "Novetats"
+
+#: models.py:40
+msgid "Self Training Courses"
+msgstr "Cursos d’autoformació"
+
+#: models.py:41
+msgid "General statistical DAIQ reports"
+msgstr "Informes estadístics generats pel DAIQ"
+
+#: models.py:42
+msgid "User Manuals"
+msgstr "Manuals d'usuari"
+
+#: models.py:43
+msgid "Regulations"
+msgstr "Normativa"
+
+#: models.py:44
+msgid "Links"
+msgstr "Enllaços"
+
+#: models.py:45
+msgid "Others"
+msgstr "Altres"
+
+#: models.py:48
+msgid "Title"
+msgstr "Títol"
+
+#: models.py:49
+msgid "Description"
+msgstr "Descripció"
+
+#: models.py:50
+msgid "Type"
+msgstr "Tipus"
+
+#: models.py:51
+msgid "Category"
+msgstr "Categoria"
+
+#: models.py:52
+msgid "Category for Documentation Type"
+msgstr "Categoria pel tipus documents"
+
+#: models.py:53
+msgid "File"
+msgstr "Fitxer"
+
+#: models.py:54
+msgid "Link"
+msgstr "Enllaç"
+
+#: models.py:55
+msgid "Youtube link for Video Type or link for Document Type"
+msgstr "Enllaç de YouTube pel tipus video o enllaç pel tipus de document"
+
+#: models.py:67
+msgid "Support Info"
+msgstr "Informació de support"
+
+#: serializers.py:35
+msgid "The selected Support Info does not exist"
+msgstr "La informació de support enviado no existeix"
+
+#: serializers.py:46
+#| msgid "Category for Documentation Type"
+msgid "Support info must be documentation type"
+msgstr "Categoria pel tipus documents"
